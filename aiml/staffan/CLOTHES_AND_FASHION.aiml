@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>WEAR</pattern>
+		<template>
+			<random>
+				<li>Most clothes are homemade. </li>
+				<li>Often we inherit our clothes and they are sometimes too big and sometimes too small. </li>
+				<li>In summer for special occasions boys wear knee-length trousers or knickers that we call "golf trousers", and a nice shirt. The girls wear a nice dress.</li>
+				<li>Adults wear nice clothes when they go out: hats and suits.</li>
+				<li>We hardly ever buy our clothes. We made them ourselves. </li>
+				<li>At some houses women will come and sew up clothes but it is rather expensive.</li>
+				<li>For special occasions the boys wear a brownish suit or knickers and check patterned socks and girls wear skirts or dresses. </li>
+				<li>When dressing nice we do not want to wear blue jeans, because that is the every day clothing.</li>
+				<li>Jeans started to be common around 1957-1958.</li>
+				<li><srai>BOYS WEAR</srai></li>
+				<li><srai>GIRLS WEAR</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * PEOPLE WEAR</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * CLOTHES DO * WEAR</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT ARE * WEARING</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT DO YOU NORMALLY WEAR</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW DO * DRESS</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * FASHION *</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * FASHIONABLE</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PEOPLE DRESS</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PEOPLE DRESS *</pattern>
+		<template><srai>WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>JEANS</pattern>
+		<template>
+			<random>
+				<li>Yes but when dressing nice we do not want to wear blue jeans, because that is the every day clothing.</li>
+				<li>Yes jeans started to be common around 1957-1958.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO * WEAR JEANS</pattern>
+		<template><srai>JEANS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * WEAR JEANS *</pattern>
+		<template><srai>JEANS</srai></template>
+	</category>
+	<category>
+		<pattern>BOYS WEAR</pattern>
+		<template>
+			<random>
+				<li>In summer boys wear shorts and in winter they wear cotton pants and a shirt. </li>
+				<li>The boys wear trousers. </li>
+				<li>The boys wear pants and knee-high stockings. </li>
+				<li>In summer we wear clogs and in winter boots made out of reindeer skin.</li>
+				<li>In winter boys wear a shirt and a woollen sweater, trousers and knee-length socks.</li>
+				<li>The boys like a type of trousers called "applestealingtrousers", because they can steal apples and stuff them into the trousers and they wouldn't fall out.</li>
+				<li>The boys wear knickers and stockings, a jacket and a cap. </li>
+				<li>The boys get their first suit at the age of seven. </li>
+				<li><srai>MEN WEAR</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT _ BOYS WEAR</pattern>
+		<template><srai>BOYS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT _ BOYS WEAR *</pattern>
+		<template><srai>BOYS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ BOYS DRESS</pattern>
+		<template><srai>BOYS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ BOYS DRESS *</pattern>
+		<template><srai>BOYS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLOTHES * BOYS WEAR</pattern>
+		<template><srai>BOYS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLOTHES * BOYS WEAR *</pattern>
+		<template><srai>BOYS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>MEN WEAR</pattern>
+		<template>
+			<random>
+				<li>Those who can't afford a suit wear a light blue shirt. </li>
+				<li>A sweater and a pair of pants. On Sundays we wear a suit.</li>
+				<li>Sometimes, if it's cold, we wear ski pants.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT _ MEN WEAR</pattern>
+		<template><srai>MEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT _ MEN WEAR *</pattern>
+		<template><srai>MEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ MEN DRESS</pattern>
+		<template><srai>MEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ MEN DRESS *</pattern>
+		<template><srai>MEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN * DRESS</pattern>
+		<template><srai>MEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN * DRESS *</pattern>
+		<template><srai>MEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>GIRLS WEAR</pattern>
+		<template>
+			<random>
+				<li>The girls mostly wear dresses.</li>
+				<li>At school and at home the girls usually dressed in short skirts with knee-length woollen stockings. </li>
+				<li>The girls usually wear dresses with aprons and knee-high stockings. </li>
+				<li>The girls mostly wear dresses, skirts and cardigans.</li>
+				<li>It is not until recently that the girls started to wear trousers. </li>
+				<li>If girls have a nice dress they put on an apron to protect it from getting dirty. </li>
+				<li>The female teachers didn't start to wear trousers until 1966.</li>
+				<li>When girls dress up sometime they wear a bow. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GIRLS DRESS</pattern>
+		<template><srai>GIRLS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS DRESS *</pattern>
+		<template><srai>GIRLS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT _ GIRLS WEAR</pattern>
+		<template><srai>GIRLS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT _ GIRLS WEAR *</pattern>
+		<template><srai>GIRLS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ GIRLS DRESS</pattern>
+		<template><srai>GIRLS WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WOMEN WEAR</pattern>
+		<template>
+			<random>
+				<li>The women mostly wear dresses.</li>
+				<li>Women usually wear dresses.</li>
+				<li>The women mostly wear dresses, skirts and cardigans.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ WOMEN DRESS</pattern>
+		<template><srai>WOMEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT _ WOMEN WEAR</pattern>
+		<template><srai>WOMEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ WOMEN DRESS</pattern>
+		<template><srai>WOMEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ WOMEN DRESS *</pattern>
+		<template><srai>WOMEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN * DRESS</pattern>
+		<template><srai>WOMEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN * DRESS *</pattern>
+		<template><srai>WOMEN WEAR</srai></template>
+	</category>
+	<category>
+		<pattern>TROUSERS</pattern>
+		<template>
+			<random>
+				<li>It is not until recently that the girls started to wear trousers. </li>
+				<li>The female teachers didn't start to wear trousers until 1966.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GIRLS WEAR TROUSERS</pattern>
+		<template><srai>TROUSERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS WEAR PANTS</pattern>
+		<template><srai>TROUSERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN WEAR TROUSERS</pattern>
+		<template><srai>TROUSERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN WEAR PANTS</pattern>
+		<template><srai>TROUSERS</srai></template>
+	</category>
+	<category>
+		<pattern>BUYING CLOTHES</pattern>
+		<template>
+			<random>
+				<li>It is very unusual to buy clothes.</li>
+				<li>Some buy clothes in the city. There is also a tailor and a seamstress who make clothes for us.</li>
+				<li>At some houses women will come and sew up clothes but it is rather expensive.</li>
+				<li>We hardly ever buy our clothes. We made them ourselves. </li>
+				<li>The mothers make the dresses for the girls, but they buy suits for the boys.</li>
+				<li>Some can afford to buy clothes or have them made, but most make their own close.</li>
+				<li>We sometimes buy clothes made by a seamstress. </li>
+				<li>It is very unusual to buy clothes, we usually make our own, but clothes can be bought from a semstress or tailor.</li>
+				<li>We hardly ever buy our clothes. We made them ourselves. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO YOU BUY CLOTHES</pattern>
+		<template><srai>BUYING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ BUY CLOTHES</pattern>
+		<template><srai>BUYING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ BUY CLOTHES *</pattern>
+		<template><srai>BUYING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>MAKING CLOTHES</pattern>
+		<template>
+			<random>
+				<li>We make clothes from fabric we weave ourselves or sometimes buy.</li>
+				<li>Some people weave their own fabrics as well and making their own clothes.</li>
+				<li>We knitted their own socks. </li>
+				<li>The clothes that we wear are made of wool that we sew or knit ourselves.</li>
+				<li>There is a seamstress, Mrs Larsson, who lives by the church. She makes lots of clothes.</li>
+				<li>The mothers make the dresses for the girls, but they buy suits for the boys.</li>
+				<li><srai>WHO MAKES CLOTHES</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MAKE CLOTHES</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKE * CLOTHES</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKE CLOTHES *</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKES CLOTHES</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKES CLOTHES *</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKES * CLOTHES</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKES * CLOTHES *</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKING CLOTHES</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKING CLOTHES *</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * MAKE CLOTHES</pattern>
+		<template><srai>MAKING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>WHO MAKES CLOTHES</pattern>
+		<template>
+			<random>
+				<li>We make our own cloths.</li>
+				<li>Most families make all their own clothing.</li>
+				<li>Sometimes a tailor or semstress is hired to make cloths.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO MAKES CLOTHES *</pattern>
+		<template><srai>WHO MAKES CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>WHO MAKES * CLOTHES</pattern>
+		<template><srai>WHO MAKES CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>WHO MAKES * CLOTHES *</pattern>
+		<template><srai>WHO MAKES CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLOTHES LIKE</pattern>
+		<template>
+			<random>
+				<li>The clothes are warm and comfortable and they are almost always knitted.</li>
+				<li><srai>CLOTHES MADE OF</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ CLOTHES LIKE *</pattern>
+		<template><srai>BLANK CLOTHES LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>CLOTHING MATERIALS</pattern>
+		<template>
+			<random>
+				<li>The fabric we would weave or sometimes buy.</li>
+				<li><srai>CLOTHES MADE OF</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * CLOTHES MADE *</pattern>
+		<template><srai>CLOTHING MATERIALS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MATERIALS * CLOTHES</pattern>
+		<template><srai>CLOTHING MATERIALS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MATERIALS * CLOTHES *</pattern>
+		<template><srai>CLOTHING MATERIALS</srai></template>
+	</category>
+	<category>
+		<pattern>CLOTHES MADE OF</pattern>
+		<template>
+			<random>
+				<li>The clothes are usually made of cotton and wool. </li>
+				<li>The clothes are made of cotton and wool.</li>
+				<li>The clothes are mostly made of cotton and wool. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT ARE YOUR CLOTHES MAKE OF</pattern>
+		<template><srai>CLOTHES MADE OF</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLOTHES MADE OF</pattern>
+		<template><srai>CLOTHES MADE OF</srai></template>
+	</category>
+	<category>
+		<pattern>MENDING CLOTHES</pattern>
+		<template>
+			<random>
+				<li>Most people can mend their own clothes.</li>
+				<li>The children at school will sometimes bring a pair of socks with holes, to learn how to mend them and how to knit.</li>
+				<li>The children learned to mend their clothes at school, in the textile craft class.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MENDING CLOTHES</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENDING CLOTHES *</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FIXING CLOTHES</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FIXING CLOTHES *</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ REPAIRING CLOTHES</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ REPAIRING CLOTHES *</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEND CLOTHES</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEND CLOTHES *</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENDS CLOTHES</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENDS CLOTHES *</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENDS * CLOTHES</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENDS * CLOTHES *</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FIX CLOTHES *</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ REPAIR CLOTHES *</pattern>
+		<template><srai>MENDING CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>TAILOR MENDING</pattern>
+		<template>Sometimes people will have a tailor or semstress mend clothes, but most people can mend their own clothing.</template>
+	</category>
+	<category>
+		<pattern>TAILOR * MEND CLOTHES</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>TAILOR * MENDING CLOTHES</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TAILOR * MEND CLOTHES</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TAILOR * MENDING</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TAILOR * MENDING *</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TAILOR * MENDING CLOTHES</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ SEAMSTRESS * MEND CLOTHES</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ SEAMSTRESS * MENDING</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ SEAMSTRESS * MENDING CLOTHES</pattern>
+		<template><srai>TAILOR MENDING</srai></template>
+	</category>
+	<category>
+		<pattern>JEWELLERY</pattern>
+		<template>
+			<random>
+				<li>Jewellery is only for ladies, and then only in special occasions.</li>
+				<li>We have jewellery, mostly homemade because it is too expensive to buy. </li>
+				<li>It is not common to wear jewellery, but if someone does, it is home made.</li>
+				<li>Jewellery is very desirable and women have it.</li>
+				<li>At school no one wears jewellery, but teenage girls will sometimes wear a necklace or a bracelet. </li>
+				<li>Well, mostly inherited jewellery.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ WEAR JEWELLERY</pattern>
+		<template><srai>JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WEAR JEWELLERY *</pattern>
+		<template><srai>JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WEAR * JEWELLERY</pattern>
+		<template><srai>JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WEAR * JEWELLERY *</pattern>
+		<template><srai>JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE JEWELLERY</pattern>
+		<template><srai>JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE JEWELLERY *</pattern>
+		<template><srai>JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>IS JEWELLERY COMMON</pattern>
+		<template><srai>JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>WHO WEARS JEWELLERY</pattern>
+		<template>
+			<random>
+				<li>It is not common to wear jewellery, but usually only women wear jewellery.</li>
+				<li>Jewellery is only for ladies, and then only in special occasions.</li>
+				<li><srai>DO MEN WEAR JEWELLERY</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO WEARS JEWELLERY *</pattern>
+		<template><srai>WHO WEARS JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * WEARS JEWELLERY</pattern>
+		<template><srai>WHO WEARS JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * WEARS JEWELLERY *</pattern>
+		<template><srai>WHO WEARS JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN WEAR JEWELLERY</pattern>
+		<template>It is totally unthinkable for a man to wear jewellery other than a wedding ring.</template>
+	</category>
+	<category>
+		<pattern>_ MEN WEAR JEWELLERY *</pattern>
+		<template><srai>BLANK MEN WEAR JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN * WEAR JEWELLERY</pattern>
+		<template><srai>BLANK MEN WEAR JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN * WEAR JEWELLERY *</pattern>
+		<template><srai>BLANK MEN WEAR JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN TO WEAR JEWELLERY</pattern>
+		<template><srai>BLANK MEN WEAR JEWELLERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE WATCHES</pattern>
+		<template>Yes, but knowing the time is not that important.</template>
+	</category>
+	<category>
+		<pattern>_ ANY WATCHES</pattern>
+		<template><srai>BLANK HAVE WATCHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE WATCHES *</pattern>
+		<template><srai>BLANK HAVE WATCHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY WATCHES *</pattern>
+		<template><srai>BLANK HAVE WATCHES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * TIME PIECES</pattern>
+		<template><srai>BLANK HAVE WATCHES</srai></template>
+	</category>
+	<category>
+		<pattern>WHO CUTS YOUR HAIR</pattern>
+		<template>
+			<random>
+				<li>We cut our hair at home.</li>
+				<li>We get our hair cut at home. 	</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHERE * CUT * HAIR</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * HAIR CUT</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * HAIR CUT *</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>WHO CUTS HAIR</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>WHO CUTS * HAIR</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>DO * BARBERS</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE BARBERS</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE BARBERS *</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * BARBERS</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * BARBERS *</pattern>
+		<template><srai>WHO CUTS YOUR HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>BOYS HAIR</pattern>
+		<template>
+			<random>
+				<li>Long hair is very unusual on boys. </li>
+				<li>Some boys have crew cuts and some have curly hair.</li>
+				<li>If a boy has long hair, he has to be prepared to hear giggling behind his back. </li>
+				<li>The boys wear short hair cuts, well combed with a part in the middle. It is important to be neat.</li>
+				<li>The boys also have short hair. </li>
+				<li>Younger boys have short hair, but as they grow older they comb it backwards and leave a little curl like Elvis.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ BOYS HAIR</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS HAIR *</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENS HAIR</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENS HAIR *</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS HAIRCUT *</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS * HAIR CUT</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS CUT * HAIR</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENS HAIRCUT *</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS HAIRCUTS *</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENS HAIRCUTS *</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS HAIRSTYLE</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS HAIRSTYLES *</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MENS HAIRSTYLES *</pattern>
+		<template><srai>BOYS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>GIRLS HAIR</pattern>
+		<template>
+			<random>
+				<li>Girls hair is usually parted on the side.</li>
+				<li>The girls part their hair on the side and wear a hair clip.</li>
+				<li>Girls have thier hair parted on the side or in the middle, and often have braids.</li>
+				<li>The women have nice, neat hairdos.</li>
+				<li>The girls mostly have short hair with a part on the side and a hair clip. </li>
+				<li>Some girls have bows and diadems. </li>
+				<li>The girls often have braids and the boys have a small curl on top of the head. </li>
+				<li>Girls have long hair that they comb backwards with hair gel.</li>
+				<li>The common girls' hair length is to the chin. </li>
+				<li>The girls often pull their hair back in a ponytail.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GIRLS HAIR</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS HAIR *</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS * HAIR</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS * HAIR *</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMENS HAIR</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMENS HAIR *</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS HAIRCUT *</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMENS HAIRCUT *</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS HAIRSTYLE *</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMENS HAIRSTYLE *</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>HOW DO GIRL WEAR THEIR HAIR</pattern>
+		<template><srai>GIRLS HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>HAIR</pattern>
+		<template>
+			<random>
+				<li>The haircuts look like if you put a bowl on your head and cut around it.</li>
+				<li><srai>BOYS HAIR</srai></li>
+				<li><srai>GIRLS HAIR</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAIRCUT</pattern>
+		<template><srai>HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAIRCUT *</pattern>
+		<template><srai>HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAIRCUTS</pattern>
+		<template><srai>HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAIRCUTS *</pattern>
+		<template><srai>HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAIRSTYLE</pattern>
+		<template><srai>HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAIRSTYLE *</pattern>
+		<template><srai>HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAIRSTYLES</pattern>
+		<template><srai>HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAIRSTYLES *</pattern>
+		<template><srai>HAIR</srai></template>
+	</category>
+	<category>
+		<pattern>SWIM SUITS</pattern>
+		<template>
+			<random>
+				<li>Of course we have bathing suits. </li>
+				<li>Bikinis are not common. </li>
+				<li>We don't like to show very much of our bodies, but we have swimsuits.</li>
+				<li>We have swimsuits, but no bikinis.</li>
+				<li><srai>DO GIRLS WEAR SWIMWEAR</srai></li>
+				<li><srai>TO BOYS WEAR SWIMWEAR</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ BATHING SUITS</pattern>
+		<template><srai>SWIM SUITS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BATHING SUITS *</pattern>
+		<template><srai>SWIM SUITS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE SWIMWEAR</pattern>
+		<template><srai>SWIM SUITS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE SWIMSUITS</pattern>
+		<template><srai>SWIM SUITS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE SWIMSUITS *</pattern>
+		<template><srai>SWIM SUITS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WEAR SWIMWEAR</pattern>
+		<template><srai>SWIM SUITS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WEAR SWIMSUITS</pattern>
+		<template><srai>SWIM SUITS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WEAR SWIMSUITS *</pattern>
+		<template><srai>SWIM SUITS</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS SWIMWEAR</pattern>
+		<template>Women wear knee-length swimsuits with sleeves to the elbow.</template>
+	</category>
+	<category>
+		<pattern>_ GIRLS SWIMWEAR *</pattern>
+		<template><srai>BLANK GIRLS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS SWIMSUITS</pattern>
+		<template><srai>BLANK GIRLS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS SWIMSUITS *</pattern>
+		<template><srai>BLANK GIRLS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN SWIMSUITS</pattern>
+		<template><srai>BLANK GIRLS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN SWIMSUITS *</pattern>
+		<template><srai>BLANK GIRLS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN SWIMWEAR</pattern>
+		<template><srai>BLANK GIRLS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN SWIMWEAR *</pattern>
+		<template><srai>BLANK GIRLS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIKINIS</pattern>
+		<template>
+			<random>
+				<li>Bikinis are not common. </li>
+				<li>We have swimsuits, but no bikinis.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ BIKINIS *</pattern>
+		<template><srai>BLANK BIKINIS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIKINI</pattern>
+		<template><srai>BLANK BIKINIS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIKINI *</pattern>
+		<template><srai>BLANK BIKINIS</srai></template>
+	</category>
+	<category>
+		<pattern>BOYS SWIMWEAR</pattern>
+		<template>
+			<random>
+				<li>The boys have bathing trunks. The size has to be perfect, otherwise the will fall off.</li>
+				<li>The boys used large, knee length swim shorts.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MEN WEAR SWIMSUITS</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS SWIMWEAR</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS SWIMWEAR *</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS SWIMSUITS</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS SWIMSUITS *</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN SWIMSUITS</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN SWIMSUITS *</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN SWIMWEAR</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN SWIMWEAR *</pattern>
+		<template><srai>BOYS SWIMWEAR</srai></template>
+	</category>
+	<category>
+		<pattern>NICE CLOTHES</pattern>
+		<template>Those who are well off wear better clothes than those who are poorer. </template>
+	</category>
+	<category>
+		<pattern>_ NICE CLOTHES</pattern>
+		<template><srai>NICE CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ NICE CLOTHES *</pattern>
+		<template><srai>NICE CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FINE CLOTHES</pattern>
+		<template><srai>NICE CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FINE CLOTHES *</pattern>
+		<template><srai>NICE CLOTHES</srai></template>
+	</category>
+	<category>
+		<pattern>SHOES</pattern>
+		<template>
+			<random>
+				<li>We often wear clogs.</li>
+				<li>Our sneakers are made of fabric.</li>
+				<li>We have rough boots in winter and in summer we are barefoot or wear sandals.</li>
+				<li>The shoes are less pointy than yours and we wear strong boots with lacing. </li>
+				<li>There are many types of shoes. Some boys are jealous of those who have rubber boots, because they can splash around in the water without getting wet.</li>
+				<li>Simple shoes as sneakers and rubber boots.</li>
+				<li>In summer we wear clogs and in winter boots made out of reindeer skin.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SHOES * WEAR</pattern>
+		<template><srai>SHOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPES * SHOES</pattern>
+		<template><srai>SHOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPES * SHOES *</pattern>
+		<template><srai>SHOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ SHOES TYPES *</pattern>
+		<template><srai>SHOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ ABOUT SHOES</pattern>
+		<template><srai>SHOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ OF SHOES *</pattern>
+		<template><srai>SHOES</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SHOES * </pattern>
+		<template><srai>SHOES</srai></template>
+	</category>
+</aiml>

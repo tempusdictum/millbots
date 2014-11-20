@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>WHEN WAS THE MILL BUILT</pattern>
+		<template>I'm not sure. There has always been a mill in the villages. They get rebuilt when they run down.</template>
+	</category>
+	<category>
+		<pattern>WHEN * MILL BUILT</pattern>
+		<template><srai>WHEN WAS THE MILL BUILT</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * BUILD * MILL</pattern>
+		<template><srai>WHEN WAS THE MILL BUILT</srai></template>
+	</category>
+	<category>
+		<pattern>WHO WORKS AT THE MILL</pattern>
+		<template>
+			<random>
+				<li>Arvid Lundstrom is the miller. The Lundstrom family had been millers for many generations.</li>
+				<li>Arvid Lundstrom, he is the miller.</li>
+				<li>The miller and his hired hand.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO * WHO WORKS AT THE MILL</pattern>
+		<template><srai>WHO WORKS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHO IS THE MILLER</pattern>
+		<template><srai>WHO WORKS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHO RUNS THE MILL</pattern>
+		<template><srai>WHO WORKS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * MILLER</pattern>
+		<template><srai>WHO WORKS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>DOES ANYONE LIVE BY THE MILL</pattern>
+		<template>
+			<random>
+				<li>There is a man, his name is Mr Lundstrom, and he is the miller. </li>
+				<li>There is an old lady called 'Flur' who lives by the river in a small cottage, where the youngster go to have a lot of fun.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DOES * LIVE NEAR * MILL</pattern>
+		<template><srai>DOES ANYONE LIVE BY THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>DOES * LIVE CLOSE * MILL</pattern>
+		<template><srai>DOES ANYONE LIVE BY THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>DOES * LIVE IN THE MILL</pattern>
+		<template>
+			<random>
+				<li>No, no one lived within the mill itself.</li>
+				<li>No, but the miller lived in a small house next to the mill.</li>
+				<li>No one lives in the mill. The miller lives in a house not far away.</li>
+				<li>There is nobody living in the mill. The miller lived in a cottage next to the mill.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DOES THE MILLER LIVE IN THE MILL</pattern>
+		<template><srai>DOES BLANK LIVE IN THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>DOES THE MILLER LIVE AT THE MILL</pattern>
+		<template><srai>DOES BLANK LIVE IN THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ THE MILLER SLEEP</pattern>
+		<template>The miller lives in a small house next to the mill.</template>
+	</category>
+	<category>
+		<pattern>_ THE MILLER SLEEP *</pattern>
+		<template><srai>BLANK THE MILLER SLEEP</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * MILLER LIVE</pattern>
+		<template><srai>BLANK THE MILLER SLEEP</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * MILLER LIVE *</pattern>
+		<template><srai>BLANK THE MILLER SLEEP</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILLER LIVE NEAR * MILL</pattern>
+		<template>Yes, the miller lives in a small house next to the mill.</template>
+	</category>
+	<category>
+		<pattern>HOW MANY * WORK * MILL</pattern>
+		<template>
+			<random>
+				<li>There are two people working there. The miller and his son or a helper.</li>
+				<li>Two people are working there, the miller and his man.</li>
+				<li>It is the miller and his man who worked there.</li>
+				<li>There are two people working at the mill, the miller and his help. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW MANY WORKED AT THE MILL</pattern>
+		<template><srai>HOW MANY BLANK WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT IS THE SALARY AT THE MILL	</pattern>
+		<template>
+			<random>
+				<li>The salary is 20 Swedish kronor a week for the youngsters who help out. </li>
+				<li>There are different salaries. It depended on what kind of work you are doing.</li>
+				<li>The farmers pay the miller for grinding their grain so it depends on how busy the mill is. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * SALARY * MILL</pattern>
+		<template><srai>WHAT IS THE SALARY AT THE MILL	</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MUCH DO THE WORKERS MAKE * MILL</pattern>
+		<template><srai>WHAT IS THE SALARY AT THE MILL	</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MUCH DO * PAID * MILL</pattern>
+		<template><srai>WHAT IS THE SALARY AT THE MILL	</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * DUTIES * MILLER</pattern>
+		<template>He is a miller, so his duty is to grind grain. </template>
+	</category>
+	<category>
+		<pattern>WHAT * DUTIES * MILLER *</pattern>
+		<template><srai>WHAT BLANK DUTIES BLANK MILLER</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILLER * DUTIES</pattern>
+		<template><srai>WHAT BLANK DUTIES BLANK MILLER</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILLER * BREAKS</pattern>
+		<template>I suppose he takes a break when the mill is grinding.</template>
+	</category>
+	<category>
+		<pattern>_ MILLER * BREAKS *</pattern>
+		<template><srai>BLANK MILLER BLANK BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * WORK * MILL</pattern>
+		<template>
+			<random>
+				<li>At the age of seven-eight you are allowed to help a little.</li>
+				<li>You have to be an adult to work at the mill because there are three floors and each sack that you would have to carry weighed between 80 and 100 kilos.</li>
+				<li>One can start to work at the mill after completing the 7th grade in school, at the age of 13-14.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ AGE * WORK * MILL *</pattern>
+		<template><srai>BLANK AGE BLANK WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * HELP * MILL</pattern>
+		<template><srai>BLANK AGE BLANK WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * START WORKING * MILL</pattern>
+		<template><srai>BLANK AGE BLANK WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW OLD * WORK * MILL</pattern>
+		<template><srai>BLANK AGE BLANK WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN AND WOMEN WORK * MILL</pattern>
+		<template>
+			<random>
+				<li>No women worked there, only men.</li>
+				<li>No, there is only the miller himself.</li>
+				<li>Only men work at the mill.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ WOMAN WORK * MILL</pattern>
+		<template><srai>BLANK MEN AND WOMEN WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMAN WORK * MILL *</pattern>
+		<template><srai>BLANK MEN AND WOMEN WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN WORK * MILL</pattern>
+		<template><srai>BLANK MEN AND WOMEN WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN WORK * MILL *</pattern>
+		<template><srai>BLANK MEN AND WOMEN WORK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>ARE THERE BREAKS</pattern>
+		<template>Yes. They work a lot when there is plenty to do and they take beaks and work less when there is little to do.</template>
+	</category>
+	<category>
+		<pattern>_ BREAKS * MILL</pattern>
+		<template><srai>ARE THERE BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL WORKERS * BREAKS</pattern>
+		<template><srai>ARE THERE BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET BREAKS * MILL</pattern>
+		<template><srai>ARE THERE BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET BREAKS * MILL *</pattern>
+		<template><srai>ARE THERE BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TAKE BREAKS * MILL</pattern>
+		<template><srai>ARE THERE BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TAKE BREAKS * MILL *</pattern>
+		<template><srai>ARE THERE BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPE OF MILL *</pattern>
+		<template>There are two different kinds of mills. The one here is a stone-mill. </template>
+	</category>
+	<category>
+		<pattern>_ KIND OF MILL *</pattern>
+		<template><srai>BLANK TYPE OF MILL BLANK</srai></template>
+	</category>
+	<category>
+		<pattern>_ SORT OF MILL *</pattern>
+		<template><srai>BLANK TYPE OF MILL BLANK</srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME * YEAR * MILL *</pattern>
+		<template>
+			<random>
+				<li>The mill is used when ever there is plenty of flowing water in the creek.</li>
+				<li>The mill runs all year around, but especially during fall and spring.</li>
+				<li>They worked mostly during fall and springtime, because they needed water to make the millwheel turn. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHEN * MILL OPEN</pattern>
+		<template><srai>BLANK TIME BLANK YEAR BLANK MILL BLANK</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * MILL RUN</pattern>
+		<template><srai>BLANK TIME BLANK YEAR BLANK MILL BLANK</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT SEASON * MILL *</pattern>
+		<template><srai>BLANK TIME BLANK YEAR BLANK MILL BLANK</srai></template>
+	</category>
+	<category>
+		<pattern>DO * CLOSE THE MILL</pattern>
+		<template>Only if the water will not turn the water wheel or if something is broken.</template>
+	</category>
+	<category>
+		<pattern>DO * CLOSE THE MILL *</pattern>
+		<template><srai>DO BLANK CLOSE THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SHUT THE MILL DOWN</pattern>
+		<template><srai>DO BLANK CLOSE THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TURN * MILL OFF</pattern>
+		<template><srai>DO BLANK CLOSE THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>IS IT USED * SUMMER * WINTER</pattern>
+		<template><set name="topic">The mill</set> is in use both summer and winter. </template>
+	</category>
+	<category>
+		<pattern>_ USE * MILL * WINTER</pattern>
+		<template><srai>IS IT USED BLANK SUMMER BLANK WINTER</srai></template>
+	</category>
+	<category>
+		<pattern>_ USE * MILL * WINTER *</pattern>
+		<template><srai>IS IT USED BLANK SUMMER BLANK WINTER</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL USED _ WINTER</pattern>
+		<template><srai>IS IT USED BLANK SUMMER BLANK WINTER</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL USED _ WINTER *</pattern>
+		<template><srai>IS IT USED BLANK SUMMER BLANK WINTER</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT HOUR * WORK</pattern>
+		<template>
+			<random>
+				<li>The mill is running day and night. They would work more than eight hours and in shifts.</li>
+				<li>They work nonstop at the mill, without any breaks, and sometimes on weekends.</li>
+				<li>The working hours are typically between 7 am until 5 pm Monday through Saturday.</li>
+				<li>In the watermill at least one person works until all the flour has been ground that day. </li>
+				<li>The grinding starts early in the morning to take advantage of the daylight.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DID THEY WORK LONG HOURS</pattern>
+		<template><srai>WHAT HOUR BLANK WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOURS AT * MILL</pattern>
+		<template><srai>WHAT HOUR BLANK WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOURS WORKED * MILL</pattern>
+		<template><srai>WHAT HOUR BLANK WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOURS WORK * MILL</pattern>
+		<template><srai>WHAT HOUR BLANK WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOURS * WORK * MILL</pattern>
+		<template><srai>WHAT HOUR BLANK WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOURS OF OPEREATION *</pattern>
+		<template><srai>WHAT HOUR BLANK WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS THE MILL OPEN</pattern>
+		<template><srai>WHAT HOUR BLANK WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ RESTROOM * MILL</pattern>
+		<template>
+			<random>
+				<li>There are no toilets, so they have to go to the outhouse, even when it is minus 20 degrees outside.</li>
+				<li>There was just an outhouse, no water closet.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MILL LOOK LIKE</pattern>
+		<template>
+			<random>
+				<li>Underneath the mill is the creek. All around it there are trees and then there is the bridge crossing Tvaran.</li>
+				<li>It is a three-story  building, that looked like a barn. It is situated where the waterpond is now, in the stream Tvaran at the Grisbacka-side.</li>
+				<li>The mill is a red wooden building. It has three floors and a steep gangway led to the door.</li>
+				<li>It is a three-story wooden building with wooden floors.</li>
+				<li>You would walk on a wooden bridge to get in, as there is water underneath.</li>
+				<li>The outside is painted in red and the inside is wooden colored.</li>
+				<li>The mill looked almost like a three-story family house with a basement.</li>
+				<li>The mill has two large doorways, one at the front and one in the back, and it has three stories. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DESCRIBE * MILL</pattern>
+		<template><srai>BLANK MILL LOOK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * MILL LIKE</pattern>
+		<template><srai>BLANK MILL LOOK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW *  MILL SITUATED</pattern>
+		<template>
+			<random>
+				<li>The mill was situated by the river.</li>
+				<li>The mill is situated at the lower part of the stream Tvaran and it is used by the farmers in the neighborhood. </li>
+				<li>The mill is situated by the stream Tvaran.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MILL ON THE RIVER</pattern>
+		<template><srai>HOW BLANK  MILL SITUATED</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS THE MILL</pattern>
+		<template><srai>HOW BLANK  MILL SITUATED</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS THE MILL *</pattern>
+		<template><srai>HOW BLANK  MILL SITUATED</srai></template>
+	</category>
+	<category>
+		<pattern>INSIDETHEMILL</pattern>
+		<template>
+			<random>
+				<li>It is very dusty and noisy in the mill. There are many stairs inside.</li>
+				<li>There is plenty of dust and leaves in the mill. </li>
+				<li>Inside there is an office, and it is very dusty. </li>
+				<li>The sound level is very high in the mill, but they did not even wear earmuffs. Maybe they just pulled down their leather-cap over their ears in wintertime, because it is not warm inside. </li>
+				<li>When the millstones turns, they are half a meter thick and two meters across, the whole house shakes, and since it is a three storage building, the shaking is really uncomfortable.</li>
+				<li>When the millstones are turning it is very noisy inside the mill.</li>
+				<li><srai>IS IT DARK INSIDE</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ INSIDE * MILL</pattern>
+		<template><srai>INSIDETHEMILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ INSIDE * MILL *</pattern>
+		<template><srai>INSIDETHEMILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * INSIDE</pattern>
+		<template><srai>INSIDETHEMILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * INSIDE *</pattern>
+		<template><srai>INSIDETHEMILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT IS IT LIKE INSIDE</pattern>
+		<template><srai>INSIDETHEMILL</srai></template>
+	</category>
+	<category>
+		<pattern>IS IT DARK INSIDE</pattern>
+		<template>In <set name="topic">the mill</set> it is dark and dusty. There are plenty of rats.</template>
+	</category>
+	<category>
+		<pattern>IS * MILL DARK</pattern>
+		<template><srai>IS IT DARK INSIDE</srai></template>
+	</category>
+	<category>
+		<pattern>IS * MILL DARK *</pattern>
+		<template><srai>IS IT DARK INSIDE</srai></template>
+	</category>
+	<category>
+		<pattern>IS * DARK * MILL</pattern>
+		<template><srai>IS IT DARK INSIDE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * HEIGHT</pattern>
+		<template><set name="topic">The mill</set> is three stories tall. The miller worked at the ground floor.</template>
+	</category>
+	<category>
+		<pattern>_ MILL TALL</pattern>
+		<template><srai>BLANK MILL BLANK HEIGHT</srai></template>
+	</category>
+	<category>
+		<pattern>_ TALL * MILL</pattern>
+		<template><srai>BLANK MILL BLANK HEIGHT</srai></template>
+	</category>
+	<category>
+		<pattern>_ HIGH * MILL</pattern>
+		<template><srai>BLANK MILL BLANK HEIGHT</srai></template>
+	</category>
+	<category>
+		<pattern>HOWTHEMILLWORKS</pattern>
+		<template>
+			<random>
+				<li>The mill was a three-story building made of timber, situated by a pond of water, which released the water at regular intervals. The water makes the wheel turn and the waterwheel powers the mill. </li>
+				<li>The mill has three floors, and the grain is brought in and unloaded on the top floor. Then it falls on to the second floor and in between the millstones. The waterwheel is on the ground floor, and it powers the mill. </li>
+				<li>It is important to make sure that the waterwheel is turning to be able to grind the grains. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW DOES THE MILL WORK</pattern>
+		<template><srai>HOWTHEMILLWORKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKES * MILL WORK</pattern>
+		<template><srai>HOWTHEMILLWORKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW THE MILL WORKS</pattern>
+		<template><srai>HOWTHEMILLWORKS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * MILL WORK</pattern>
+		<template><srai>HOWTHEMILLWORKS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * MILL WORKS</pattern>
+		<template><srai>HOWTHEMILLWORKS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * MILL DO</pattern>
+		<template><srai>HOWTHEMILLWORKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DOES * MILL DO</pattern>
+		<template><srai>HOWTHEMILLWORKS</srai></template>
+	</category>
+	<category>
+		<pattern>HOWISTHEMILLPOWERED</pattern>
+		<template>
+			<random>
+				<li>The mill is powered by the water in Tvaran.</li>
+				<li>The mill is run by waterpower, which is taken from the creek Tvaran.</li>
+				<li>The mill is run by waterpower and the building is a three-story building. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MILL POWERED</pattern>
+		<template><srai>HOWISTHEMILLPOWERED</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL POWERED *</pattern>
+		<template><srai>HOWISTHEMILLPOWERED</srai></template>
+	</category>
+	<category>
+		<pattern>_ POWER * MILL</pattern>
+		<template><srai>HOWISTHEMILLPOWERED</srai></template>
+	</category>
+	<category>
+		<pattern>_ POWER * MILL *</pattern>
+		<template><srai>HOWISTHEMILLPOWERED</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * POWERED</pattern>
+		<template><srai>HOWISTHEMILLPOWERED</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * POWER</pattern>
+		<template><srai>HOWISTHEMILLPOWERED</srai></template>
+	</category>
+	<category>
+		<pattern>IS THE MILL LOCKED</pattern>
+		<template>In the evenings the mill is locked so that no one can get in.</template>
+	</category>
+	<category>
+		<pattern>_ LOCK * MILL</pattern>
+		<template><srai>IS THE MILL LOCKED</srai></template>
+	</category>
+	<category>
+		<pattern>_ LOCK * MILL *</pattern>
+		<template><srai>IS THE MILL LOCKED</srai></template>
+	</category>
+	<category>
+		<pattern>IS * MILL * LOCKED</pattern>
+		<template><srai>IS THE MILL LOCKED</srai></template>
+	</category>
+	<category>
+		<pattern>IS * MILL * LOCKED *</pattern>
+		<template><srai>IS THE MILL LOCKED</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * LOCK * MILL</pattern>
+		<template>In the evenings the miller locks the mill so that no one can get in.</template>
+	</category>
+	<category>
+		<pattern>WHO * LOCKS * MILL</pattern>
+		<template><srai>WHO BLANK LOCK BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * DO * MILL</pattern>
+		<template>
+			<random>
+				<li>They would grind grains into flour.</li>
+				<li>The farmers arrived with the barley and they poured it into a large funnel. At the bottom there are two big stones grinding the barley into flour.</li>
+				<li>They grind barley, oat and wheat. </li>
+				<li>In the mill they grind the grain into flour.</li>
+				<li>They grind barley in the mill. </li>
+				<li>In the mill the grain is ground into flour.</li>
+				<li>The farmers come to the mill with their scale and their barley which the miller grinds and then they receive flour.</li>
+				<li>They grind the grain into flour and they give the leftovers to the pigs or to other animals.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * DONE * MILL</pattern>
+		<template><srai>WHAT BLANK DO BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * MILL * PURPOSE</pattern>
+		<template><srai>WHAT BLANK DO BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * MILLS * PURPOSE</pattern>
+		<template><srai>WHAT BLANK DO BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT PURPOSE * MILL *</pattern>
+		<template><srai>WHAT BLANK DO BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * PURPOSE * MILL</pattern>
+		<template><srai>WHAT BLANK DO BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * PURPOSE * MILL *</pattern>
+		<template><srai>WHAT BLANK DO BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW DOES THE MILL MAKE MONEY</pattern>
+		<template>The farmers pay the miller for grinding their grain. </template>
+	</category>
+	<category>
+		<pattern>HOW * MILL * PROFIT</pattern>
+		<template><srai>HOW DOES THE MILL MAKE MONEY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * MILL * MONEY</pattern>
+		<template><srai>HOW DOES THE MILL MAKE MONEY</srai></template>
+	</category>
+	<category>
+		<pattern>KINDOFWORKINTHEMILL</pattern>
+		<template>In the mill they ground flour or repaired broken things. </template>
+	</category>
+	<category>
+		<pattern>WHAT KIND OF WORK DO THEY DO IN THE MILL</pattern>
+		<template><srai>KINDOFWORKINTHEMILL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * WORK * MILL</pattern>
+		<template><srai>KINDOFWORKINTHEMILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ GROUND GRAIN</pattern>
+		<template>Once ground, the flour is poured into large sacks of jute cloth. The miller carries them on his shoulder and loads them on to the buyers' carriage for their horses to bring home. </template>
+	</category>
+	<category>
+		<pattern>WHAT * WITH * GRAIN * GROUND</pattern>
+		<template><srai>BLANK GROUND GRAIN</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * WITH * GRAIN * GROUND *</pattern>
+		<template><srai>BLANK GROUND GRAIN</srai></template>
+	</category>
+	<category>
+		<pattern>_ GRAIN AFTER * GROUND</pattern>
+		<template><srai>BLANK GROUND GRAIN</srai></template>
+	</category>
+	<category>
+		<pattern>_ GRAIN AFTER * GROUND *</pattern>
+		<template><srai>BLANK GROUND GRAIN</srai></template>
+	</category>
+	<category>
+		<pattern>_ GRAIN AFTER GRINDING *</pattern>
+		<template><srai>BLANK GROUND GRAIN</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PERFORM THE GRINDING</pattern>
+		<template>
+			<random>
+				<li>A large waterwheel made the millstones rotate and these stones ground the barley into flour. The chaff is ground into nourishment for the pigs.</li>
+				<li><srai>THE MILLWHEEL</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW * GRAIN * GROUND</pattern>
+		<template><srai>HOW BLANK PERFORM THE GRINDING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GRAIN * GROUND *</pattern>
+		<template><srai>HOW BLANK PERFORM THE GRINDING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GRAIN GROUND</pattern>
+		<template><srai>HOW BLANK PERFORM THE GRINDING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GRAIN GROUND *</pattern>
+		<template><srai>HOW BLANK PERFORM THE GRINDING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GRIND * GRAIN</pattern>
+		<template><srai>HOW BLANK PERFORM THE GRINDING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GRIND * GRAIN *</pattern>
+		<template><srai>HOW BLANK PERFORM THE GRINDING</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT _ CHAFF</pattern>
+		<template>The left over hulls of the grain.</template>
+	</category>
+	<category>
+		<pattern>HOW * MILLWHEEL *</pattern>
+		<template>At the grinding there are two large millstones placed next to each other. These stones are rubbed against each other and the grain is crushed.</template>
+	</category>
+	<category>
+		<pattern>HOW * MILLSTONE *</pattern>
+		<template><srai>HOW BLANK MILLWHEEL BLANK</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILLSTONE WORK</pattern>
+		<template><srai>HOW BLANK MILLWHEEL BLANK</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILLWHEEL WORK</pattern>
+		<template><srai>HOW BLANK MILLWHEEL BLANK</srai></template>
+	</category>
+	<category>
+		<pattern>IS THERE A MILLWHEEL</pattern>
+		<template>Yes, there is a millwheel, and it is very big.</template>
+	</category>
+	<category>
+		<pattern>DOES * MILL HAVE * MILLWHEEL</pattern>
+		<template><srai>IS THERE A MILLWHEEL</srai></template>
+	</category>
+	<category>
+		<pattern>DOES * MILL HAVE * MILLWHEEL *</pattern>
+		<template><srai>IS THERE A MILLWHEEL</srai></template>
+	</category>
+	<category>
+		<pattern>IS THERE A MILLSTONE</pattern>
+		<template>Yes, there is a millstone, and it is very big.</template>
+	</category>
+	<category>
+		<pattern>DOES * MILL HAVE * MILLSTONE</pattern>
+		<template><srai>IS THERE A MILLSTONE</srai></template>
+	</category>
+	<category>
+		<pattern>DOES * MILL HAVE * MILLSTONE *</pattern>
+		<template><srai>IS THERE A MILLSTONE</srai></template>
+	</category>
+	<category>
+		<pattern>WERE THERE ACCIDENTS</pattern>
+		<template>
+			<random>
+				<li>Nothing that is known. A minor fire occurred in 1882. A flake of metal came in with the grain and ended up between the millstones. The sparks set the bolt cloths on fire and they were destroyed as well as the bolt cupboard.</li>
+				<li>There are no accidents that I know of. The whole building shakes as the millstones are grinding. That is very exciting.</li>
+				<li><srai>HOW IS THE SAFETY </srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ ACCIDENTS * MILL</pattern>
+		<template><srai>WERE THERE ACCIDENTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * ACCIDENTS</pattern>
+		<template><srai>WERE THERE ACCIDENTS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW IS THE SAFETY </pattern>
+		<template>
+			<random>
+				<li>It is not a very safe place to work, but I don't think there have been any accidents. </li>
+				<li>The safety in the mill is very poor, but there are seldom any accidents. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MILL SAFETY</pattern>
+		<template><srai>HOW IS THE SAFETY </srai></template>
+	</category>
+	<category>
+		<pattern>_ SAFE * MILL</pattern>
+		<template><srai>HOW IS THE SAFETY </srai></template>
+	</category>
+	<category>
+		<pattern>_ SAFE * MILL *</pattern>
+		<template><srai>HOW IS THE SAFETY </srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * SAFE</pattern>
+		<template><srai>HOW IS THE SAFETY </srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * SAFE *</pattern>
+		<template><srai>HOW IS THE SAFETY </srai></template>
+	</category>
+	<category>
+		<pattern>EXCITING AT THE MILL</pattern>
+		<template>
+			<random>
+				<li>It is very often that anything especially exciting happened here, but sometimes a horse will kick something out or run off.</li>
+				<li>The mill is a scary and exciting place, according to the children. </li>
+				<li>The mill is a very exciting place to be because there are straps and things.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ THRILLING * MILL</pattern>
+		<template><srai>EXCITING AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ EXCITEMENT * MILL</pattern>
+		<template><srai>EXCITING AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL EXCITING</pattern>
+		<template><srai>EXCITING AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL EXCITING *</pattern>
+		<template><srai>EXCITING AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ ACTION * MILL</pattern>
+		<template><srai>EXCITING AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET TO * MILL</pattern>
+		<template>
+			<random>
+				<li>By horse and carriage or a sled in the winter. The mill is in a ravine and the road is exciting and a little dangerous, especially in winter when it is slippery.</li>
+				<li>You drive across the bridge that leads over the creek Tvaran. The mill is just next to the creek.</li>
+				<li>The farmers come with their horses and carts. They leave their grain in the morning and go to run some errands in the city. Then they picked up the flour in the evening.</li>
+				<li>You can walk to the mill, but most people travel by horse and cart.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GET TO * MILL *</pattern>
+		<template><srai>BLANK GET TO BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW DO THE DRESS AT THE MILL</pattern>
+		<template>
+			<random>
+				<li>They wore thick woollen clothes, rough homespun clothing in wintertime.</li>
+				<li>In summer they a thin cap to protect their ears from the noise.</li>
+				<li>The workers wore special clothing, because it was so dusty. </li>
+				<li>The workers dressed in working overalls. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DID HE WEAR SPECIAL CLOTHES</pattern>
+		<template><srai>HOW DO THE DRESS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ WEAR * CLOTHES * MILL</pattern>
+		<template><srai>HOW DO THE DRESS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILLER WEAR</pattern>
+		<template><srai>HOW DO THE DRESS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILLER WEAR *</pattern>
+		<template><srai>HOW DO THE DRESS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * WEAR</pattern>
+		<template><srai>HOW DO THE DRESS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ DRESS * WORK * MILL</pattern>
+		<template><srai>HOW DO THE DRESS AT THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>DO CHILDREN PLAY * MILL</pattern>
+		<template>
+			<random>
+				<li>Yes they do. Some say that the place is haunted.</li>
+				<li>Yes, I used to play there sometimes myself as a child.</li>
+				<li>It is too dangerous for children to be there, but yes they do anyway.</li>
+				<li><srai>CHILDREN AT MILL</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO CHILDREN PLAY * MILL *</pattern>
+		<template><srai>DO CHILDREN PLAY BLANK MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILL * HAUNTED</pattern>
+		<template>
+			<random>
+				<li>That's what they say.</li>
+				<li>That's just a rumor.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>CHILDRENATMILL</pattern>
+		<template>
+			<random>
+				<li>Many children play by the mill. Among other things, they start small fires that they tried to take away from each other, a game that wasn't without danger.</li>
+				<li>Curious children like to play here, but the miller doesn't like it because it is too dangerous. </li>
+				<li>In the winter when the water freezes on the pond, the children go ice-skating. </li>
+				<li>You are not allowed to play in the mill, but many kids did anyway, because they thought it was exciting. </li>
+				<li>You could go into the water where the stream Tvaran comes out in the river, but it is not an especially great place to swim. </li>
+				<li>In the evening, young boys go there and play cards for money. </li>
+				<li>The mill is a scary and exciting place, according to the children. </li>
+				<li>You aren't allowed to play by the mill. But that doesn't stop some unfortunately.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>* CHILDREN * MILL</pattern>
+		<template><srai>CHILDRENATMILL</srai></template>
+	</category>
+	<category>
+		<pattern>* KIDS * MILL</pattern>
+		<template><srai>CHILDRENATMILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ PLAYING * MILL</pattern>
+		<template><srai>CHILDRENATMILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ PLAY * MILL</pattern>
+		<template><srai>CHILDRENATMILL</srai></template>
+	</category>
+	<category>
+		<pattern>TVARAN RIVER	</pattern>
+		<template>
+			<random>
+				<li>You can swim in the creek Tvaran.</li>
+				<li>It is said that you could swim there, but the water is dirty and muddy. We would go there to throw rocks and play.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SWIM * TVARAN</pattern>
+		<template><srai>TVARAN RIVER	</srai></template>
+	</category>
+	<category>
+		<pattern>_ SWIM * TVARAN *</pattern>
+		<template><srai>TVARAN RIVER	</srai></template>
+	</category>
+	<category>
+		<pattern>_ SWIMMING * TVARAN *</pattern>
+		<template><srai>TVARAN RIVER	</srai></template>
+	</category>
+	<category>
+		<pattern>_ SWIMMING * TVARAN</pattern>
+		<template><srai>TVARAN RIVER	</srai></template>
+	</category>
+	<category>
+		<pattern>_ BEAVERS</pattern>
+		<template>No not right now, but sometimes the beavers come from upstream the river Umealven.</template>
+	</category>
+	<category>
+		<pattern>_ BEAVERS * TVARAN *</pattern>
+		<template><srai>BLANK BEAVERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BRIDGE * TVARAN</pattern>
+		<template>The bridge is a little scary and dangerous.</template>
+	</category>
+	<category>
+		<pattern>_ BRIDGE * MILL</pattern>
+		<template><srai>BLANK BRIDGE BLANK TVARAN</srai></template>
+	</category>
+	<category>
+		<pattern>KVARNBRON</pattern>
+		<template>Someday there will be a bridge called Kvarnbron, right where the mill is.</template>
+	</category>
+	<category>
+		<pattern>_ KVARNBRON</pattern>
+		<template><srai>KVARNBRON</srai></template>
+	</category>
+	<category>
+		<pattern>_ KVARNBRON *</pattern>
+		<template><srai>KVARNBRON</srai></template>
+	</category>
+	<category>
+		<pattern>WHY * MILL TORN DOWN</pattern>
+		<template>
+			<random>
+				<li>The water in the creek Tvaran came from the lake Piparbolesjon. Since the city of Umea took its drinking water from that lake, the water level sunk so that there was not enough water to run the mill. Many are sad that it was torn down.</li>
+				<li>When they constructed houses in the area of Vasterslatt, the house owners had water in their basements in the evening as the millpond was dammed. The city of Umea bought the mill in 1962 and it was demolished that same year.</li>
+				<li>The mill became old-fashioned and the larger, electrical mills were more profitable.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHY * MILL DESTROYED</pattern>
+		<template><srai>WHY BLANK MILL TORN DOWN</srai></template>
+	</category>
+	<category>
+		<pattern>WHY * MILL GONE</pattern>
+		<template><srai>WHY BLANK MILL TORN DOWN</srai></template>
+	</category>
+	<category>
+		<pattern>WHY * MILL REMOVED</pattern>
+		<template><srai>WHY BLANK MILL TORN DOWN</srai></template>
+	</category>
+	<category>
+		<pattern>WHY * MILL DEMOLISHED</pattern>
+		<template><srai>WHY BLANK MILL TORN DOWN</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * MILL TORN DOWN</pattern>
+		<template>
+			<random>
+				<li>It was torn down around 1960 because it was too old-fashioned.</li>
+				<li>It was destroyed in 1962. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHEN * MILL DESTROYED</pattern>
+		<template><srai>WHEN BLANK MILL TORN DOWN</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * MILL GONE</pattern>
+		<template><srai>WHEN BLANK MILL TORN DOWN</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * MILL REMOVED</pattern>
+		<template><srai>WHEN BLANK MILL TORN DOWN</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * MILL DEMOLISHED</pattern>
+		<template><srai>WHEN BLANK MILL TORN DOWN</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT HAPPENS TO THE MILL</pattern>
+		<template>
+			<random>
+				<li>The municipality buys the mill and they had it torn down. </li>
+				<li>The mill is torn down in the 50's because it was worn down.</li>
+				<li>The mill is demolished so that the youth wouldn't start hanging there.</li>
+				<li>The mill is torn down because it became too old to serve its purpose. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MILL * FUTURE</pattern>
+		<template><srai>WHAT HAPPENS TO THE MILL</srai></template>
+	</category>
+	<category>
+		<pattern>_ MILLS FUTURE</pattern>
+		<template><srai>WHAT HAPPENS TO THE MILL</srai></template>
+	</category>
+</aiml>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>MISCHIEF</pattern>
+		<template>
+			<random>
+				<li>At school the children are up to a lot of mischief. </li>
+				<li>The children steel turnips for example. </li>
+				<li>The children tease and bother old men and women in the neighborhood, and they love it when an old man comes out screaming all red in the face.</li>
+				<li>There are lots of brats around. </li>
+				<li>The children steal turnips. </li>
+				<li>The school children also tease an old man who lives by the old mill. </li>
+				<li>There is an old man who lives by the mill that the school children love to tease because he gets so angry.</li>
+				<li>The girls don't do much mischief but the boys steal apples. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * TROUBLE</pattern>
+		<template><srai>MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * TROUBLE *</pattern>
+		<template><srai>MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * MISCHIEF</pattern>
+		<template><srai>MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * MISCHIEF *</pattern>
+		<template><srai>MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ INTO MISCHIEF</pattern>
+		<template><srai>MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ INTO MISCHIEF *</pattern>
+		<template><srai>MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY MISCHIEF </pattern>
+		<template><srai>MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY MISCHIEF *</pattern>
+		<template><srai>MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ YOU * MISCHIEF</pattern>
+		<template>
+			<random>
+				<li>Yes. Once at the chemistry place I stole a piece of something that would develop a gas if you mixed it with another fluid. So I made a balloon with the gas inside and it went off into the sky. Then I set fire on another piece and it flew across the village. In the newspaper the next day the headline was "woman saw ghost flyer", but it was only my balloon!</li>
+				<li>Yes, we hid in the bushes outside the police station and we would tie string around a wallet. When the police officer came to pick it up, we would pull it away!</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ YOU * MISCHIEF *</pattern>
+		<template><srai>BLANK YOU BLANK MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ YOU * TROUBLE</pattern>
+		<template><srai>BLANK YOU BLANK MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>_ YOU * TROUBLE *</pattern>
+		<template><srai>BLANK YOU BLANK MISCHIEF</srai></template>
+	</category>
+	<category>
+		<pattern>TOYS</pattern>
+		<template>
+			<random>
+				<li>The toys are homemade. </li>
+				<li>The only toy brand we have is BRIO. </li>
+				<li>We mostly make our own toys. </li>
+				<li>One thing that we do is to take a string and rub it with resin to make it sound like an untuned violin.</li>
+				<li>Our toys are mostly dolls and cars, and skis in the winter. </li>
+				<li>Some boys have bows and arrows, dangerous but great fun!</li>
+				<li>We make our own toys, because as children we don't have any money. </li>
+				<li>A girl who has money might buy a porcelain head and make a doll.</li>
+				<li>We build wooden airplanes.</li>
+				<li>We sometimes attach a sting to a hook on a window, and we rub resin on it to make it sound like a violin.</li>
+				<li>Many children make their own toys. </li>
+				<li>Handmade dolls, teddy bears and wooden toys were most common. </li>
+				<li>The rich can buy their toys.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * TOYS DO *</pattern>
+		<template><srai>TOYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TOYS</pattern>
+		<template><srai>TOYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TOYS *</pattern>
+		<template><srai>TOYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPES OF TOYS *</pattern>
+		<template><srai>TOYS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * TOYS *</pattern>
+		<template><srai>TOYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN EARN MONEY</pattern>
+		<template>The only way to earn money is to run errands. </template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN EARN MONEY *</pattern>
+		<template><srai>BLANK CHILDREN EARN MONEY</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN MAKE MONEY</pattern>
+		<template><srai>BLANK CHILDREN EARN MONEY</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN MAKE MONEY *</pattern>
+		<template><srai>BLANK CHILDREN EARN MONEY</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BRIO</pattern>
+		<template>
+			<random>
+				<li>They manufacture toys.</li>
+				<li>A company that build toys.</li>
+				<li>They make children's toys.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO * BRIO</pattern>
+		<template><srai>WHAT BLANK BRIO</srai></template>
+	</category>
+	<category>
+		<pattern>GAMES</pattern>
+		<template>
+			<random>
+				<li>We dance, play football and collect stamps. </li>
+				<li>When we have time to play, we play with the animals.</li>
+				<li>The games are a part of everyday life, playing with the cats, dogs and pigs.</li>
+				<li>Sometimes we go out in the field to kick ball. </li>
+				<li>At the summer parties we dance folk dances.</li>
+				<li>Hide and seek is a popular game. </li>
+				<li>Sometimes we may set up a play. </li>
+				<li>We sometimes play "kick the can" or other chasing games.</li>
+				<li>We often play indians and cowboys.</li>
+				<li>Skiing is favorite hobby. </li>
+				<li>Many boys run cross-country races.</li>
+				<li>We often played hide and seek and we chase each other.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GAMES * PLAY</pattern>
+		<template><srai>GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GAMES * PLAY *</pattern>
+		<template><srai>GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE GAMES</pattern>
+		<template><srai>GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE GAMES *</pattern>
+		<template><srai>GAMES</srai></template>
+	</category>
+</aiml>

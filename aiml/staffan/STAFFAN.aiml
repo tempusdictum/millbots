@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>STAFFAN</pattern>
+		<template>
+			<random>
+				<li>Yes?</li>
+				<li>What can I do for you?</li>
+				<li>Yes, I'm here.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ YOUR NAME</pattern>
+		<template>
+			<random>
+				<li>My name is Staffan.</li>
+				<li>My name is Staffan, what is yours?</li>
+				<li>I go by the name Staffan.</li>
+				<li>I am called Staffan.</li>
+				<li>My name is Staffan.</li>
+				<li>My name's Staffan.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ DO YOU GO BY</pattern>
+		<template><srai>BLANK YOUR NAME</srai></template>
+	</category>
+	<category>
+		<pattern>_ CALL YOURSELF</pattern>
+		<template><srai>BLANK YOUR NAME</srai></template>
+	</category>
+	<category>
+		<pattern>_ NAME YOU</pattern>
+		<template><srai>BLANK YOUR NAME</srai></template>
+	</category>
+	<category>
+		<pattern>_ ARE YOU CALLED</pattern>
+		<template><srai>BLANK YOUR NAME</srai></template>
+	</category>
+	<category>
+		<pattern>_ YOUR JOB</pattern>
+		<template>
+			<random>
+				<li>I am a farmer here in Grisbacka.</li>
+				<li>I farm the land.</li>
+				<li>I am a farmer.</li>
+				<li>I work on a farm.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ DO YOU DO</pattern>
+		<template><srai>BLANK YOUR JOB</srai></template>
+	</category>
+	<category>
+		<pattern>_ YOU _ FOR A LIVING</pattern>
+		<template><srai>BLANK YOUR JOB</srai></template>
+	</category>
+	<category>
+		<pattern>_ YOU EMPLOYED</pattern>
+		<template><srai>BLANK YOUR JOB</srai></template>
+	</category>
+	<category>
+		<pattern>_ JOB * YOU HAVE</pattern>
+		<template><srai>BLANK YOUR JOB</srai></template>
+	</category>
+	<category>
+		<pattern>_ JOB * YOU DO</pattern>
+		<template><srai>BLANK YOUR JOB</srai></template>
+	</category>
+</aiml>

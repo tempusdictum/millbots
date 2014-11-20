@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>GRISBACKA</pattern>
+		<template>
+			<random>
+				<li>The village of Grisbacka is a rather large village with mostly farms. </li>
+				<li>There are mostly cultivated fields in the Grisbacka area. </li>
+				<li>Mostly poor people lived in Grisbacka.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * GRISBACKA LIKE</pattern>
+		<template><srai>GRISBACKA</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * LIKE * GRISBACKA</pattern>
+		<template><srai>GRISBACKA</srai></template>
+	</category>
+	<category>
+		<pattern>DESCRIBE GRISBACKA</pattern>
+		<template><srai>GRISBACKA</srai></template>
+	</category>
+	<category>
+		<pattern>DESCRIBE * GRISBACKA</pattern>
+		<template><srai>GRISBACKA</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * TOWN LIKE</pattern>
+		<template><srai>GRISBACKA</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * LIKE * TOWN</pattern>
+		<template><srai>GRISBACKA</srai></template>
+	</category>
+	<category>
+		<pattern>GETTING AROUND</pattern>
+		<template>
+			<random>
+				<li>Mostly you would walk or ride a bike to get somewhere. </li>
+				<li>The most common means of transportation is the bicycle. Otherwise people would walk. Cars are not that common.</li>
+				<li>The means of transportation available are bicycles, busses and horses. Cars are a luxury.</li>
+				<li>There are 3 cars, and a bus running from the church to the city, but it cost 15 ore so it is very expensive.</li>
+				<li>Mostly we used the bike. You can sit on your bicycle and hold on to a bus and ride along.</li>
+				<li><srai>BLANK HAVE CARS</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>TRANSPORTATION</pattern>
+		<template><srai>GETTING AROUND</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GET AROUND</pattern>
+		<template><srai>GETTING AROUND</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GET AROUND *</pattern>
+		<template><srai>GETTING AROUND</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * TRANSPORTATION *</pattern>
+		<template><srai>GETTING AROUND</srai></template>
+	</category>
+	<category>
+		<pattern>_ PLACE TO PLACE</pattern>
+		<template><srai>GETTING AROUND</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEANS OF TRANSPORTATION</pattern>
+		<template><srai>GETTING AROUND</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEANS OF TRANSPORTATION *</pattern>
+		<template><srai>GETTING AROUND</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE CARS</pattern>
+		<template>
+			<random>
+				<li>It is rather unusual that someone had a car but of course some people do. </li>
+				<li>Some people have a car, it is becoming more and more common. </li>
+				<li>There are not many cars, instead you can ride a bicycle. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ OWN CARS</pattern>
+		<template><srai>BLANK HAVE CARS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DRIVE CARS</pattern>
+		<template><srai>BLANK HAVE CARS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * CARS * COMMON</pattern>
+		<template>Local busses and trucks are common. </template>
+	</category>
+	<category>
+		<pattern>_ TYPES * CARS * ROAD</pattern>
+		<template><srai>WHAT BLANK CARS BLANK COMMON</srai></template>
+	</category>
+	<category>
+		<pattern>_ SORTS * CARS * ROAD</pattern>
+		<template><srai>WHAT BLANK CARS BLANK COMMON</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TRAFFIC</pattern>
+		<template>There isn't so much traffic. </template>
+	</category>
+	<category>
+		<pattern>_ HAVE TRAFFIC *</pattern>
+		<template><srai>BLANK HAVE TRAFFIC</srai></template>
+	</category>
+	<category>
+		<pattern>ROADS</pattern>
+		<template>
+			<random>
+				<li>There is a road called Haraldsvagen. </li>
+				<li>The road Backenvagen is called "the new road" and Grubbevagen is called "the old road".</li>
+				<li>Through the village there is a road, Storgatan, and most houses are along this road.</li>
+				<li>There is a road for busses and cars leading between Backen and the hospital. </li>
+				<li>On the small roads there is no speed limit, but the condition of the roads are very poor and it isn't possible to drive fast. </li>
+				<li><srai>NAMES OF ROADS</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>ARE THERE ROADS *</pattern>
+		<template><srai>ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * HAVE ROADS</pattern>
+		<template><srai>ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * HAVE ROADS *</pattern>
+		<template><srai>ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT ROADS *</pattern>
+		<template><srai>ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>NAMES OF ROADS</pattern>
+		<template>
+			<random>
+				<li>The road were named in the late 1950's. </li>
+				<li>They are often named after people. The road where Per Jansson lives is named Per Jansvagen.</li>
+				<li>Some roads have been named after someone who lived on the street, like the road Per Jansvagen where Per Jansson lived.</li>
+				<li>Some roads have their names from soldiers living in soldier's crofts. If a soldier's last name is Lang, a road could be called after him: Langgatan.</li>
+				<li><srai>WHO NAMED ROADS</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ NAMES * ROADS</pattern>
+		<template><srai>NAMES OF ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NAMES * ROADS *</pattern>
+		<template><srai>NAMES OF ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * ROADS NAMED</pattern>
+		<template><srai>NAMES OF ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NAMED ROADS</pattern>
+		<template>
+			<random>
+				<li>There is a teacher called Elsa Astrom who gave names to the roads. </li>
+				<li>It is the task of the municipality to name roads, and they checked who lived there and named the roads after them. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ NAMED * ROADS</pattern>
+		<template><srai>BLANK NAMED ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NAMED THE ROADS *</pattern>
+		<template><srai>BLANK NAMED ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NAMING ROADS</pattern>
+		<template><srai>BLANK NAMED ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NAMING * ROADS</pattern>
+		<template><srai>BLANK NAMED ROADS</srai></template>
+	</category>
+	<category>
+		<pattern>CARS</pattern>
+		<template>
+			<random>
+				<li>There are only a few vehicles: busses and a few cars. </li>
+				<li>There are a few shops and some of them are still in the same location.</li>
+				<li>There are three T-Fords in the village, but no motorbikes. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>ARE THERE CARS</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE THERE CARS *</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * HAVE CARS</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>DOES * DRIVE CARS *</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE CARS *</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>_ VEHICLES</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>_ VEHICLES *</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>_ AUTOMOBILS</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>_ AUTOMOBILS *</pattern>
+		<template><srai>CARS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MOTORCYCLE</pattern>
+		<template>There are no motorbikes in the village.</template>
+	</category>
+	<category>
+		<pattern>_ MOTORCYCLES</pattern>
+		<template><srai>BLANK MOTORCYCLE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MOTORCYCLES *</pattern>
+		<template><srai>BLANK MOTORCYCLE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MOTORBIKES</pattern>
+		<template><srai>BLANK MOTORCYCLE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MOTORBIKES *</pattern>
+		<template><srai>BLANK MOTORCYCLE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW FAST * CARS</pattern>
+		<template>
+			<random>
+				<li>In some cars you can drive as fast as 50-60 km/h.</li>
+				<li>The cars don't run faster than 50 to 60 kilometers per hour. </li>
+				<li>Naturally the cars can't run so fast either. 60 km/h is racer speed!</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW FAST * CARS *</pattern>
+		<template><srai>HOW FAST BLANK CARS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW FAST * CAR *</pattern>
+		<template><srai>HOW FAST BLANK CARS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW FAST * CAR</pattern>
+		<template><srai>HOW FAST BLANK CARS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPEED LIMIT</pattern>
+		<template>
+			<random>
+				<li>There is not really any speed limit or any traffic signs. </li>
+				<li>There are no speed limits, but roads are generally bad and cars can only go so fast.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SPEED LIMIT *</pattern>
+		<template><srai>BLANK SPEED LIMIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPEED LIMITS</pattern>
+		<template><srai>BLANK SPEED LIMIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPEED LIMITS *</pattern>
+		<template><srai>BLANK SPEED LIMIT</srai></template>
+	</category>
+	<category>
+		<pattern>HOW FAST * DRIVE</pattern>
+		<template><srai>BLANK SPEED LIMIT</srai></template>
+	</category>
+	<category>
+		<pattern>HOW FAST * DRIVE *</pattern>
+		<template><srai>BLANK SPEED LIMIT</srai></template>
+	</category>
+	<category>
+		<pattern>HOUSE TYPES</pattern>
+		<template>
+			<random>
+				<li>The most common houses are the traditional building of the region: Vasterbottensgarden. </li>
+				<li>In the 30's, in a regular farmers village, you lived in the typical local building: Vasterbottensgard. </li>
+				<li>Most houses have two stories and several families can live in one house. </li>
+				<li>There are no apartment buildings. </li>
+				<li>In the 1930's many lived in the typical local building, Vasterbottenshus.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TYPES OF HOUSES *</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ SORT OF HOUSES *</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPES OF HOMES *</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ SORT OF HOMES *</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSES LIKE</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSES LIKE *</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOMES LIKE *</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOMES LIKE</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOME LIKE *</pattern>
+		<template><srai>HOUSE TYPES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSE SIZE</pattern>
+		<template>
+			<random>
+				<li>The houses are mostly large and nice. </li>
+				<li>In a house there are 4 to 6 rooms approximately. </li>
+				<li>Since families are often big, the houses can have up to 5-6 rooms. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW BIG * HOUSES</pattern>
+		<template><srai>BLANK HOUSE SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW BIG * HOUSES *</pattern>
+		<template><srai>BLANK HOUSE SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>ARE HOUSES *</pattern>
+		<template><srai>BLANK HOUSE SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY ROOMS * HOUSES *</pattern>
+		<template><srai>BLANK HOUSE SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSES LOOK LIKE</pattern>
+		<template>The houses are red local type buildings, Vasterbottensgardar.</template>
+	</category>
+	<category>
+		<pattern>_ HOUSES LOOK LIKE *</pattern>
+		<template><srai>BLANK HOUSES LOOK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSES * LOOK LIKE</pattern>
+		<template><srai>BLANK HOUSES LOOK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSE LOOK LIKE</pattern>
+		<template><srai>BLANK HOUSES LOOK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSE * LOOK LIKE</pattern>
+		<template><srai>BLANK HOUSES LOOK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>VASTERBOTTENSGARDAR</pattern>
+		<template>That's just a typical style of house that is common in this area.</template>
+	</category>
+	<category>
+		<pattern>WHAT * VASTERBOTTENSGARDAR</pattern>
+		<template><srai>VASTERBOTTENSGARDAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * VASTERBOTTENSGARDAR *</pattern>
+		<template><srai>VASTERBOTTENSGARDAR</srai></template>
+	</category>
+	<category>
+		<pattern>DEFINE VASTERBOTTENSGARDAR</pattern>
+		<template><srai>VASTERBOTTENSGARDAR</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE IN A HOUSE</pattern>
+		<template>
+			<random>
+				<li>Mostly there are 1-3 families living in the same house. </li>
+				<li>Many people lived together in the same house. </li>
+				<li>In summer more people lived in the houses because of all the work that has to be done, farm-men and maids.</li>
+				<li>My whole family lives in a big, nice house. We sleep two in each bed.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MANY PEOPLE LIVE * HOUSE</pattern>
+		<template><srai>BLANK PEOPLE IN A HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY PEOPLE LIVE * HOUSE *</pattern>
+		<template><srai>BLANK PEOPLE IN A HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE LIVING * HOUSE</pattern>
+		<template><srai>BLANK PEOPLE IN A HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE LIVING * HOUSE *</pattern>
+		<template><srai>BLANK PEOPLE IN A HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * IN THE KITCHEN</pattern>
+		<template>In the kitchen there is a pantry but no refrigerator. </template>
+	</category>
+	<category>
+		<pattern>WHAT * IN THE KITCHEN *</pattern>
+		<template><srai>WHAT BLANK IN THE KITCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * IN KITCHENS</pattern>
+		<template><srai>WHAT BLANK IN THE KITCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * IN KITCHENS *</pattern>
+		<template><srai>WHAT BLANK IN THE KITCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>_ STORE FOOD * KITCHEN</pattern>
+		<template><srai>WHAT BLANK IN THE KITCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>_ STORE FOOD * KITCHEN *</pattern>
+		<template><srai>WHAT BLANK IN THE KITCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>_ STORE FOOD * KITCHENS</pattern>
+		<template><srai>WHAT BLANK IN THE KITCHEN</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO AT HOME</pattern>
+		<template>
+			<random>
+				<li>You worked almost all the time, even at home. </li>
+				<li>The evening is spent doing homework. </li>
+				<li>All sorts of things, eat and slept. There is no television.</li>
+				<li>You always had to help out and chop wood or help in the kitchen.</li>
+				<li>You changed your clothes after school and then you chopped wood or pumped up water for the animals in the barn. </li>
+				<li>On Saturdays and Sundays there is more time to play.</li>
+				<li>As a child you would play.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ DO * AT HOME</pattern>
+		<template><srai>BLANK DO AT HOME</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO AROUND THE HOUSE</pattern>
+		<template><srai>BLANK DO AT HOME</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO IN * HOUSES</pattern>
+		<template><srai>BLANK DO AT HOME</srai></template>
+	</category>
+	<category>
+		<pattern>DISHES</pattern>
+		<template>The dishes are made by hand.</template>
+	</category>
+	<category>
+		<pattern>_ GET DISHES</pattern>
+		<template><srai>DISHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ BUY DISHES</pattern>
+		<template><srai>DISHES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET * DISHES</pattern>
+		<template><srai>DISHES</srai></template>
+	</category>
+	<category>
+		<pattern>RENTING</pattern>
+		<template>
+			<random>
+				<li>You can rent a house from a landowner. </li>
+				<li>You can rent a small house from a landowner. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ RENT HOMES</pattern>
+		<template><srai>RENTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ RENT * HOME</pattern>
+		<template><srai>RENTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ RENT * HOME *</pattern>
+		<template><srai>RENTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ RENT * HOUSE</pattern>
+		<template><srai>RENTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ RENT * HOUSE *</pattern>
+		<template><srai>RENTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ RENT * APPARTMENT</pattern>
+		<template><srai>RENTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ RENT * APPARTMENT *</pattern>
+		<template><srai>RENTING</srai></template>
+	</category>
+	<category>
+		<pattern>RUNNING WATER</pattern>
+		<template>
+			<random>
+				<li>There is running water in the tap.</li>
+				<li>We have access to running water from the tap. </li>
+				<li>Some people don't have running water from taps, but they have water wells. </li>
+				<li>Running water came in the 30's. </li>
+				<li>From the 40's and on, we have had running water.</li>
+				<li>We got cold water in the taps in the beginning of the 30's. They drilled a well at the hill Rodberget, and then they put in pipes made of wooden logs.</li>
+				<li>There isn't always running water inside, nor bathtubs or toilets. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE RUNNING WATER</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE RUNNING WATER *</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>IS * RUNNING WATER</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>IS * RUNNING WATER *</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ WATER ON TAP</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ WATER FROM TAP</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ WATER FROM * TAP</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TAP WATER</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TAP WATER *</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>IS * TAP WATER</pattern>
+		<template><srai>RUNNING WATER</srai></template>
+	</category>
+	<category>
+		<pattern>HOT WATER</pattern>
+		<template>
+			<random>
+				<li>If you needed hot water you can heat it on the stove.</li>
+				<li>We have running water, but no hot running water. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE HOT WATER</pattern>
+		<template><srai>HOT WATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE HOT WATER *</pattern>
+		<template><srai>HOT WATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE HOT * WATER</pattern>
+		<template><srai>HOT WATER</srai></template>
+	</category>
+	<category>
+		<pattern>BATHING</pattern>
+		<template>
+			<random>
+				<li>Many have no running water and don't have showers but we bathe in a tub. </li>
+				<li>There are no showers but we have bathtubs and toilets. </li>
+				<li>There are no showers, but on the other hand we have bathtubs.</li>
+				<li>When you take a bath there is a big tub in the laundry room and the water is heated in the kitchen. </li>
+				<li>Most houses have running water and bathtubs, but still they have outhouses and no WC. </li>
+				<li>There are no showers, so we would rub ourselves with soap and then rinse behind a windshield. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE BATHE</pattern>
+		<template><srai>BATHING</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE * BATHE</pattern>
+		<template><srai>BATHING</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE BATHE *</pattern>
+		<template><srai>BATHING</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * BATHE</pattern>
+		<template><srai>BATHING</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * BATH</pattern>
+		<template><srai>BATHING</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY TIMES * BATH</pattern>
+		<template>
+			<random>
+				<li>We take a bath every two weeks, approximately.</li>
+				<li>Most people bathe at least twice a month.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MANY TIMES * BATHE</pattern>
+		<template><srai>BLANK MANY TIMES BLANK BATH</srai></template>
+	</category>
+	<category>
+		<pattern>_ OFTEN * BATHE</pattern>
+		<template><srai>BLANK MANY TIMES BLANK BATH</srai></template>
+	</category>
+	<category>
+		<pattern>_ BATHE OFTEN</pattern>
+		<template><srai>BLANK MANY TIMES BLANK BATH</srai></template>
+	</category>
+	<category>
+		<pattern>_ OFTEN * BATH</pattern>
+		<template><srai>BLANK MANY TIMES BLANK BATH</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * BATHE</pattern>
+		<template><srai>BLANK MANY TIMES BLANK BATH</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * BATH</pattern>
+		<template><srai>BLANK MANY TIMES BLANK BATH</srai></template>
+	</category>
+	<category>
+		<pattern>_ BATHTUB LIKE</pattern>
+		<template>The bathtub is a barrel with heated water.</template>
+	</category>
+	<category>
+		<pattern>_ BATHTUB LIKE *</pattern>
+		<template><srai>BLANK BATHTUB LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ BATHTUBS LIKE</pattern>
+		<template><srai>BLANK BATHTUB LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ BATHTUBS LIKE *</pattern>
+		<template><srai>BLANK BATHTUB LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIND OF BATHTUB</pattern>
+		<template><srai>BLANK BATHTUB LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BATH TUB</pattern>
+		<template><srai>BLANK BATHTUB LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BATH TUB *</pattern>
+		<template><srai>BLANK BATHTUB LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BATH TUBS *</pattern>
+		<template><srai>BLANK BATHTUB LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>DO YOU BATHE</pattern>
+		<template>
+			<random>
+				<li>Of course we bathe. </li>
+				<li><srai>BATHING</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO YOU BATH</pattern>
+		<template><srai>DO YOU BATHE</srai></template>
+	</category>
+	<category>
+		<pattern>DO YOU TAKE BATHS</pattern>
+		<template><srai>DO YOU BATHE</srai></template>
+	</category>
+	<category>
+		<pattern>WASHING CLOTHS</pattern>
+		<template>
+			<random>
+				<li>At home in large barrels. Down by the river you would make a fire and heat up the water in a big barrel. The water is taken from the river. </li>
+				<li>In the middle of the 30's the wash machine came, but it is expensive and they said that it destroyed the clothes, so not many people own them.</li>
+				<li>We do not have washing machines, but we have large pots where they boiled their dirty laundry and then rinsed it in cold water. </li>
+				<li>There are no washing machines. You can do laundry in the creek or in the river. </li>
+				<li>There are special laundry houses in some places, where you can heat the water and then wash your clothes with soap.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW * WASH * CLOTHES </pattern>
+		<template><srai>WASHING CLOTHS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * WASH CLOTHES </pattern>
+		<template><srai>WASHING CLOTHS</srai></template>
+	</category>
+	<category>
+		<pattern>WERE THERE WASH MACHINES</pattern>
+		<template>There are no wash machines. We go down to the river and there is a bridge where we wash our clothes.</template>
+	</category>
+	<category>
+		<pattern>WERE * WASHING MACHINES</pattern>
+		<template><srai>WERE THERE WASH MACHINES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE WASHING MACHINES</pattern>
+		<template><srai>WERE THERE WASH MACHINES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE WASHING MACHINES *</pattern>
+		<template><srai>WERE THERE WASH MACHINES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE WASH MACHINES</pattern>
+		<template><srai>WERE THERE WASH MACHINES</srai></template>
+	</category>
+	<category>
+		<pattern>YOU WASH CLOTHES * RIVER</pattern>
+		<template>Yes, that's right, in the river.</template>
+	</category>
+	<category>
+		<pattern>CHORES</pattern>
+		<template>
+			<random>
+				<li>It is customary for the children to help out at home and they would carry wood and cook. </li>
+				<li>After school you would do household chores, do your homework and play. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * CHORES *</pattern>
+		<template><srai>CHORES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * CHORES</pattern>
+		<template><srai>CHORES</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * CHORES *</pattern>
+		<template><srai>CHORES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE REFRIGERATORS</pattern>
+		<template>
+			<random>
+				<li>The rich have refrigerators, but others keep their food in food cellars.</li>
+				<li>There were no fridges until 1945 when you could buy a cooling closet. </li>
+				<li>There are no fridges or freezers. </li>
+				<li>There are no refrigerators so the food is kept in a food cellar. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE REFRIGERATORS *</pattern>
+		<template><srai>BLANK HAVE REFRIGERATORS</srai></template>
+	</category>
+	<category>
+		<pattern>_ OWN REFRIGERATORS</pattern>
+		<template><srai>BLANK HAVE REFRIGERATORS</srai></template>
+	</category>
+	<category>
+		<pattern>_ OWN REFRIGERATORS *</pattern>
+		<template><srai>BLANK HAVE REFRIGERATORS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE THERE REFRIGERATORS</pattern>
+		<template><srai>BLANK HAVE REFRIGERATORS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE THERE REFRIGERATORS *</pattern>
+		<template><srai>BLANK HAVE REFRIGERATORS</srai></template>
+	</category>
+	<category>
+		<pattern>DO REFRIGERATORS *</pattern>
+		<template><srai>BLANK HAVE REFRIGERATORS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE FREEZERS</pattern>
+		<template>There are no freezers.</template>
+	</category>
+	<category>
+		<pattern>_ HAVE FREEZERS *</pattern>
+		<template><srai>BLANK HAVE FREEZERS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * FREEZERS</pattern>
+		<template><srai>BLANK HAVE FREEZERS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * FREEZERS *</pattern>
+		<template><srai>BLANK HAVE FREEZERS</srai></template>
+	</category>
+	<category>
+		<pattern>FOOD STORAGE</pattern>
+		<template>
+			<random>
+				<li>There could be a trapdoor in the floor where it is cold enough to keep potatoes and other things.</li>
+				<li>Some people have ice-barns, they go to the river to saw out blocks of ice. These ice blocks are buried underneath sawdust.</li>
+				<li>There is no fridge or freezer, but they stored the food in a food cellar. </li>
+				<li>Since they didn't have a refrigerator they dug a hole in the ground to store their food. </li>
+				<li>You can't keep the food in refrigerators, because there aren't any, but those who lived along the river have access to ice, which is brought in and kept in large barns on the yards and food is stored there. </li>
+				<li>From the river you would cut big pieces of ice and bring to the ice barn. There the food is kept during summer and the ice remained frozen for quite a long time.</li>
+				<li>In winter you keep the food in outdoor boxes, on which you have to put a lock so that the dogs don't get to the food.</li>
+				<li>The food is kept in ice barns. You saw out big blocks of ice from the river and put them in a barn with sawdust. This served as a freezer. Otherwise you used an non insulated room as a fridge. In the end of the 30's some people began to get refrigerators though.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW * STORE * FOOD</pattern>
+		<template><srai>FOOD STORAGE</srai></template>
+	</category>
+	<category>
+		<pattern>* STORE FOOD</pattern>
+		<template><srai>FOOD STORAGE</srai></template>
+	</category>
+	<category>
+		<pattern>* STORE FOOD *</pattern>
+		<template><srai>FOOD STORAGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ KEEP FOOD *</pattern>
+		<template><srai>FOOD STORAGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ STORE * FOOD</pattern>
+		<template><srai>FOOD STORAGE</srai></template>
+	</category>
+	<category>
+		<pattern>RESTROOM</pattern>
+		<template>You rarely find a toilet inside a house, only sometimes in the richer households.</template>
+	</category>
+	<category>
+		<pattern>WC</pattern>
+		<template><srai>RESTROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSES HAVE RESTROOMS</pattern>
+		<template><srai>RESTROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSE * RESTROOMS</pattern>
+		<template><srai>RESTROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSE * RESTROOMS *</pattern>
+		<template><srai>RESTROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSES * RESTROOMS</pattern>
+		<template><srai>RESTROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOUSES * RESTROOMS *</pattern>
+		<template><srai>RESTROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOMES * RESTROOMS</pattern>
+		<template><srai>RESTROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOMES * RESTROOMS *</pattern>
+		<template><srai>RESTROOM</srai></template>
+	</category>
+	<category>
+		<pattern>GARBAGE</pattern>
+		<template>
+			<random>
+				<li>Since the food didn't come in packages, there wasn't that much to throw away. </li>
+				<li>We burnt paper in the stove. </li>
+				<li>People put their garbage in heaps, as a compost, or they burned it.</li>
+				<li>You feed what you can to the pigs.  </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * GARBAGE</pattern>
+		<template><srai>GARBAGE</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * GARBAGE</pattern>
+		<template><srai>GARBAGE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GARBAGE</pattern>
+		<template><srai>GARBAGE</srai></template>
+	</category>
+	<category>
+		<pattern>ENTERTAINMENT</pattern>
+		<template>
+			<random>
+				<li>There no televisions but we've heard of them. </li>
+				<li>There is no TV, but in the evenings we sometimes play football. </li>
+				<li>There is no TV, but sometimes a family will play a game together.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>ARE * TELEVISIONS</pattern>
+		<template><srai>ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TELEVISION</pattern>
+		<template><srai>ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TELEVISION *</pattern>
+		<template><srai>ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TELEVISIONS</pattern>
+		<template><srai>ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TELEVISIONS *</pattern>
+		<template><srai>ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * TELEVISIONS *</pattern>
+		<template><srai>ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ WATCH TELEVISION</pattern>
+		<template><srai>ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ WATCH TELEVISION *</pattern>
+		<template><srai>ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE RADIO</pattern>
+		<template>
+			<random>
+				<li>We have radios, but no television.</li>
+				<li>We have radios, but there is lots of interference.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE RADIO *</pattern>
+		<template><srai>BLANK HAVE RADIO</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE RADIOS</pattern>
+		<template><srai>BLANK HAVE RADIO</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE RADIOS *</pattern>
+		<template><srai>BLANK HAVE RADIO</srai></template>
+	</category>
+	<category>
+		<pattern>FAMILY SIZE</pattern>
+		<template>
+			<random>
+				<li>It is common that a family have between 9-15 children in the countryside, but in the city they have 3-5 children, or less.</li>
+				<li>The parents often have between 2-5 children. </li>
+				<li>The most common is to have between two or three children in a family.</li>
+				<li>If you had a big house and a good economy, you most often had fewer children. A reason for this could be that they needed more help in the farms. </li>
+				<li>Families are rather big, around 4 to 5 children. But there are families with twice as many children too.</li>
+				<li>In a family there can be up to 12 people. </li>
+				<li>Mostly you had between 4-6 children. Sometimes up to 11 children.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TYPICAL FAMILY SIZE</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY * IN * FAMILY</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY * IN * FAMILIES</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIG * FAMILIES</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SIZE * FAMILY</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ LARGE * FAMILY</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ LARGE * FAMILIES</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAMILIES BIG</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAMILIES LARGE</pattern>
+		<template><srai>FAMILY SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>ANIMALS</pattern>
+		<template>
+			<random>
+				<li>We have many animals; in the city we have dogs and cats, but in the countryside we can have cows, pigs, hen, cats and dogs.</li>
+				<li>In every barn there is a cat for chasing mice.</li>
+				<li>On a farm there are horses, cats, pigs, hen and sheep. Turkeys aren't so common, but there are those who have them.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * ANIMALS * HAVE</pattern>
+		<template><srai>ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * HAVE ANIMALS</pattern>
+		<template><srai>ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * HAVE ANIMALS *</pattern>
+		<template><srai>ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * HAVE * ANIMALS</pattern>
+		<template><srai>ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * KEEP ANIMALS</pattern>
+		<template><srai>ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * KEEP ANIMALS *</pattern>
+		<template><srai>ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>* IT COMMON TO HAVE PETS</pattern>
+		<template>
+			<random>
+				<li>It is common. Cats and dogs mostly, but the dogs aren't kept for company.</li>
+				<li>Cats and dogs are rather common.</li>
+				<li>Yes, you can say that it is, mostly cats and dogs.</li>
+				<li>There is a cat in every house. They kept rats and mice away. The farmers had pets such as pigs, calves and lambs.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO * HAVE PETS</pattern>
+		<template><srai>BLANK IT COMMON TO HAVE PETS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * HAVE PETS *</pattern>
+		<template><srai>BLANK IT COMMON TO HAVE PETS</srai></template>
+	</category>
+	<category>
+		<pattern>FRUIT TREES</pattern>
+		<template>There are apple trees in Grisbacka. </template>
+	</category>
+	<category>
+		<pattern>DO * GROW FRUIT</pattern>
+		<template><srai>FRUIT TREES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * GROW * FRUIT</pattern>
+		<template><srai>FRUIT TREES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * GROW FRUIT *</pattern>
+		<template><srai>FRUIT TREES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * GROW FRUITS</pattern>
+		<template><srai>FRUIT TREES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * GROW * FRUITS</pattern>
+		<template><srai>FRUIT TREES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * HAVE FRUIT TREES</pattern>
+		<template><srai>FRUIT TREES</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * FRUIT TREES</pattern>
+		<template><srai>FRUIT TREES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GROW APPLE *</pattern>
+		<template><srai>FRUIT TREES</srai></template>
+	</category>
+	<category>
+		<pattern>FARMS ANIMALS</pattern>
+		<template>On a farm there are horses, cats, pigs, hen and sheep. Turkeys aren't so common, but there are those who have them.</template>
+	</category>
+	<category>
+		<pattern>_ ANIMALS * FARM</pattern>
+		<template><srai>FARMS ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANIMALS * FARM *</pattern>
+		<template><srai>FARMS ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>_ FARM ANIMALS</pattern>
+		<template><srai>FARMS ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>_ FARM ANIMALS *</pattern>
+		<template><srai>FARMS ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>_ FARM * ANIMALS</pattern>
+		<template><srai>FARMS ANIMALS</srai></template>
+	</category>
+	<category>
+		<pattern>CHRISTMAS</pattern>
+		<template>
+			<random>
+				<li>We have Santa Claus coming for Christmas and the children receive many Christmas presents.</li>
+				<li>On Christmas Eve the whole family will gather. There could be up to 30 people, and most of the food they eat is homemade.</li>
+				<li>It isn't very common to have Santa Claus coming. You give presents to the neighbours. You throw in the present and then run off not to get caught, it is great fun.</li>
+				<li>We celebrated Christmas in a traditional way, but there is electricity for the lights. </li>
+				<li>We gathered the whole family and everyone believes in Santa Claus.</li>
+				<li>You put real candles in the Christmas tree.</li>
+				<li>Christmas is celebrated, you know, Christmas tree, Santa and all that.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW * CELEBRATE CHRISTMAS</pattern>
+		<template><srai>CHRISTMAS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * CHRISTMAS *</pattern>
+		<template><srai>CHRISTMAS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * D0 * CHRISTMAS</pattern>
+		<template><srai>CHRISTMAS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT HAPPENS * CHRISTMAS</pattern>
+		<template><srai>CHRISTMAS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * CELEBRATE CHRISTMAS</pattern>
+		<template><srai>CHRISTMAS</srai></template>
+	</category>
+	<category>
+		<pattern>SANTA CLAUS</pattern>
+		<template>Yes, we had Santa Claus. We really believed in him. </template>
+	</category>
+	<category>
+		<pattern>DO * HAVE SANTA CLAUS</pattern>
+		<template><srai>SANTA CLAUS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * BELIEVE * SANTA CLAUS</pattern>
+		<template><srai>SANTA CLAUS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SANTA CLAUS * CHRISTMAS</pattern>
+		<template><srai>SANTA CLAUS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SANTA CLAUS * CHRISTMAS *</pattern>
+		<template><srai>SANTA CLAUS</srai></template>
+	</category>
+	<category>
+		<pattern>POPULATION</pattern>
+		<template>
+			<random>
+				<li>In the village of Grisbacka about eight hundred people live. </li>
+				<li>There are about 40-60 families living in the village of Grisbacka. </li>
+				<li>There are around 800 people in Grisbacka. </li>
+				<li>In Grisbacka there are around 800 people. </li>
+				<li>There are around 800 inhabitants in the whole village. </li>
+				<li>There are more farmers than ordinary people in Grisbacka.</li>
+				<li>Around 800 people.</li>
+				<li>Approximately 800 people live here. There is a lot of construction and many people moving here.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * POPULATION</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * POPULATION *</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY PEOPLE * GRISBACKA</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY PEOPLE * TOWN</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY PEOPLE * VILLAGE</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ POPULATION * GRISBACKA</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ POPULATION * TOWN</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ POPULATION * VILLAGE</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>HOW BIG * GRISBACKA</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>HOW BIG * TOWN</pattern>
+		<template><srai>POPULATION</srai></template>
+	</category>
+	<category>
+		<pattern>LARGEST BUILDING</pattern>
+		<template>
+			<random>
+				<li>The school is the largest building.</li>
+				<li>I think it is the school, Hartvigsskolan.</li>
+				<li><srai>BLANK THE LARGEST BUILDINGS</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ LARGEST BUILDING</pattern>
+		<template><srai>LARGEST BUILDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ LARGEST BUILDING *</pattern>
+		<template><srai>LARGEST BUILDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIGGEST BUILDING</pattern>
+		<template><srai>LARGEST BUILDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIGGEST BUILDING *</pattern>
+		<template><srai>LARGEST BUILDING</srai></template>
+	</category>
+	<category>
+		<pattern>_ LARGEST BUILDINGS</pattern>
+		<template>
+			<random>
+				<li>The school is the largest building, but there is also a brewery. Olle works there and he is paid 20 Swedish kronor a week.</li>
+				<li>The biggest buildings in the village are the school, the church, the carpenter's place and the new brewery. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ LARGEST BUILDINGS *</pattern>
+		<template><srai>BLANK LARGEST BUILDINGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIGGEST BUILDINGS</pattern>
+		<template><srai>BLANK LARGEST BUILDINGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIGGEST BUILDINGS *</pattern>
+		<template><srai>BLANK LARGEST BUILDINGS</srai></template>
+	</category>
+	<category>
+		<pattern>BREWERY</pattern>
+		<template>Olle works there and he is paid 20 Swedish kronor a week.</template>
+	</category>
+	<category>
+		<pattern>_ THE BREWERY</pattern>
+		<template><srai>BREWERY</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * OLLE</pattern>
+		<template>Olle is a friend of mine.</template>
+	</category>
+	<category>
+		<pattern>WHO * OLLE *</pattern>
+		<template><srai>WHO BLANK OLLE</srai></template>
+	</category>
+	<category>
+		<pattern>RESTAURANTS</pattern>
+		<template>
+			<random>
+				<li>There is no restaurant in Grisbacka, only in the city center.</li>
+				<li>There is a cafe where you can have a Coca Cola for two ore. </li>
+				<li>There are no restaurants, but there is a small kiosk.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * RESTAURANTS *</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE RESTAURANTS</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE RESTAURANTS *</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * RESTAURANTS</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * RESTAURANTS *</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * RESTAURANTS *</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * EAT * RESTAURANTS</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * RESTAURANT *</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * RESTAURANT</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT * RESTAURANT</pattern>
+		<template><srai>RESTAURANTS</srai></template>
+	</category>
+	<category>
+		<pattern>SHOPS</pattern>
+		<template>
+			<random>
+				<li>Between 1900 and 1950 there weren't many shops in Grisbacka, only 3 or 4. They were grocery-stores, a kiosk and a hot dog stand.  </li>
+				<li>There is a small kiosk, measuring 2 times 2 meters, in Grisbacka. </li>
+				<li>There is a cafe where you can have a Coca Cola for two ore. </li>
+				<li>There is a shop by the school called the household shop, and there is a shop by the Hartvigsgarden.</li>
+				<li>There are a few kiosks in the area. </li>
+				<li>There are several bakeries and shops as the "household shop", Hjalmar Astrom's and Andersson's. </li>
+				<li>The shopkeeper Andersson also had a big mangle in a mangling room that you can rent when you'd done your laundry. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE SHOPS</pattern>
+		<template><srai>SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE SHOPS *</pattern>
+		<template><srai>SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SHOPS *</pattern>
+		<template><srai>SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * SHOPPING</pattern>
+		<template><srai>SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * SHOPPING *</pattern>
+		<template><srai>SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * SHOP</pattern>
+		<template><srai>SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * SHOP *</pattern>
+		<template><srai>SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SELF SERVE</pattern>
+		<template>You buy everthing over the counter, there is no self service. </template>
+	</category>
+	<category>
+		<pattern>_ SELF SERVICE</pattern>
+		<template><srai>BLANK SELF SERVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SELF SERVE *</pattern>
+		<template><srai>BLANK SELF SERVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SELF SERVICE *</pattern>
+		<template><srai>BLANK SELF SERVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SERVE YOURSELF</pattern>
+		<template><srai>BLANK SELF SERVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SERVE YOURSELF *</pattern>
+		<template><srai>BLANK SELF SERVE</srai></template>
+	</category>
+	<category>
+		<pattern>BUSINESSES</pattern>
+		<template>The carpentry is the biggest company with 10 people employed.</template>
+	</category>
+	<category>
+		<pattern>DO * BUSNESSES</pattern>
+		<template><srai>BUSINESSES</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT BUSNESSES *</pattern>
+		<template><srai>BUSINESSES</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BUSINESSES *</pattern>
+		<template><srai>BUSINESSES</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * BUSINESSES *</pattern>
+		<template><srai>BUSINESSES</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY * BUSINESSES *</pattern>
+		<template><srai>BUSINESSES</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY * BUSINESSES</pattern>
+		<template><srai>BUSINESSES</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY BUSINESSES</pattern>
+		<template><srai>BUSINESSES</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY BUSINESSES *</pattern>
+		<template><srai>BUSINESSES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY SHOPS</pattern>
+		<template>
+			<random>
+				<li>There are 3 shops. </li>
+				<li>Hjalmar Astrom's shop and the Johansson's had a small shop in their hallway, by Heden. </li>
+				<li>There is a café by the school.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MANY SHOPS *</pattern>
+		<template><srai>BLANK MANY SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>_ A LOT OF SHOPS</pattern>
+		<template><srai>BLANK MANY SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>_ A LOT OF SHOPS *</pattern>
+		<template><srai>BLANK MANY SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>BUY AT SHOPS</pattern>
+		<template>
+			<random>
+				<li>Turkish cigarettes you can only buy when you are an adult. </li>
+				<li>You can buy a fizzy powder that you mixed with water to make a soda, and you can buy Marabou chocolate. It cost 25 ore.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * BUY * SHOP</pattern>
+		<template><srai>BUY AT SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BUY * SHOP *</pattern>
+		<template><srai>BUY AT SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BUY * SHOPS</pattern>
+		<template><srai>BUY AT SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BUY * SHOPS *</pattern>
+		<template><srai>BUY AT SHOPS</srai></template>
+	</category>
+	<category>
+		<pattern>BIG SCHOOL</pattern>
+		<template>
+			<random>
+				<li>The largest building is the school, Hartvigsgarden. </li>
+				<li>The school is the largest building.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW BIG * SCHOOL</pattern>
+		<template><srai>BIG SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW BIG * SCHOOL *</pattern>
+		<template><srai>BIG SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * NAME * SCHOOL</pattern>
+		<template>Hartvigsgarden is the school.</template>
+	</category>
+	<category>
+		<pattern>WHAT * NAME * SCHOOL *</pattern>
+		<template><srai>WHAT BLANK NAME BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>RODANG</pattern>
+		<template>
+			<random>
+				<li>The area of Rodang is totally empty. </li>
+				<li>There are no houses except for the railway-worker's house.</li>
+				<li>There are no houses or buildings on the area of Rodang. </li>
+				<li>At Rodang there are only meadows and fields.</li>
+				<li>At Rodang there are only fields, meadows and cultivated land. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * RODANG</pattern>
+		<template><srai>RODANG</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * RODANG *</pattern>
+		<template><srai>RODANG</srai></template>
+	</category>
+	<category>
+		<pattern>IS RODANG *</pattern>
+		<template><srai>RODANG</srai></template>
+	</category>
+	<category>
+		<pattern>_ IN RODANG</pattern>
+		<template><srai>RODANG</srai></template>
+	</category>
+	<category>
+		<pattern>RODBERGET</pattern>
+		<template>
+			<random>
+				<li>At Rodberget it is mostly forest. </li>
+				<li>You would go skiing on the hill at Rodberget.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * RODBERGET</pattern>
+		<template><srai>RODBERGET</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * RODBERGET *</pattern>
+		<template><srai>RODBERGET</srai></template>
+	</category>
+	<category>
+		<pattern>IS RODBERGET *</pattern>
+		<template><srai>RODBERGET</srai></template>
+	</category>
+	<category>
+		<pattern>_ IN RODBERGET</pattern>
+		<template><srai>RODBERGET</srai></template>
+	</category>
+	<category>
+		<pattern>_ GRISBACKASKOLAN</pattern>
+		<template>The school GRISBACKAskolan, hasn't been built at this time and there is nothing where that school is in your day.</template>
+	</category>
+	<category>
+		<pattern>_ WAR LIKE</pattern>
+		<template>
+			<random>
+				<li>During the war there were hard times for the families and wives.</li>
+				<li>Rolf Tjarnstrom told me that in the evenings, after a certain hour they covered up the windows, a blackout as a precaution against air raids, and not even a small ray of light could slip out. </li>
+				<li>There were finnish children at the school during the war.  </li>
+				<li>During the Second World War those who lived in Grisbacka had to blackout in the evenings and cover up the windows, because they were afraid that German bomb planes would fly above. </li>
+				<li>Many children enjoyed looking at the soldiers with their weapons, posted outside certain buildings.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ WAR LIKE *</pattern>
+		<template><srai>BLANK WAR LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ IT  LIKE * WAR</pattern>
+		<template><srai>BLANK WAR LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ IT LIKE * WAR *</pattern>
+		<template><srai>BLANK WAR LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ DURRING * WAR</pattern>
+		<template><srai>BLANK WAR LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ DURRING * WAR *</pattern>
+		<template><srai>BLANK WAR LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>ASSOCIATIONS</pattern>
+		<template>
+			<random>
+				<li>The people here join in associations. </li>
+				<li>In Grisbacka the men of the village created an association to managed a water pump on Rodberget. The piping is made by drilled wooden logs.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE ASSOCIATIONS</pattern>
+		<template><srai>ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE ASSOCIATIONS *</pattern>
+		<template><srai>ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * ASSOCIATIONS</pattern>
+		<template><srai>ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ ASSOCIATIONS IN *</pattern>
+		<template><srai>ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT ASSOCIATIONS *</pattern>
+		<template><srai>ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>TELEPHONES</pattern>
+		<template>In the village there are 4 telephones. One telephone call cost 4 ore.</template>
+	</category>
+	<category>
+		<pattern>_ HAVE TELEPHONES</pattern>
+		<template><srai>TELEPHONES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * TELEPHONES</pattern>
+		<template><srai>TELEPHONES</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * TELEPHONES</pattern>
+		<template><srai>TELEPHONES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * TELEPHONES *</pattern>
+		<template><srai>TELEPHONES</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * TELEPHONES *</pattern>
+		<template><srai>TELEPHONES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * COOK FOOD</pattern>
+		<template>
+			<random>
+				<li>You cook food on a wood stove.</li>
+				<li>You would either cook on a wooden stove or if you were wealthy an electric stove.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW * COOK FOOD *</pattern>
+		<template><srai>HOW BLANK COOK FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * COOK * FOOD</pattern>
+		<template><srai>HOW BLANK COOK FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * COOK * FOOD *</pattern>
+		<template><srai>HOW BLANK COOK FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE ORDINARY BEDS</pattern>
+		<template>Yes, but the mattresses are made of straw.</template>
+	</category>
+	<category>
+		<pattern>_ HAVE TYPICAL BEDS</pattern>
+		<template><srai>BLANK HAVE ORDINARY BEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE REGULAR BEDS</pattern>
+		<template><srai>BLANK HAVE ORDINARY BEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BEDS LIKE</pattern>
+		<template>The mattresses are made of straw.</template>
+	</category>
+	<category>
+		<pattern>_ BEDS LIKE *</pattern>
+		<template><srai>BLANK BEDS LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT IS IN GRISBACKA</pattern>
+		<template>There is a racetrack for bicycles.</template>
+	</category>
+	<category>
+		<pattern>_ GARDEN SIZE</pattern>
+		<template>The gardens are about 4 times 4 meters.	</template>
+	</category>
+	<category>
+		<pattern>_ SIZE * GARDENS</pattern>
+		<template><srai>BLANK GARDEN SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SIZE * GARDENS *</pattern>
+		<template><srai>BLANK GARDEN SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SIZE * GARDEN</pattern>
+		<template><srai>BLANK GARDEN SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIG * GARDENS</pattern>
+		<template><srai>BLANK GARDEN SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIG * GARDENS *</pattern>
+		<template><srai>BLANK GARDEN SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIG * GARDEN</pattern>
+		<template><srai>BLANK GARDEN SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>_ BIG * GARDEN *</pattern>
+		<template><srai>BLANK GARDEN SIZE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY ROOMS * HOUSE</pattern>
+		<template>We have 4 rooms and a kitchen, and a few rooms on the second floor.</template>
+	</category>
+	<category>
+		<pattern>HOW MANY ROOMS * HOUSE *</pattern>
+		<template><srai>HOW MANY ROOMS BLANK HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW BIG _ HOUSE</pattern>
+		<template><srai>HOW MANY ROOMS BLANK HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW BIG * HOUSE *</pattern>
+		<template><srai>HOW MANY ROOMS BLANK HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SIZE * HOUSE</pattern>
+		<template><srai>HOW MANY ROOMS BLANK HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SIZE * HOUSE *</pattern>
+		<template><srai>HOW MANY ROOMS BLANK HOUSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CULTIVATED LAND</pattern>
+		<template>There is much cultivated land since there are many farmers.</template>
+	</category>
+	<category>
+		<pattern>_ CULTIVATED LAND *</pattern>
+		<template><srai>BLANK CULTIVATED LAND</srai></template>
+	</category>
+	<category>
+		<pattern>_ CULTIVATE * LAND</pattern>
+		<template><srai>BLANK CULTIVATED LAND</srai></template>
+	</category>
+	<category>
+		<pattern>_ CULTIVATE * LAND *</pattern>
+		<template><srai>BLANK CULTIVATED LAND</srai></template>
+	</category>
+	<category>
+		<pattern>_ RICH AND POOR * </pattern>
+		<template>
+			<random>
+				<li>There is not a great difference between people, they are quite alike and happy with their way of life.</li>
+				<li>There is no one really very poor, but on the other hand no one is very rich either.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ POOR PEOPLE</pattern>
+		<template><srai>BLANK RICH AND POOR BLANK </srai></template>
+	</category>
+	<category>
+		<pattern>_ POOR PEOPLE *</pattern>
+		<template><srai>BLANK RICH AND POOR BLANK </srai></template>
+	</category>
+	<category>
+		<pattern>_ POVERTY</pattern>
+		<template><srai>BLANK RICH AND POOR BLANK </srai></template>
+	</category>
+	<category>
+		<pattern>_ POVERTY *</pattern>
+		<template><srai>BLANK RICH AND POOR BLANK </srai></template>
+	</category>
+</aiml>

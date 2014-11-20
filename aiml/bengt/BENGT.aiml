@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>GETCONVERSATIONSTARTER</pattern>
+		<template>
+			<random>
+				<li><srai>WORK</srai></li>
+				<li><srai>SCHOOL</srai></li>
+				<li><srai>MILL</srai></li>
+				<li><srai>FOOD</srai></li>
+				<li><srai>HOUSES ROADS POPULATION</srai></li>
+				<li><srai>CLOTHES AND FASHION</srai></li>
+				<li><srai>GAMES AND FUN</srai></li>
+				<li><srai>LEISURE</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WORK</pattern>
+		<template>
+			<random>
+				<li>What types of jobs are there here?</li>
+				<li>How do people earn their livings?</li>
+				<li>At what age do people begin working jobs?</li>
+				<li>How long is the average work day?</li>
+				<li>What is the average salary for a worker?</li>
+				<li>Do people ever work for room and board?</li>
+				<li>How much money can a farmer make?</li>
+				<li>Do women have to work?</li>
+				<li>Is there work in the forest?</li>
+				<li>Who works the fields?</li>
+				<li>Do children have to work?</li>
+				<li>Do children get an allowance?</li>
+				<li>How much work would children have to do for thier allowance?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>SCHOOL</pattern>
+		<template>
+			<random>
+				<li>How do children have to dress for school?</li>
+				<li>What do boys wear to school?</li>
+				<li>How do girls dress for school?</li>
+				<li>Do children have to wear school uniforms?</li>
+				<li>What are the teachers like at the school?</li>
+				<li>Are the school teachers nice to the students?</li>
+				<li>Do teachers live at the school?</li>
+				<li>How many school teachers are there?</li>
+				<li>Are there teachers for children with special needs?</li>
+				<li>What do the school teachers do?</li>
+				<li>Do you know any of the school teachers?</li>
+				<li>How old are the school teachers?</li>
+				<li>Is there a headmaster at the school?</li>
+				<li>Do students every skip school?</li>
+				<li>Is there fighting at the school?</li>
+				<li>Are the school children disciplined?</li>
+				<li>How are students punished at school?</li>
+				<li>What types of punishment do the students get in school?</li>
+				<li>What happens to a student who misbehaves?</li>
+				<li>Do children get into mischief at the school?</li>
+				<li>What are the classrooms like at the school?</li>
+				<li>Is there a seating assignment in the classrooms?</li>
+				<li>What is the schoolyard like?</li>
+				<li>What are the hours at the school?</li>
+				<li>How many days a week are students in school?</li>
+				<li>Is there school on Saturday?</li>
+				<li>Are there school holidays?</li>
+				<li>Do they have a restroom in the school?</li>
+				<li>What kind of studies do the students have in school?</li>
+				<li>Do you have to do hand writing in school?</li>
+				<li>What is the best subject taught at the school?</li>
+				<li>What was the most important subject taught in the school?</li>
+				<li>Do the students have a lot of school books?</li>
+				<li>How much does it cost to send a child to school?</li>
+				<li>Do the kids get breaks at school?</li>
+				<li>How much time do the students get for recess? </li>
+				<li>How many breaks do the students get in school?</li>
+				<li>What do the student do durring recess?</li>
+				<li>What sort of toys do they have at the school?</li>
+				<li>Who watches the students durring their breaks?</li>
+				<li>How are students to know when recess is over?</li>
+				<li>What do the children of farmers do about school durring the harvest?</li>
+				<li>Can students get help if they have special needs?</li>
+				<li>Do students get any help with thier homework?</li>
+				<li>Do they serve lunch at the school</li>
+				<li>Is there a dining room at the school?</li>
+				<li>Where do the students eat lunch?</li>
+				<li>How much time do the students get for lunch?</li>
+				<li>How much does lunch cost at the school?</li>
+				<li>What do the students eat for lunch at the school?</li>
+				<li>Is there a heater at the school for the winter?</li>
+				<li>How do the students get to school?</li>
+				<li>Do the students carry backpacks?</li>
+				<li>How many classrooms are there at the school?</li>
+				<li>What is the age that children start in school?</li>
+				<li>How many students are there at the school?</li>
+				<li>How many years do students have to stay in school?</li>
+				<li>How many students are in a classroom?</li>
+				<li>Is there a telephone at the school?</li>
+				<li>Do the students like school?</li>
+				<li>What do students not like about school?</li>
+				<li>Is there a janitor at the school?</li>
+				<li>What sort of supplies do students need for school?</li>
+				<li>What is the school called?</li>
+				<li>What does the school look like?</li>
+				<li>Who all has to go to school?</li>
+				<li>Could a student stay home from school for any reason?</li>
+				<li>When was the school built?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>MILL</pattern>
+		<template>
+			<random>
+				<li>When was the mill built?</li>
+				<li>Who works at the mill?</li>
+				<li>Does anyone live in the mill?</li>
+				<li>Where does the miller sleep?</li>
+				<li>Does the miller live near the mill?</li>
+				<li>How many people work at the mill?</li>
+				<li>What is the salary at the mill?</li>
+				<li>What are the miller's duties?</li>
+				<li>Does the miller take breaks durring the day?</li>
+				<li>What age can one start to work in the mill?</li>
+				<li>Do any women work at the mill?</li>
+				<li>Do the workers get breaks at the mill?</li>
+				<li>What type of mill is it?</li>
+				<li>What time of year does the mill operate?</li>
+				<li>Do they close the mill?</li>
+				<li>Is the mill used in the winter?</li>
+				<li>What hours do they work at the mill?</li>
+				<li>Is there a restroom at the mill?</li>
+				<li>What does the mill look like?</li>
+				<li>Where is the mill?</li>
+				<li>What is the inside of the mill like?</li>
+				<li>How tall is the mill?</li>
+				<li>How does the mill work?</li>
+				<li>How is the mill powered?</li>
+				<li>Do they lock the mill at night?</li>
+				<li>What is the purpose of the mill?</li>
+				<li>What do they do at the mill?</li>
+				<li>How does the mill make money?</li>
+				<li>What do they do with the grain after it is ground at the mill?</li>
+				<li>How does the grain get ground by the mill?</li>
+				<li>How does the millstone work?</li>
+				<li>Are there accidents at the mill?</li>
+				<li>Is the mill a safe place to work?</li>
+				<li>Is there ever any excitement at the mill?</li>
+				<li>How do the farmers get to the mill?</li>
+				<li>How do the millers dress for work in the mill?</li>
+				<li>Do children play near the mill?</li>
+				<li>Do people swim in the Tvaran river?</li>
+				<li>Are there any beavers in the Tvaran river?</li>
+				<li>How is the bridge that crosses the river to the mill?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ CHAFF</pattern>
+		<template>What is chaff?</template>
+	</category>
+	<category>
+		<pattern>_ CHAFF *</pattern>
+		<template><srai>BLANK CHAFF</srai></template>
+	</category>
+	<category>
+		<pattern>FOOD</pattern>
+		<template>
+			<random>
+				<li>How often to people here eat meals?</li>
+				<li>What type of food do you eat here?</li>
+				<li>What do people here eat for breakfast?</li>
+				<li>What type of food to you eat for lunch?</li>
+				<li>What sort of things do you eat for dinner?</li>
+				<li>Do you eat any fruit here?</li>
+				<li>Do people eat a lot of meat here?</li>
+				<li>Are there any exotic foods available here?</li>
+				<li>What sorts of things do people drink?</li>
+				<li>What is this svagdricka I keep hearing about?</li>
+				<li>Do people eat much candy here?</li>
+				<li>What sorts of candy do you have here?</li>
+				<li>Where do you go to buy candy?</li>
+				<li>How much does candy cost here?</li>
+				<li>How often do you eat candy?</li>
+				<li>What is the cost of food here?</li>
+				<li>Is food expensive here?</li>
+				<li>Is there a way to get food if you don't have any money?</li>
+				<li>How do people buy food?</li>
+				<li>Do people use credit to buy food?</li>
+				<li>Do you have a credit card?</li>
+				<li>Do people grow their own food?</li>
+				<li>Where do people buy thier food?</li>
+				<li>Do people eat a lot of vegetables?</li>
+				<li>Do you have any vegetarians here?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOUSES ROADS POPULATION</pattern>
+		<template>
+			<random>
+				<li>What is Grisbacka like?</li>
+				<li>How do people get around here?</li>
+				<li>Do many people own cars?</li>
+				<li>How fast are cars allowed to drive?</li>
+				<li>Do you have any traffic problems?</li>
+				<li>What roads are there here for cars?</li>
+				<li>How are the roads named?</li>
+				<li>Who is responsible for naming the roads?</li>
+				<li>Are there any cars here?</li>
+				<li>What are the speed limits for cars?</li>
+				<li>What sort of houses do people live in?</li>
+				<li>How big are the houses here?</li>
+				<li>What do the houses here look like?</li>
+				<li>How many people live in the typical house?</li>
+				<li>Do poeple store food in the kitchen?</li>
+				<li>What do people do at home?</li>
+				<li>Where do people buy dishes?</li>
+				<li>Can you rent an appartment in town?</li>
+				<li>Do you have running water here?</li>
+				<li>Do you have hot water?</li>
+				<li>Where do people bathe?</li>
+				<li>How often do people here bathe?</li>
+				<li>What are your bath tubs like?</li>
+				<li>How do people wash their clothes?</li>
+				<li>Do people have washing machines?</li>
+				<li>What sorts of chores do the children do?</li>
+				<li>Do people have refrigerators?</li>
+				<li>Do people have freezers?</li>
+				<li>How do people store their food?</li>
+				<li>Do the houses here have restrooms inside?</li>
+				<li>How do people dispose of thier garbage?</li>
+				<li>Do people have television sets?</li>
+				<li>Do people have radios?</li>
+				<li>What is the size of the typical family?</li>
+				<li>Do people here keep animals?</li>
+				<li>Do families often have pets?</li>
+				<li>Do the farmers grow any sorts of fruits?</li>
+				<li>What kinds of farm animals are there on the farms?</li>
+				<li>How do people celebrate Christmas here?</li>
+				<li>Do the children believe in Santa Claus?</li>
+				<li>What is the population here?</li>
+				<li>Which is the largest building in town?</li>
+				<li>Do you have any big restaurants here?</li>
+				<li>What sorts of shops do you have here?</li>
+				<li>Are you allowed to serve yourself at the shops?</li>
+				<li>Are there any big businesses in town?</li>
+				<li>How many shops are there in town?</li>
+				<li>What can I buy at the shops here?</li>
+				<li>How big is the school?</li>
+				<li>What is the name of the school here?</li>
+				<li>What is this place Rodang that I heard about?</li>
+				<li>What is this place Rodberget that I heard people talking about?</li>
+				<li>What was it like here durring the war?</li>
+				<li>Are there any associations in town?</li>
+				<li>Are there any telephones in the town?</li>
+				<li>How do people cook there food here?</li>
+				<li>Do the homes have ordinary beds?</li>
+				<li>What are the beds like here?</li>
+				<li>How big are people's gardens here?</li>
+				<li>How big is your house?</li>
+				<li>Is there a lot of cultivated land here?</li>
+				<li>Are there any poor people here?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ VASTERBOTTENSGARDAR</pattern>
+		<template>What is a Vasterbottensgardar?</template>
+	</category>
+	<category>
+		<pattern>CLOTHES AND FASHION</pattern>
+		<template>
+			<random>
+				<li>How do people dress here?</li>
+				<li>Do people wear jeans here?</li>
+				<li>What sorts of clothes do boys wear here?</li>
+				<li>How do men dress here?</li>
+				<li>What sorts of things do girls wear?</li>
+				<li>How do women in town dress?</li>
+				<li>Do the girls wear trousers?</li>
+				<li>Where do people go to buy cloths here?</li>
+				<li>Do people here make their own clothes?</li>
+				<li>Who makes the clothes that people wear?</li>
+				<li>What are the clothes made from?</li>
+				<li>Who mends the clothes when they are damaged?</li>
+				<li>Do people ever take thier cloths to a tailor for mending?</li>
+				<li>Do the people here wear much jewellery?</li>
+				<li>Do men ever wear jewellery?</li>
+				<li>Do any people have watches?</li>
+				<li>What are the hair styles like here?</li>
+				<li>Where do people get there hair cut?</li>
+				<li>What are boys hair styles like?</li>
+				<li>How do girls wear their hair here?</li>
+				<li>Do people wear bathing suits to swim in?</li>
+				<li>What is girls swimwear like?</li>
+				<li>Do women wear bikinis to swim in?</li>
+				<li>What are boys swimsuits like?</li>
+				<li>Do people wear nice clothes?</li>
+				<li>What kinds of shoes do people wear?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>GAMES AND FUN</pattern>
+		<template>
+			<random>
+				<li>Do the children ever get up to any mischief?</li>
+				<li>Did you ever get into any trouble as a child?</li>
+				<li>What sorts of toys do children play with?</li>
+				<li>How can children earn money?</li>
+				<li>What kinds of games do children here play?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>THE ONLY TOY BRAND WE HAVE IS BRIO</pattern>
+		<template>What is Brio?</template>
+	</category>
+	<category>
+		<pattern>LEISURE</pattern>
+		<template>
+			<random>
+				<li>Do people here travel often?</li>
+				<li>Do people go fishing around here?</li>
+				<li>What do people do for entertainment?</li>
+				<li>What do people here do when they want to relax?</li>
+				<li>Do people get much leisure time here?</li>
+				<li>Does everone here go to church on Sunday?</li>
+				<li>Is there a movie theater in town?</li>
+				<li>How much does it cost to see a movie at the theater?</li>
+				<li>What do the children do for fun?</li>
+				<li>What sorts of games do girls play?</li>
+				<li>What kinds of games do the boys play?</li>
+				<li>What sports are popular here?</li>
+				<li>How do the children pick teams for games?</li>
+				<li>Do people go skiing in the winter?</li>
+				<li>Are there any sports associations?</li>
+				<li>Do people in the village play soccer?</li>
+				<li>Do people here swim in the rivers?</li>
+				<li>What sorts of things do the children do after school?</li>
+				<li>Do people here read books?</li>
+				<li>What type of reading do people do?</li>
+				<li>Is there a library in the town?</li>
+				<li>Do people read newspapers here?</li>
+				<li>Does anyone read magazines?</li>
+				<li>Do the people here listen to any music?</li>
+				<li>Does anyone here listen to rock music?</li>
+				<li>Does anyone in town sing or play music?</li>
+				<li>Do any people play musical instruments?</li>
+				<li>Do people here listen to radios?</li>
+				<li>Do the people here have any idols?</li>
+				<li>Who are some of peoples favorite actors?</li>
+				<li>Do people go on vacations?</li>
+				<li>What vacation days do people get?</li>
+				<li>Are there any drugs in the town?</li>
+				<li>Do people here smoke?</li>
+				<li>Do any of the children smoke?</li>
+				<li>Do children here ever get into drugs?</li>
+				<li>Is there any crime in town?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SSK *</pattern>
+		<template>What is the SSK?</template>
+	</category>
+	<category>
+		<pattern>_ MORA NISSE *</pattern>
+		<template>Who is Mora-Nisse?</template>
+	</category>
+	<category>
+		<pattern>_ BERTIL BOO *</pattern>
+		<template>Who is Bertil Boo?</template>
+	</category>
+	<category>
+		<pattern>_ SIXTEN JERNBERG *</pattern>
+		<template>Who is Sixten Jernberg?</template>
+	</category>
+</aiml>

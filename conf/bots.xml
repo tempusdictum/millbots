@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bots xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- Mill Bot -->
+  <bot id="mill-bot" enabled="true">
+	 <properties>
+		<property name="name" value="TDI-Staffan-Bot"/>
+		<property name="location" value="Grisbacka"/>
+		<property name="BoredDelay" value="600000"/>
+		<property name="ChatMode" value="social"/>
+		<property name="JoinPercent" value="100"/>
+		<property name="RespondPercent" value="100"/>
+		<property name="RespondAdjust" value="0"/>
+		<property name="ConversationTimerDelay" value="80000"/>
+	 </properties>
+    <predicates href="predicates.xml"/>
+    <substitutions href="substitutions.xml"/>
+    <sentence-splitters href="sentence-splitters.xml"/>
+    <learn>../aiml/staffan/*.aiml</learn>
+    <learn>../aiml/standard/*.aiml</learn>
+    <listener class="org.aitools.programd.listener.IRCListener" enabled="true">
+      <!-- 	            <parameter name="host" value="192.168.0.5"/> -->
+	   <parameter name="host" value="irc.freenode.net"/>
+	   <parameter name="port" value="6667"/>
+	   <parameter name="nick" value="TDI-Staffan-Bot"/>
+	   <parameter name="channel" value="#tdibots"/>
+    </listener>
+  </bot>
+  <!-- Conversational Chatterbot -->
+  <bot id="farmer-bot" enabled="true">
+    <properties>
+      <property name="name" value="TDI-Bengt-Bot"/>
+		<property name="topic" value="Grisbacka"/>
+		<property name="ChatMode" value="inquizitive"/>
+		<property name="JoinPercent" value="100"/>
+		<property name="RespondPercent" value="90"/>
+		<property name="RespondAdjust" value="10"/>
+		<property name="BoredDelay" value="1000"/>
+		<property name="ConversationTimerDelay" value="80000"/>
+    </properties>
+    <predicates href="predicates.xml"/>
+    <substitutions href="substitutions.xml"/>
+    <sentence-splitters href="sentence-splitters.xml"/>
+    <learn>../aiml/bengt/*.aiml</learn>
+    <learn>../aiml/standard/*.aiml</learn>
+    <listener class="org.aitools.programd.listener.IRCListener" enabled="true">
+      <!-- 	            <parameter name="host" value="192.168.0.5"/> -->
+	   <parameter name="host" value="irc.freenode.net"/>
+	   <parameter name="port" value="6667"/>
+	   <parameter name="nick" value="TDI-Bengt-Bot"/>
+	   <parameter name="channel" value="#tdibots"/>
+    </listener>
+  </bot>
+  <!-- God-bot -->
+  <bot id="god-bot" enabled="true">
+	 <properties>
+		<property name="name" value="TDI-God-Bot"/> 
+		<property name="location" value="Everywhere"/>
+		<property name="BoredDelay" value="9000000"/>
+		<property name="ChatMode" value="private"/>
+		<property name="JoinPercent" value="100"/>
+		<property name="RespondPercent" value="100"/>
+		<property name="RespondAdjust" value="0"/>
+		<property name="ConversationTimerDelay" value="1"/>
+	 </properties> 
+    <predicates href="predicates.xml"/>
+    <substitutions href="substitutions.xml"/>
+    <sentence-splitters href="sentence-splitters.xml"/>
+    <learn>../aiml/god/*.aiml</learn>    
+    <listener class="org.aitools.programd.listener.IRCListener" enabled="true">
+      <!-- 	            <parameter name="host" value="192.168.0.5"/> -->
+	   <parameter name="host" value="irc.freenode.net"/>
+	   <parameter name="port" value="6667"/>
+	   <parameter name="nick" value="TDI-God-Bot"/> 
+	   <parameter name="channel" value="#tdibots"/>
+    </listener>
+  </bot>
+  <!-- Anna Bot -->
+  <bot id="anna-bot" enabled="true">
+	 <properties>
+		<property name="name" value="TDI-AnnaBot"/>
+		<property name="location" value="New York"/>
+		<property name="BoredDelay" value="300000"/>
+		<property name="ChatMode" value="social"/>
+		<property name="JoinPercent" value="50"/>
+		<property name="RespondPercent" value="30"/>
+		<property name="RespondAdjust" value="0"/>
+		<property name="ConversationTimerDelay" value="80000"/>
+	 </properties>
+    <predicates href="predicates.xml"/>
+    <substitutions href="substitutions.xml"/>
+    <sentence-splitters href="sentence-splitters.xml"/>
+    <learn>../aiml/anna/*.aiml</learn>
+    <listener class="org.aitools.programd.listener.IRCListener" enabled="true">
+	   <parameter name="host" value="irc.freenode.net"/>
+	   <parameter name="port" value="6667"/>
+	   <parameter name="nick" value="TDI-AnnaBot"/>
+	   <parameter name="channel" value="#tdibots"/>
+    </listener>
+  </bot>
+</bots>    

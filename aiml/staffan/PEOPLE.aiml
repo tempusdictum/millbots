@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>MR LUNDSTROM</pattern>
+		<template>
+			<random>
+				<li>Folke Hübinett remembers when he and his friend climbed up on the church in the city. </li>
+				<li>Arvid Lundstrom was the last miller. The Lundstrom family had been millers for many generations.</li>
+				<li>There was a man, his name was Mr Lundstrom, and I think he was the miller. His wife was called Pegi, but her real name was Irma. She was very kind. She’d let you pick as many berries from the current bush as you wanted. She also gave you peppermint rocks if you wanted, yum-yum! She lived until she around 90 years old.</li>
+				<li>A long time ago there was a mill and the millers name was Mr Lundstrom. He worked alone, but sometimes a handyman came to help him.</li>
+				<li>At work, Mr Lundstrom the miller mostly wore a pair of boots and blue pants with a pair of suspenders.</li>
+				<li>Mr Lundstrom did not earn very much money since the farmers in the village couldn’t pay him very much.</li>
+				<li>When Mr Lundstrom or the millers’ man needed to go to the bathroom, there was no water closet. </li>
+				<li>The millers’ name was Arvid Lundstrom.</li>
+				<li>Mr Anton Lundstrom owned the mill between 1893 and 1927. After his death it was taken over by Arvid Lundstro who run it until 1960.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>ARVID LUNDSTROM</pattern>
+		<template><srai>MR LUNDSTROM</srai></template>
+	</category>
+	<category>
+		<pattern>ANTON LUNDSTROM</pattern>
+		<template><srai>MR LUNDSTROM</srai></template>
+	</category>
+	<category>
+		<pattern>FLUR</pattern>
+		<template>She lives in a cottage by the mill and the children fool around at her place. </template>
+	</category>
+	<category>
+		<pattern>_ MAN IN THE PIT</pattern>
+		<template>
+			<random>
+				<li>Next to the mill there is a small peninsula in the creek. On that peninsula lived an old man who is called 'the man in the pit'.</li>
+				<li>There used to be bikes lying around outside the house where the 'man in the pit' lived. They belonged to the boys. </li>
+				<li>Sometimes you would run into the 'man in the pit'.</li>
+				<li>Some scream 'man in the pit!' and then he would come out and be angry. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO IS THE MAN IN THE PIT</pattern>
+		<template>The 'man in the pit' is a tinsmith. He fell off a roof, and he had a clubfoot. But you wonder if anyone really knows who he is.</template>
+	</category>
+	<category>
+		<pattern>MR IVAR</pattern>
+		<template>
+			<random>
+				<li>Mr Ivar lives in one room with a kitchen. The beds are fixed onto the wall and there are foldable beds that you put away during the day. Next to the wooden stove there is a washbasin with hot water for dishes and laundry.</li>
+				<li>When there is much laundry it is taken to the stream Tvaran. In winter they made a hole in the ice and as the clothes froze they were brought inside where they dried quickly.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO IS ROLF TJARNSTROM</pattern>
+		<template>Rolf Tjarnstrom live in Griisbacka durring the War and he told me that in the evenings, after a certain hour they covered up the windows, a blackout as a precaution against air raids, and not even a small ray of light could slip out. </template>
+	</category>
+	<category>
+		<pattern>WHO IS ROLF</pattern>
+		<template><srai>WHO IS ROLF TJARNSTROM</srai></template>
+	</category>
+	<category>
+		<pattern>GUNNAR</pattern>
+		<template>
+			<random>
+				<li>When Gunnar came to the village Griisbacka, the Second World War was over. </li>
+				<li>His father was in the military emergency service in Boden. </li>
+			</random>
+		</template>
+	</category>
+</aiml>

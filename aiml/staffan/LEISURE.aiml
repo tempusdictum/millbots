@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>TRAVEL</pattern>
+		<template>
+			<random>
+				<li>Those who can afford it go by bus to Stromback.</li>
+				<li>We go with our families on short outings in the neighbourhood, like in a boat on the river.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE TRAVEL</pattern>
+		<template><srai>TRAVEL</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE TRAVEL *</pattern>
+		<template><srai>TRAVEL</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE * TRAVEL</pattern>
+		<template><srai>TRAVEL</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE * TRAVEL *</pattern>
+		<template><srai>TRAVEL</srai></template>
+	</category>
+	<category>
+		<pattern>IS TRAVELING *</pattern>
+		<template><srai>TRAVEL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TO TRAVEL</pattern>
+		<template><srai>TRAVEL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TO TRAVEL *</pattern>
+		<template><srai>TRAVEL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TRAVELING</pattern>
+		<template><srai>TRAVEL</srai></template>
+	</category>
+	<category>
+		<pattern>FISHING</pattern>
+		<template>
+			<random>
+				<li>In the river we go fishing, and when it's warm enough we also swim there.   </li>
+				<li>Sometimes people ride their bikes to the river in Savar to go fishing.</li>
+				<li>There is a lot of fishing in the rivers and streams.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GO FISHING</pattern>
+		<template><srai>FISHING</srai></template>
+	</category>
+	<category>
+		<pattern>_ GO FISHING *</pattern>
+		<template><srai>FISHING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TO FISH</pattern>
+		<template><srai>FISHING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TO FISH *</pattern>
+		<template><srai>FISHING</srai></template>
+	</category>
+	<category>
+		<pattern>IS FISHING *</pattern>
+		<template><srai>FISHING</srai></template>
+	</category>
+	<category>
+		<pattern>DO * FISHING</pattern>
+		<template><srai>FISHING</srai></template>
+	</category>
+	<category>
+		<pattern>ADULT ENTERTAINMENT</pattern>
+		<template>
+			<random>
+				<li>Sometimes people their bikes to the river in Savar to go fishing.</li>
+				<li>We sometimes watch football games.</li>
+				<li>We play cards, talk and eat.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE * ENTERTAINMENT</pattern>
+		<template><srai>ADULT ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ ADULTS * ENTERTAINMENT</pattern>
+		<template><srai>ADULT ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ ENTERTAIN THEMSELVES</pattern>
+		<template><srai>ADULT ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ ENTERTAIN THEMSELVES *</pattern>
+		<template><srai>ADULT ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO FOR ENTERTAINMENT</pattern>
+		<template><srai>ADULT ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO FOR ENTERTAINMENT *</pattern>
+		<template><srai>ADULT ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO FOR FUN</pattern>
+		<template><srai>ADULT ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO FOR FUN *</pattern>
+		<template><srai>ADULT ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ SAVAR</pattern>
+		<template>Savar is a town northeast of here.</template>
+	</category>
+	<category>
+		<pattern>WHERE * SAVAR</pattern>
+		<template><srai>BLANK SAVAR</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * SAVAR *</pattern>
+		<template><srai>BLANK SAVAR</srai></template>
+	</category>
+	<category>
+		<pattern>LEISURE TIME</pattern>
+		<template>
+			<random>
+				<li>In our leisure time we often listen to the radio. </li>
+				<li>Every Saturday we meet to play cards, talk and eat together. </li>
+				<li>Sometimes we take the bus downtown to watch a movie. </li>
+				<li>The families in Grisbacka don't have very much money for pleasure, but sometimes in they will gather the family and ride their bicycles to Savar or some other exciting place in the neighbourhood.</li>
+				<li>We don't have much spare time during the weekdays, but on Saturdays we spend time together.</li>
+				<li>In their spare time the adults don't do very much at all. </li>
+				<li>The labour days are very long so we don't have much time off.</li>
+				<li>Maybe once a month or so people spend their money on a movie in the city.</li>
+				<li>When we have time we sing and play music together. </li>
+				<li>People attend meetings in different organizations, like the God Templars who perform theatrical plays, singing and folkdance. Some go to church.</li>
+				<li><srai>HAVE LEISURE TIME</srai></li>
+				<li><srai>SKI</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TO RELAX</pattern>
+		<template><srai>LEISURE TIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ TO RELAX *</pattern>
+		<template><srai>LEISURE TIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ LEISURE TIME</pattern>
+		<template><srai>LEISURE TIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ LEISURE TIME *</pattern>
+		<template><srai>LEISURE TIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO AFTER WORK</pattern>
+		<template><srai>LEISURE TIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPARE TIME</pattern>
+		<template><srai>LEISURE TIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPARE TIME *</pattern>
+		<template><srai>LEISURE TIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAMILY TIME</pattern>
+		<template><srai>LEISURE TIME</srai></template>
+	</category>
+	<category>
+		<pattern>AMOUNT OF LEISURE </pattern>
+		<template>
+			<random>
+				<li>The adults don't have much free time. </li>
+				<li>After coming home from work more work awaits at home: the laundry, the dishes and the cooking. </li>
+				<li>Mostly the wives do the household chores. </li>
+				<li>The husband goes down town to work and earn money for the family. </li>
+				<li>The grown ups don't have much spare time. </li>
+				<li>Adults have long working hours and they also work on Saturdays. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE LEISURE TIME</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE LEISURE TIME *</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>_ GET LEISURE TIME</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>_ GET * LEISURE TIME</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>_ GET LEISURE TIME *</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>_ GET * 	LEISURE TIME *</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME FOR FUN</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME TO RELAX</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME AFTER WORK</pattern>
+		<template><srai>AMOUNT OF LEISURE </srai></template>
+	</category>
+	<category>
+		<pattern>CHURCH</pattern>
+		<template>
+			<random>
+				<li>On Sundays everyone goes to church.</li>
+				<li>Some go to church.</li>
+				<li><srai>SUNDAY SCHOOL</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GO TO CHURCH</pattern>
+		<template><srai>CHURCH</srai></template>
+	</category>
+	<category>
+		<pattern>_ GO TO CHURCH *</pattern>
+		<template><srai>CHURCH</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHURCH * SUNDAY</pattern>
+		<template><srai>CHURCH</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHURCH * SUNDAY *</pattern>
+		<template><srai>CHURCH</srai></template>
+	</category>
+	<category>
+		<pattern>SUNDAY SCHOOL</pattern>
+		<template>
+			<random>
+				<li>On Sundays all the children go to Sunday school.</li>
+				<li>Almost everyone goes to Sunday school. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SUNDAY SCHOOL</pattern>
+		<template><srai>SUNDAY SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUNDAY SCHOOL *</pattern>
+		<template><srai>SUNDAY SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>MOVIE THEATRE</pattern>
+		<template>
+			<random>
+				<li>There is a movie theatre but they mostly show films for the younger children.</li>
+				<li>Yes, there is a theatre downtown. Sometimes we take the bus there to watch a movie. </li>
+				<li>Yes, I used to sell candy at the Roda Kvarn theatre when I was young.</li>
+				<li>Yes, there is a theatre called Roda Kvarn. </li>
+				<li>Yes, there are four movie theatres in the city.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>IS _ THEATRE</pattern>
+		<template><srai>MOVIE THEATRE</srai></template>
+	</category>
+	<category>
+		<pattern>IS _ THEATRE *</pattern>
+		<template><srai>MOVIE THEATRE</srai></template>
+	</category>
+	<category>
+		<pattern>_ THEATRE IN *</pattern>
+		<template><srai>MOVIE THEATRE</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * THEATRE</pattern>
+		<template><srai>MOVIE THEATRE</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * THEATRE *</pattern>
+		<template><srai>MOVIE THEATRE</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * CINEMA</pattern>
+		<template><srai>MOVIE THEATRE</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * CINEMA *</pattern>
+		<template><srai>MOVIE THEATRE</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * RODA KVARN</pattern>
+		<template>The theatre is in town.</template>
+	</category>
+	<category>
+		<pattern>WHERE * RODA KVARN *</pattern>
+		<template><srai>WHERE BLANK RODA KVARN</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * RODA KVARN</pattern>
+		<template>The Roda Kvarn is a movie theatre in town.</template>
+	</category>
+	<category>
+		<pattern>WHAT * RODA KVARN *</pattern>
+		<template><srai>WHAT BLANK RODA KVARN</srai></template>
+	</category>
+	<category>
+		<pattern>* COST</pattern>
+		<that>* RODA KVARN</that>
+		<template><srai>MOVIE COST</srai></template>
+	</category>
+	<category>
+		<pattern>MOVIE COST</pattern>
+		<template>It cost 60 ore to see the movie, and 20 ore each way if you want a bus ride to the theatre.</template>
+	</category>
+	<category>
+		<pattern>HOW MUCH * MOVIE *</pattern>
+		<template><srai>MOVIE COST</srai></template>
+	</category>
+	<category>
+		<pattern>_ MOVIE COST</pattern>
+		<template><srai>MOVIE COST</srai></template>
+	</category>
+	<category>
+		<pattern>_ THEATRE COST</pattern>
+		<template><srai>MOVIE COST</srai></template>
+	</category>
+	<category>
+		<pattern>_ COST * MOVIE</pattern>
+		<template><srai>MOVIE COST</srai></template>
+	</category>
+	<category>
+		<pattern>_ COST * MOVIE *</pattern>
+		<template><srai>MOVIE COST</srai></template>
+	</category>
+	<category>
+		<pattern>CHILDRENS ENTERTAINMENT</pattern>
+		<template>
+			<random>
+				<li>They sometimes watch football games</li>
+				<li>Sometimes the parents ride their bikes with the children to the river in Savar to go fishing. </li>
+				<li>On Sundays all the children go to Sunday school.</li>
+				<li>They like to go to the football field.</li>
+				<li><srai>CHILDRENS GAMES</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * ENTERTAINMENT</pattern>
+		<template><srai>CHILDRENS ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN ENTERTAIN THEMSELVES</pattern>
+		<template><srai>CHILDRENS ENTERTAINMENT</srai></template>
+	</category>
+	<category>
+		<pattern>CHILDRENS GAMES</pattern>
+		<template>
+			<random>
+				<li>In thier spare time they play in their playhouses, which are full of toys. </li>
+				<li>They often played mistress and maid and or played croquet. </li>
+				<li>The children do not get to attend many sports classes. </li>
+				<li>When children play it is mostly ball games, or Indians.</li>
+				<li>In Grisbacka the children collect cards with pictures of the Swedish national team.</li>
+				<li>Both boys and girls play rounders. </li>
+				<li>In our leisure time we play of course, lots of ball games like rounders.</li>
+				<li>Children would play a lot in the ravine. </li>
+				<li>In summer we play football and in winter we go skiing on Rodberget, both down hill and cross-country.</li>
+				<li>Some children have to look after their sisters and brothers. </li>
+				<li>Sometimes we build a steeplechase course and race our brothers and sisters in athletic competitions of running and jumping.</li>
+				<li><srai>CHILDRENS ENTERTAINMENT</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GAMES * CHILDREN</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GAMES * CHILDREN *</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * GAMES</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * GAMES *</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * PLAY</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN PLAY</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * FOR FUN</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FUN * CHILDREN</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FUN * CHILDREN *</pattern>
+		<template><srai>CHILDRENS GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>GIRL GAMES</pattern>
+		<template>
+			<random>
+				<li>Girls play with skipping rope, hopscotch, collected bookmarks and read Pippi Longstocking or Kulla Gulla. </li>
+				<li>Both girls and boys play rounders. </li>
+				<li>Girls all have different interests, and some like to sew, draw or play. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GIRLS PLAY</pattern>
+		<template><srai>GIRL GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS PLAY *</pattern>
+		<template><srai>GIRL GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GAMES * GIRLS *</pattern>
+		<template><srai>GIRL GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FUN * GIRLS *</pattern>
+		<template><srai>GIRL GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS * FUN</pattern>
+		<template><srai>GIRL GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS * FUN *</pattern>
+		<template><srai>GIRL GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>BOY GAMES</pattern>
+		<template>
+			<random>
+				<li>The boys play football, build tree houses and play marbles. </li>
+				<li>The boys play war games and the girls sing and clapped to rhymes. </li>
+				<li>Both boys and girls play rounders. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GAMES BOYS PLAY</pattern>
+		<template><srai>BOY GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GAMES BOYS PLAY *</pattern>
+		<template><srai>BOY GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GAMES * BOYS PLAY</pattern>
+		<template><srai>BOY GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GAMES * BOYS PLAY *</pattern>
+		<template><srai>BOY GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ FUN * BOYS *</pattern>
+		<template><srai>BOY GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS * FUN</pattern>
+		<template><srai>BOY GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS * FUN *</pattern>
+		<template><srai>BOY GAMES</srai></template>
+	</category>
+	<category>
+		<pattern>SPORTS </pattern>
+		<template>
+			<random>
+				<li>The sports that we performed in were skiing, ice-skating and rounders.</li>
+				<li>There is no sports association so we organize rounders games, skiing and skating races ourselves. </li>
+				<li>We have also made a speedway racetrack where we race with our bicycles. </li>
+				<li>In our leisure time we play basketball and football, but the girls never join to play football, only the boys do. </li>
+				<li>For cross-country racing you join the club Umedalens IF. </li>
+				<li>Sometimes we build a steeplechase course and race our brothers and sisters in athletic competitions of running and jumping.</li>
+				<li>We do the long jump. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * SPORTS</pattern>
+		<template><srai>SPORTS </srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SPORTS *</pattern>
+		<template><srai>SPORTS </srai></template>
+	</category>
+	<category>
+		<pattern>WHAT SPORTS *</pattern>
+		<template><srai>SPORTS </srai></template>
+	</category>
+	<category>
+		<pattern>_ SPORTS * HAVE</pattern>
+		<template><srai>SPORTS </srai></template>
+	</category>
+	<category>
+		<pattern>DO * SPORTS</pattern>
+		<template><srai>SPORTS </srai></template>
+	</category>
+	<category>
+		<pattern>_ OF SPORTS *</pattern>
+		<template><srai>SPORTS </srai></template>
+	</category>
+	<category>
+		<pattern>_ PICKING TEAMS</pattern>
+		<template>A leader gets to pick out his team, and the girls are always picked last.</template>
+	</category>
+	<category>
+		<pattern>_ PICKING TEAMS *</pattern>
+		<template><srai>BLANK PICKING TEAMS</srai></template>
+	</category>
+	<category>
+		<pattern>_ PICKS TEAMS</pattern>
+		<template><srai>BLANK PICKING TEAMS</srai></template>
+	</category>
+	<category>
+		<pattern>_ PICKS TEAMS *</pattern>
+		<template><srai>BLANK PICKING TEAMS</srai></template>
+	</category>
+	<category>
+		<pattern>_ PICK TEAMS</pattern>
+		<template><srai>BLANK PICKING TEAMS</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN PICK TEAMS *</pattern>
+		<template><srai>BLANK PICKING TEAMS</srai></template>
+	</category>
+	<category>
+		<pattern>_ PICKS * TEAMS</pattern>
+		<template><srai>BLANK PICKING TEAMS</srai></template>
+	</category>
+	<category>
+		<pattern>SKI</pattern>
+		<template>
+			<random>
+				<li>In winter we ski on Rodberget, both down hill and cross-country. . </li>
+				<li>Sometimes we go skiing on Rodberget.  </li>
+				<li>Yes we ski. In the 60's they built a ski lift, before that we had to walk up the hill.</li>
+				<li>Yes people enjoy skiing. There is a small cabin where we ski that you can buy refreshments or just get away from the cold.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO * SKI</pattern>
+		<template><srai>SKI</srai></template>
+	</category>
+	<category>
+		<pattern>DO * SKI *</pattern>
+		<template><srai>SKI</srai></template>
+	</category>
+	<category>
+		<pattern>DO * SKIING</pattern>
+		<template><srai>SKI</srai></template>
+	</category>
+	<category>
+		<pattern>DO * SKIING *</pattern>
+		<template><srai>SKI</srai></template>
+	</category>
+	<category>
+		<pattern>_ GO SKIING</pattern>
+		<template><srai>SKI</srai></template>
+	</category>
+	<category>
+		<pattern>_ GO SKIING *</pattern>
+		<template><srai>SKI</srai></template>
+	</category>
+	<category>
+		<pattern>IS SKIING *</pattern>
+		<template><srai>SKI</srai></template>
+	</category>
+	<category>
+		<pattern>SPORTS ASSOCIATIONS</pattern>
+		<template>
+			<random>
+				<li>Yes, there is the SSK. There is also another club called Grisbacka-Grubbe.</li>
+				<li><srai>THE SSK</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SPORTS ASSOCIATIONS</pattern>
+		<template><srai>SPORTS ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPORTS ASSOCIATIONS *</pattern>
+		<template><srai>SPORTS ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPORTS ASSOCIATION</pattern>
+		<template><srai>SPORTS ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPORTS ASSOCIATION *</pattern>
+		<template><srai>SPORTS ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPORTING ASSOCIATIONS</pattern>
+		<template><srai>SPORTS ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPORTING ASSOCIATION</pattern>
+		<template><srai>SPORTS ASSOCIATIONS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SSK</pattern>
+		<template>The association Sandakern (SSK) has handball and football teams, but only for older guys. There's no team for children.</template>
+	</category>
+	<category>
+		<pattern>SOCCER</pattern>
+		<template>
+			<random>
+				<li>Borje Jenssen, a Danish man, is at the soccer field every day, and he divides us into teams.</li>
+				<li>If we have a soccer game against another team somewhere, we ride our bikes there.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ PLAY SOCCER</pattern>
+		<template><srai>SOCCER</srai></template>
+	</category>
+	<category>
+		<pattern>_ PLAY SOCCER *</pattern>
+		<template><srai>SOCCER</srai></template>
+	</category>
+	<category>
+		<pattern>_ PLAY FOOTBALL</pattern>
+		<template><srai>SOCCER</srai></template>
+	</category>
+	<category>
+		<pattern>_ PLAY FOOTBALL *</pattern>
+		<template><srai>SOCCER</srai></template>
+	</category>
+	<category>
+		<pattern>SWIMMING</pattern>
+		<template>
+			<random>
+				<li>Sometimes we go to Lundakern to swim in a stream there. </li>
+				<li>Sometimes we go swimming in Tvaran, or by Hulte in the river. </li>
+				<li>You can swim in some of the rivers but if you want to go to the indoor swimming pool it costs 50 to 75 ore.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>* GO SWIMMING</pattern>
+		<template><srai>SWIMMING</srai></template>
+	</category>
+	<category>
+		<pattern>* GO SWIMMING *</pattern>
+		<template><srai>SWIMMING</srai></template>
+	</category>
+	<category>
+		<pattern>* SWIM</pattern>
+		<template><srai>SWIMMING</srai></template>
+	</category>
+	<category>
+		<pattern>* SWIM *</pattern>
+		<template><srai>SWIMMING</srai></template>
+	</category>
+	<category>
+		<pattern>IS * INDOOR POOL</pattern>
+		<template>Yes, there is an indoor pool, but it costs 50 to 75 ore to use the pool.</template>
+	</category>
+	<category>
+		<pattern>IS * INDOOR POOL *</pattern>
+		<template><srai>IS BLANK INDOOR POOL</srai></template>
+	</category>
+	<category>
+		<pattern>IS * INDOOR SWIMMING</pattern>
+		<template><srai>IS BLANK INDOOR POOL</srai></template>
+	</category>
+	<category>
+		<pattern>IS * INDOOR SWIMMING *</pattern>
+		<template><srai>IS BLANK INDOOR POOL</srai></template>
+	</category>
+	<category>
+		<pattern>AFTER SCHOOL</pattern>
+		<template>
+			<random>
+				<li>After school we go home to do our homework and then we can go out to play with our friends. </li>
+				<li>We often go to the soccer field, Sandakern, to play football. Borje Jenssen, a Danish man, is there every day, and he divides us into teams. </li>
+				<li>After school we have to help out some at home. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ AFTER SCHOOL</pattern>
+		<template><srai>AFTER SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ AFTER SCHOOL *</pattern>
+		<template><srai>AFTER SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO * SCHOOL IS OUT</pattern>
+		<template><srai>AFTER SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>READING</pattern>
+		<template>
+			<random>
+				<li><srai>BOOKS</srai></li>
+				<li><srai>NEWSPAPERS</srai></li>
+				<li><srai>TYPES OF READING</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO * READ</pattern>
+		<template><srai>READING</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE READ</pattern>
+		<template><srai>READING</srai></template>
+	</category>
+	<category>
+		<pattern>_ READING</pattern>
+		<template><srai>READING</srai></template>
+	</category>
+	<category>
+		<pattern>BOOKS</pattern>
+		<template>
+			<random>
+				<li>Yes we read books from the library or books we get as presents.</li>
+				<li>In our spare time we read books sometimes, but they are usually religious books.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ READ BOOKS</pattern>
+		<template><srai>BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ READ BOOKS *</pattern>
+		<template><srai>BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ READ * BOOKS</pattern>
+		<template><srai>BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ READ * BOOKS *</pattern>
+		<template><srai>BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ READING BOOKS</pattern>
+		<template><srai>BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ READING BOOKS *</pattern>
+		<template><srai>BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOOKS * READ</pattern>
+		<template><srai>BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>TYPES OF READING</pattern>
+		<template>We have poetry and for example Robinson Crouse.</template>
+	</category>
+	<category>
+		<pattern>WHAT * READ</pattern>
+		<template><srai>TYPES OF READING</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * READING *</pattern>
+		<template><srai>TYPES OF READING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPES * READING *</pattern>
+		<template><srai>TYPES OF READING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPE * READING *</pattern>
+		<template><srai>TYPES OF READING</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPE * READ</pattern>
+		<template><srai>TYPES OF READING</srai></template>
+	</category>
+	<category>
+		<pattern>LIBRARY</pattern>
+		<template>At school we have a library.</template>
+	</category>
+	<category>
+		<pattern>_ HAVE A LIBRARY</pattern>
+		<template><srai>LIBRARY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE A LIBRARY *</pattern>
+		<template><srai>LIBRARY</srai></template>
+	</category>
+	<category>
+		<pattern>IS THERE * LIBRARY</pattern>
+		<template><srai>LIBRARY</srai></template>
+	</category>
+	<category>
+		<pattern>IS THERE * LIBRARY *</pattern>
+		<template><srai>LIBRARY</srai></template>
+	</category>
+	<category>
+		<pattern>NEWSPAPERS</pattern>
+		<template>
+			<random>
+				<li>There is only one newspaper that we receive every now and then.</li>
+				<li>We don't have many newspapers. </li>
+				<li><srai>MAGAZINES</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO * NEWSPAPERS</pattern>
+		<template><srai>NEWSPAPERS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * NEWSPAPER</pattern>
+		<template><srai>NEWSPAPERS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * NEWSPAPERS *</pattern>
+		<template><srai>NEWSPAPERS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * NEWSPAPER *</pattern>
+		<template><srai>NEWSPAPERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE NEWSPAPERS</pattern>
+		<template><srai>NEWSPAPERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE NEWSPAPER</pattern>
+		<template><srai>NEWSPAPERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * NEWSPAPER</pattern>
+		<template><srai>NEWSPAPERS</srai></template>
+	</category>
+	<category>
+		<pattern>MAGAZINES</pattern>
+		<template>
+			<random>
+				<li>We only had daily newspapers, no weekly magazines. </li>
+				<li>We have plenty of magazines; Filmjournalen and Veckorevyn for example. </li>
+				<li>If someone buys a magazine they will lend it to all thier friends. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO * MAGAZINES</pattern>
+		<template><srai>MAGAZINES</srai></template>
+	</category>
+	<category>
+		<pattern>DO * MAGAZINES *</pattern>
+		<template><srai>MAGAZINES</srai></template>
+	</category>
+	<category>
+		<pattern>_ READ MAGAZINES</pattern>
+		<template><srai>MAGAZINES</srai></template>
+	</category>
+	<category>
+		<pattern>_ READ MAGAZINES *</pattern>
+		<template><srai>MAGAZINES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE MAGAZINES</pattern>
+		<template><srai>MAGAZINES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE MAGAZINES *</pattern>
+		<template><srai>MAGAZINES</srai></template>
+	</category>
+	<category>
+		<pattern>MUSIC</pattern>
+		<template>
+			<random>
+				<li>Yes, some people have a gramophone and they mostly listen to the religious music.</li>
+				<li>We don't have much time for listening to music, but we do have a portable record player and the radio.</li>
+				<li><srai>RADIO</srai></li>
+				<li><srai>PLAY MUSIC</srai></li>
+				<li><srai>ROCK MUSIC</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ LISTEN * MUSIC</pattern>
+		<template><srai>MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ LISTEN * MUSIC *</pattern>
+		<template><srai>MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE MUSIC</pattern>
+		<template><srai>MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE MUSIC *</pattern>
+		<template><srai>MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME FOR MUSIC</pattern>
+		<template><srai>MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>ROCK MUSIC</pattern>
+		<template>Yes, Elvis Presley is a popular rock artist.</template>
+	</category>
+	<category>
+		<pattern>_ HAVE ROCK AND ROLL</pattern>
+		<template><srai>ROCK MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE ROCK MUSIC</pattern>
+		<template><srai>ROCK MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ LISTEN * ROCK AND ROLL</pattern>
+		<template><srai>ROCK MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ LISTEN * ROCK MUSIC</pattern>
+		<template><srai>ROCK MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>PLAY MUSIC</pattern>
+		<template>
+			<random>
+				<li>At school the teacher always plays the organ and the children sing. </li>
+				<li>Harriett started a choir that sings together.</li>
+				<li>We sing songs from the psalm book or from the Bible. </li>
+				<li>Music is mostly performed at school when our teacher plays the piano or the organ and we sing.</li>
+				<li>When we have time we sing and play music together. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ PLAY MUSIC</pattern>
+		<template><srai>PLAY MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ PLAY MUSIC *</pattern>
+		<template><srai>PLAY MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ PLAY MUSICAL *</pattern>
+		<template><srai>PLAY MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>DO * SING</pattern>
+		<template><srai>PLAY MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE SING</pattern>
+		<template><srai>PLAY MUSIC</srai></template>
+	</category>
+	<category>
+		<pattern>INSTRUMENTS</pattern>
+		<template>The accordion and the violin are popular instruments to play. </template>
+	</category>
+	<category>
+		<pattern>WHAT INSTRUMENTS *</pattern>
+		<template><srai>INSTRUMENTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ INSTRUMENTS * PLAY</pattern>
+		<template><srai>INSTRUMENTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MUSICAL INSTRUMENTS</pattern>
+		<template><srai>INSTRUMENTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MUSICAL INSTRUMENTS *</pattern>
+		<template><srai>INSTRUMENTS</srai></template>
+	</category>
+	<category>
+		<pattern>RADIO</pattern>
+		<template>
+			<random>
+				<li>We often listen to the radio and Harriett started a choir that sings together. </li>
+				<li>Sometimes we listen to the radio, but there is only one channel. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ LISTEN * RADIO</pattern>
+		<template><srai>RADIO</srai></template>
+	</category>
+	<category>
+		<pattern>_ LISTEN * RADIOS</pattern>
+		<template><srai>RADIO</srai></template>
+	</category>
+	<category>
+		<pattern>_ LISTEN * RADIO *</pattern>
+		<template><srai>RADIO</srai></template>
+	</category>
+	<category>
+		<pattern>_ LISTEN * RADIOS *</pattern>
+		<template><srai>RADIO</srai></template>
+	</category>
+	<category>
+		<pattern>IDOLS</pattern>
+		<template>
+			<random>
+				<li>We do have idols, like Mora-Nisse, Sixten Jernberg and Bertil Boo. </li>
+				<li>Most of our idols are skiers like Mora-Nisse and Sixten Jernberg.</li>
+				<li>We have idols: movie stars and athletes. Greta Garbo is a great idol.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE IDOLS</pattern>
+		<template><srai>IDOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE IDOLS *</pattern>
+		<template><srai>IDOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * IDOLS</pattern>
+		<template><srai>IDOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * IDOLS *</pattern>
+		<template><srai>IDOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE STARS</pattern>
+		<template><srai>IDOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE STARS *</pattern>
+		<template><srai>IDOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * STARS</pattern>
+		<template><srai>IDOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * STARS *</pattern>
+		<template><srai>IDOLS</srai></template>
+	</category>
+	<category>
+		<pattern>MORA NISSE</pattern>
+		<template>Mora-Nisse was a famous singer.</template>
+	</category>
+	<category>
+		<pattern>WHO IS MORA NISSE</pattern>
+		<template><srai>MORA NISSE</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * MORA NISSE</pattern>
+		<template><srai>MORA NISSE</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * MORA NISSE *</pattern>
+		<template><srai>MORA NISSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAMOUS MUSICIANS</pattern>
+		<template><srai>MORA NISSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAMOUS MUSICIANS *</pattern>
+		<template><srai>MORA NISSE</srai></template>
+	</category>
+	<category>
+		<pattern>BERTIL BOO</pattern>
+		<template>Bertil Boo was an actor and musician know as the "Singing Farmer."</template>
+	</category>
+	<category>
+		<pattern>WHO IS BERTIL BOO</pattern>
+		<template><srai>BERTIL BOO</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * BERTIL BOO</pattern>
+		<template><srai>BERTIL BOO</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * BERTIL BOO *</pattern>
+		<template><srai>BERTIL BOO</srai></template>
+	</category>
+	<category>
+		<pattern>_ MOVIE STARS</pattern>
+		<template><srai>BERTIL BOO</srai></template>
+	</category>
+	<category>
+		<pattern>_ MOVIE STARS *</pattern>
+		<template><srai>BERTIL BOO</srai></template>
+	</category>
+	<category>
+		<pattern>SIXTEN JERNBERG</pattern>
+		<template>Sixten Jernberg was an Olympic cross-country skier who won the gold medal for the 50k race and silver metals for the 15k and 30k races in the 1956 Cortina Games.</template>
+	</category>
+	<category>
+		<pattern>WHO IS SIXTEN JERNBERG</pattern>
+		<template><srai>SIXTEN JERNBERG</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * SIXTEN JERNBERG</pattern>
+		<template><srai>SIXTEN JERNBERG</srai></template>
+	</category>
+	<category>
+		<pattern>WHO * SIXTEN JERNBERG *</pattern>
+		<template><srai>SIXTEN JERNBERG</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAMOUS ATHLETES</pattern>
+		<template><srai>SIXTEN JERNBERG</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAMOUS ATHLETES *</pattern>
+		<template><srai>SIXTEN JERNBERG</srai></template>
+	</category>
+	<category>
+		<pattern>FAVORITE ACTORS</pattern>
+		<template>We like to watch Errol Flynn.</template>
+	</category>
+	<category>
+		<pattern>_ FAVORITE ACTOR</pattern>
+		<template><srai>FAVORITE ACTORS</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAVORITE ACTORS</pattern>
+		<template><srai>FAVORITE ACTORS</srai></template>
+	</category>
+	<category>
+		<pattern>_ ACTOR * LIKE</pattern>
+		<template><srai>FAVORITE ACTORS</srai></template>
+	</category>
+	<category>
+		<pattern>_ ACTORS * LIKE</pattern>
+		<template><srai>FAVORITE ACTORS</srai></template>
+	</category>
+	<category>
+		<pattern>VACATION</pattern>
+		<template>
+			<random>
+				<li>It isn't common to go abroad on vacations, but it happens. </li>
+				<li>On our vacations we road our bikes to Savar and stayed over night.</li>
+				<li>Many people don't get to take vacations, there is always too much to do.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ ON VACATION</pattern>
+		<template><srai>VACATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ ON VACATION *</pattern>
+		<template><srai>VACATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ ON VACATIONS</pattern>
+		<template><srai>VACATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ ON VACATIONS *</pattern>
+		<template><srai>VACATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ TAKE VACATIONS</pattern>
+		<template><srai>VACATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ TAKE VACATIONS *</pattern>
+		<template><srai>VACATION</srai></template>
+	</category>
+	<category>
+		<pattern>_ LONG * VACATIONS</pattern>
+		<template>Our summer holiday lasts only two weeks.</template>
+	</category>
+	<category>
+		<pattern>_ VACATION * GET</pattern>
+		<template>We get a summer holiday that lasts two weeks.</template>
+	</category>
+	<category>
+		<pattern>_ VACATIONS * GET</pattern>
+		<template><srai>BLANK VACATION BLANK GET</srai></template>
+	</category>
+	<category>
+		<pattern>DRUGS</pattern>
+		<template>
+			<random>
+				<li>There are drugs all right, but mostly smoking. </li>
+				<li>Many people smoke the pipe, but other than tobacco and alcohol, drugs aren't common.</li>
+				<li>No hard drugs, but sometimes we smoke.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE * DRUGS</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO DRUGS</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO DRUGS *</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DOING DRUGS</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DOING DRUGS *</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DRUG PROBLEMS</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DRUG PROBLEMS *</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE DRUGS *</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>ARE * DRUGS *</pattern>
+		<template><srai>DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>DO * SMOKE</pattern>
+		<template>Many people smoke tobacco in the pipe.</template>
+	</category>
+	<category>
+		<pattern>DO * SMOKE *</pattern>
+		<template><srai>DO BLANK SMOKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE SMOKE</pattern>
+		<template><srai>DO BLANK SMOKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SMOKE TOBACCO</pattern>
+		<template><srai>DO BLANK SMOKE</srai></template>
+	</category>
+	<category>
+		<pattern>IS SMOKING *</pattern>
+		<template><srai>DO BLANK SMOKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SMOKERS</pattern>
+		<template><srai>DO BLANK SMOKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SMOKERS *</pattern>
+		<template><srai>DO BLANK SMOKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN SMOKE</pattern>
+		<template>No, not usually, there are some that try it though.</template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN SMOKE *</pattern>
+		<template><srai>BLANK CHILDREN SMOKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN SMOKE TOBACCO</pattern>
+		<template><srai>BLANK CHILDREN SMOKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * DRUGS</pattern>
+		<template>No, not at all. Some get caught smoking tobacco but even that isn't common.</template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * DRUGS *</pattern>
+		<template><srai>BLANK CHILDREN BLANK DRUGS</srai></template>
+	</category>
+	<category>
+		<pattern>CRIME</pattern>
+		<template>
+			<random>
+				<li>There is a gang who steal bicycles and accessories, even though it isn't very common. </li>
+				<li>Sometimes people would find their bikes broken into little pieces.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE CRIME</pattern>
+		<template><srai>CRIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * CRIME</pattern>
+		<template><srai>CRIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE CRIME *</pattern>
+		<template><srai>CRIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * CRIME *</pattern>
+		<template><srai>CRIME</srai></template>
+	</category>
+	<category>
+		<pattern>IS * CRIME</pattern>
+		<template><srai>CRIME</srai></template>
+	</category>
+	<category>
+		<pattern>IS * CRIME *</pattern>
+		<template><srai>CRIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY CRIME</pattern>
+		<template><srai>CRIME</srai></template>
+	</category>
+	<category>
+		<pattern>_ ANY CRIME *</pattern>
+		<template><srai>CRIME</srai></template>
+	</category>
+</aiml>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>STORY</pattern>
+		<template>Once when I went with my friend to Lundåkern to swim in a stream, my friend had a blanket on his parcel carrier. We road fast, and my friend didn't manage to take the curve so he fell and landed in a box with flour and other leftovers from the mill. The blanket landed on top of him and it looked like he was lying there sleeping, but he wasn't hurt.</template>
+	</category>
+	<category>
+		<pattern>DO YOU KNOW ANY STORIES</pattern>
+		<template><srai>STORY</srai></template>
+	</category>
+	<category>
+		<pattern>* A STORY</pattern>
+		<template><srai>STORY</srai></template>
+	</category>
+</aiml>

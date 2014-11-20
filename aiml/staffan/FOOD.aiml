@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+  <category>
+		<pattern>HOW MANY MEALS A DAY</pattern>
+		<template>
+			<random>
+				<li>We eat three times a day; in the morning, at noon and in the evening.</li>
+				<li>We eat breakfast, lunch and dinner, and to accompany the food we drink water or a homemade malt beverage, svagdricka.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW MANY MEALS *</pattern>
+		<template><srai>HOW MANY MEALS A DAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY TIMES * EAT</pattern>
+		<template><srai>HOW MANY MEALS A DAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN DO YOU EAT</pattern>
+		<template><srai>HOW MANY MEALS A DAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW OFTEN * EAT</pattern>
+		<template><srai>HOW MANY MEALS A DAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW OFTEN * EAT *</pattern>
+		<template><srai>HOW MANY MEALS A DAY</srai></template>
+	</category>
+	<category>
+		<pattern>MEALS</pattern>
+		<template>
+			<random>
+				<li>In the evenings we eat porridge.</li>
+				<li>We eat lots of potatoes.</li>
+				<li>We eat potatoes, pasta, rice, pancakes and pork. We eat three times a day.</li>
+				<li>We often eat warm bread soaked in water or milk: blota.</li>
+				<li>For breakfast we have oatmeal porridge and for dinner we eat black pudding, small pancakes, potatoes and meat.</li>
+				<li>We also have some different sorts of candy.</li>
+				<li>We eat salt-cured raw salmon, rind, bacon, potatoes and jellied veal. </li>
+				<li>We eat a lot of fat food, like pork and potatoes.</li>
+				<li>We eat much potatoes and meat, and also potato dumplings. </li>
+				<li><srai>DO YOU EAT FRUIT</srai></li>
+				<li><srai>BREAKFAST</srai></li>
+				<li><srai>LUNCH</srai></li>
+				<li><srai>DINNER</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT DO YOU EAT</pattern>
+		<template><srai>MEALS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * YOU EAT</pattern>
+		<template><srai>MEALS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * YOU * EAT</pattern>
+		<template><srai>MEALS</srai></template>
+	</category>
+	<category>
+		<pattern>DO YOU EAT *</pattern>
+		<template><srai>MEALS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * MEALS *</pattern>
+		<template><srai>MEALS</srai></template>
+	</category>
+	<category>
+		<pattern>_ FOOD * EAT</pattern>
+		<template><srai>MEALS</srai></template>
+	</category>
+	<category>
+		<pattern>_ FOOD * EAT *</pattern>
+		<template><srai>MEALS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * TYPICAL MEALS</pattern>
+		<template>
+			<random>
+				<li><srai>BREAKFAST</srai></li>
+				<li><srai>LUNCH</srai></li>
+				<li><srai>DINNER</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>BREAKFAST</pattern>
+		<template>
+			<random>
+				<li>We have hot chocolate and sandwiches for breakfast. </li>
+				<li>For breakfast we have oatmeal porridge.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * BREAKFAST</pattern>
+		<template><srai>BREAKFAST</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * BREAKFAST *</pattern>
+		<template><srai>BREAKFAST</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT * MORNING</pattern>
+		<template><srai>BREAKFAST</srai></template>
+	</category>
+	<category>
+		<pattern>LUNCH</pattern>
+		<template>For lunch we eat potatoes and meat or pancakes. </template>
+	</category>
+	<category>
+		<pattern>WHAT * LUNCH</pattern>
+		<template><srai>LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * LUNCH *</pattern>
+		<template><srai>LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>DINNER</pattern>
+		<template>
+			<random>
+				<li>For dinner we eat black pudding, small pancakes, potatoes and meat.</li>
+				<li>For dinner we sometimes have dumplings.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * DINNER</pattern>
+		<template><srai>DINNER</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * DINNER *</pattern>
+		<template><srai>DINNER</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SUPPER</pattern>
+		<template><srai>DINNER</srai></template>
+	</category>
+	<category>
+		<pattern>DO * EAT FRUIT</pattern>
+		<template>
+			<random>
+				<li>We often eat fruit since there are many apple trees.</li>
+				<li><srai>EXOTIC FOOD</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ EAT * FRUIT *</pattern>
+		<template><srai>DO BLANK EAT FRUIT</srai></template>
+	</category>
+	<category>
+		<pattern>DO YOU EAT A LOT OF MEAT</pattern>
+		<template>Yes, we butcher pigs and cows from our farms.</template>
+	</category>
+	<category>
+		<pattern>DO * EAT MEAT</pattern>
+		<template><srai>DO YOU EAT A LOT OF MEAT</srai></template>
+	</category>
+	<category>
+		<pattern>DO * EAT MEAT *</pattern>
+		<template><srai>DO YOU EAT A LOT OF MEAT</srai></template>
+	</category>
+	<category>
+		<pattern>DO * EAT * MEAT</pattern>
+		<template><srai>DO YOU EAT A LOT OF MEAT</srai></template>
+	</category>
+	<category>
+		<pattern>DO * EAT * MEAT *</pattern>
+		<template><srai>DO YOU EAT A LOT OF MEAT</srai></template>
+	</category>
+	<category>
+		<pattern>EXOTIC FOOD</pattern>
+		<template>If you wanted some exotic fruit you would have to go to the shop, Hjalmar Astrom's, and buy bananas, oranges or tomatoes. You could also buy canned pineapple and peaches.   </template>
+	</category>
+	<category>
+		<pattern>_ EXOTIC FOOD</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EXOTIC FOOD *</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EXOTIC FOODS</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EXOTIC FOODS *</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT BANANAS</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT ORANGES</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT TOMATOES</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT PINEAPPLE</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT PEACHES</pattern>
+		<template><srai>EXOTIC FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>DRINK</pattern>
+		<template>
+			<random>
+				<li>Since 90% of the population are farmers, we drink milk. We skim the milk and sell the cream and keep only the skimmed milk for our own use.</li>
+				<li>We drink milk.</li>
+				<li>We drink a non-alcoholic malt beverage, svagdricka. </li>
+				<li>We drink milk or water, no alcohol. During the war the coffee was rationed, otherwise we drink coffee too.</li>
+				<li>We also have coffee sometimes. </li>
+				<li>Those who can afford it drink coffee, most farmers do.</li>
+				<li><srai>DO YOU DRINK COFFEE</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT DO YOU DRINK NORMALLY</pattern>
+		<template><srai>DRINK</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT DO YOU NORMALLY DRINK</pattern>
+		<template><srai>DRINK</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * DRINK</pattern>
+		<template><srai>DRINK</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * DRINK *</pattern>
+		<template><srai>DRINK</srai></template>
+	</category>
+	<category>
+		<pattern>DO * DRINK COFFEE</pattern>
+		<template>We have coffee every day, but sometimes we add water and use the same coffee grounds several times. We can also mix it with different herbs.</template>
+	</category>
+	<category>
+		<pattern>DOES * DRINK COFFEE</pattern>
+		<template><srai>DO BLANK DRINK COFFEE</srai></template>
+	</category>
+	<category>
+		<pattern>_ DRINK WITH BREAKFAST</pattern>
+		<template><srai>DO BLANK DRINK COFFEE</srai></template>
+	</category>
+	<category>
+		<pattern>SVAGDRICKA</pattern>
+		<template>A drink made from malt that doesn't contain any alcohol. </template>
+	</category>
+	<category>
+		<pattern>WHAT * SVAGDRICKA</pattern>
+		<template><srai>SVAGDRICKA</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SVAGDRICKA *</pattern>
+		<template><srai>SVAGDRICKA</srai></template>
+	</category>
+	<category>
+		<pattern>DO * EAT CANDY</pattern>
+		<template>
+			<random>
+				<li>We don't eat candy every Saturday, but when we do it's lollipops and acid drops.</li>
+				<li>We have some differnt sorts of candy.</li>
+				<li><srai>CANDY</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO * EAT CANDY *</pattern>
+		<template><srai>DO BLANK EAT CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>DO * EAT * CANDY</pattern>
+		<template><srai>DO BLANK EAT CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>DO * EAT * CANDY *</pattern>
+		<template><srai>DO BLANK EAT CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>_ CANDY EATEN</pattern>
+		<template><srai>DO BLANK EAT CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>CANDY</pattern>
+		<template>
+			<random>
+				<li>We have peppermint rocks, soft caramel, chocolate and other candy.</li>
+				<li>We have caramel, licorice, and chewing gum.</li>
+				<li>We have a shop near our school were you can buy caramels wrapped in paper that are delicious! They costs 1 ore a piece.</li>
+				<li>There isn't a very large selection of candy.</li>
+				<li>When we buy candy we didn't pick it ourselves. You pointed out to the salesman behind the counter what you want, and he puts it in a bag for you. </li>
+				<li>You can buy a caramel for 1 ore and 1 liter of milk costs 20 ore.</li>
+				<li>There is a chocolate bar called Makalos. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT KIND OF CANDY DO YOU HAVE</pattern>
+		<template><srai>CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * CANDY *</pattern>
+		<template><srai>CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>_ BUY CANDY</pattern>
+		<template>
+			<random>
+				<li>We have a shop near our school were you can buy candy.</li>
+				<li>When we buy candy we didn't pick it ourselves. You pointed out to the salesman behind the counter what you want, and he puts it in a bag for you. </li>
+				<li>We have a shop near our school were you can buy caramels wrapped in paper that are delicious! They costs 1 ore a piece.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ BUY CANDY *</pattern>
+		<template><srai>BLANK BUY CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MUCH * CANDY COST</pattern>
+		<template>
+			<random>
+				<li>For 10 ore you get a full cone of candy.</li>
+				<li>You can buy a caramel for 1 ore.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW MUCH * CANDY COST *</pattern>
+		<template><srai>HOW MUCH BLANK CANDY COST</srai></template>
+	</category>
+	<category>
+		<pattern>HOW OFTEN * EAT CANDY</pattern>
+		<template>You may only get candy for birthdays and special occasions.</template>
+	</category>
+	<category>
+		<pattern>WHEN * EAT CANDY</pattern>
+		<template><srai>HOW OFTEN BLANK EAT CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * EAT CANDY *</pattern>
+		<template><srai>HOW OFTEN BLANK EAT CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>_ OCCASIONS * CANDY</pattern>
+		<template><srai>HOW OFTEN BLANK EAT CANDY</srai></template>
+	</category>
+	<category>
+		<pattern>PRICE OF FOOD</pattern>
+		<template>
+			<random>
+				<li>During war it is hard to get food.</li>
+				<li>Those who don't grow their own crops have to buy it, but it is expensive when there is a war going on in the other countries.</li>
+				<li>Food is quite expensive: 1 krona for a hot dog, 50 ore for an ice cream. </li>
+				<li>A caramel cost 2 ore.</li>
+				<li>Most people have gardens to grow their own food.</li>
+				<li>1 krona for a hot dog, 50 ore for an ice cream. </li>
+				<li>1 liter of milk costs 20 ore.</li>
+				<li>For a hot dog we pay 1 krona.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ FOOD COST</pattern>
+		<template><srai>PRICE OF FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ FOOD COST *</pattern>
+		<template><srai>PRICE OF FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ PRICE OF FOOD</pattern>
+		<template><srai>PRICE OF FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ PRICE OF FOOD *</pattern>
+		<template><srai>PRICE OF FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ COST OF FOOD</pattern>
+		<template><srai>PRICE OF FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ COST OF FOOD *</pattern>
+		<template><srai>PRICE OF FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>IS FOOD EXPENSIVE</pattern>
+		<template>
+			<random>
+				<li>No, food is very cheap. We mostly make everything ourselves.</li>
+				<li>It is expensive when there is a war going on in the other countries.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>IS FOOD EXPENSIVE *</pattern>
+		<template><srai>IS FOOD EXPENSIVE</srai></template>
+	</category>
+	<category>
+		<pattern>BUYING FOOD</pattern>
+		<template>
+			<random>
+				<li>It is normal to buy on credit in the shop. They write in a book how much you owe, and you pay at the end of the month.</li>
+				<li>Kids are often sent to buy food, you give them the note and the shop keeper provides them with what's on the note. The shop keeper marks in a book how much you owe them, and then you pay at the end of the month.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW * BUY FOOD</pattern>
+		<template><srai>BUYING FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>DO * BUY FOOD</pattern>
+		<template><srai>BUYING FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET FOOD</pattern>
+		<template>If you wanted something from the kiosk, you could run an errand to earn 5 ore to buy something with.</template>
+	</category>
+	<category>
+		<pattern>_ GET FOOD *</pattern>
+		<template><srai>BLANK GET FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>USING CREDIT</pattern>
+		<template>It is normal to buy on credit in the shop. They write in a book how much you owe, and you pay at the end of the month.</template>
+	</category>
+	<category>
+		<pattern>_ USE CREDIT</pattern>
+		<template><srai>USING CREDIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ USE CREDIT *</pattern>
+		<template><srai>USING CREDIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ USING CREDIT</pattern>
+		<template><srai>USING CREDIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ USING CREDIT *</pattern>
+		<template><srai>USING CREDIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ WITH CREDIT</pattern>
+		<template><srai>USING CREDIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ WITH CREDIT *</pattern>
+		<template><srai>USING CREDIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ ON CREDIT</pattern>
+		<template><srai>USING CREDIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ ON CREDIT *</pattern>
+		<template><srai>USING CREDIT</srai></template>
+	</category>
+	<category>
+		<pattern>_ CREDIT CARDS</pattern>
+		<template>We don't have credit cards, but the shops will let people they know buy on credit. They write in a book how much you owe, and you pay at the end of the month.</template>
+	</category>
+	<category>
+		<pattern>_ CREDIT CARD</pattern>
+		<template><srai>BLANK CREDIT CARDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ CREDIT CARDS *</pattern>
+		<template><srai>BLANK CREDIT CARDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ CREDIT CARD *</pattern>
+		<template><srai>BLANK CREDIT CARDS</srai></template>
+	</category>
+	<category>
+		<pattern>GROWING FOOD</pattern>
+		<template>
+			<random>
+				<li>Those who don't grow their own crops have to buy it.</li>
+				<li>Most people have gardens to grow their own food.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GROW FOOD</pattern>
+		<template><srai>GROWING FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ GROW FOOD *</pattern>
+		<template><srai>GROWING FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ GROW * FOOD</pattern>
+		<template><srai>GROWING FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ GROW * FOOD *</pattern>
+		<template><srai>GROWING FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ GARDENS</pattern>
+		<template><srai>GROWING FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ GARDENS *</pattern>
+		<template><srai>GROWING FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>BUY FOOD</pattern>
+		<template>
+			<random>
+				<li>We buy our food in Hjalmar Astrom's grocery store. </li>
+				<li>We buy food in shops, but during war there were rations, and you need coupons. It was not easy to find meat to buy.</li>
+				<li>We have three shops in Grisbacka.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHERE * BUY * FOOD</pattern>
+		<template><srai>BUY FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * BUY * FOOD *</pattern>
+		<template><srai>BUY FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * BUY FOOD</pattern>
+		<template><srai>BUY FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * BUY FOOD *</pattern>
+		<template><srai>BUY FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE SUPERMARKETS</pattern>
+		<template><srai>BUY FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET A SNACK</pattern>
+		<template>If you wanted something from the kiosk, you could run an errand to earn 5 ore to buy something for.</template>
+	</category>
+	<category>
+		<pattern>VEGATABLES</pattern>
+		<template>
+			<random>
+				<li>We eat potatoes, swedes and carrots from our own gardens. Since 1930 we also have tomatoes and lettuce.</li>
+				<li>There are no vegetarians. Until recently we didn't even know that there was such a word. We didn't know about lettuce and many other vegetables until the 1930's.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ EAT * VEGETABLES</pattern>
+		<template><srai>VEGATABLES</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT * VEGETABLES *</pattern>
+		<template><srai>VEGATABLES</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT VEGETABLES</pattern>
+		<template><srai>VEGATABLES</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT VEGETABLES *</pattern>
+		<template><srai>VEGATABLES</srai></template>
+	</category>
+	<category>
+		<pattern>_ VEGETABLES EATEN</pattern>
+		<template><srai>VEGATABLES</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT SWEDES</pattern>
+		<template>Swedes are a root vegetable, some people call them rutabagas.</template>
+	</category>
+	<category>
+		<pattern>WHAT ARE SWEDES</pattern>
+		<template><srai>BLANK EAT SWEDES</srai></template>
+	</category>
+	<category>
+		<pattern>VEGATARIANS</pattern>
+		<template>
+			<random>
+				<li>There is only one in the entire school.</li>
+				<li>There are no vegetarians.  </li>
+				<li>There is vegetarian food, but we must eat the food that we have, therefore there are no vegetarians.</li>
+				<li>There were no vegetarians. We didn't even know that there was such a word. We didn't know about lettuce and other vegetables.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>ARE THERE ANY VEGETARIANS</pattern>
+		<template><srai>VEGATARIANS</srai></template>
+	</category>
+	<category>
+		<pattern>_ VEGETARIAN</pattern>
+		<template><srai>VEGATARIANS</srai></template>
+	</category>
+	<category>
+		<pattern>_ VEGETARIAN *</pattern>
+		<template><srai>VEGATARIANS</srai></template>
+	</category>
+	<category>
+		<pattern>_ VEGETARIANS</pattern>
+		<template><srai>VEGATARIANS</srai></template>
+	</category>
+	<category>
+		<pattern>_ VEGETARIANS *</pattern>
+		<template><srai>VEGATARIANS</srai></template>
+	</category>
+</aiml>

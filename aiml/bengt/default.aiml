@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>	
+		<pattern>CONNECT</pattern>
+		<template>Hello there.</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<template>
+				<random>
+					<li>I don't know about that. </li>
+					<li>Not sure about that.</li>
+					<li>Don't rightly know.</li>
+					<li>If you are wondering what it is like inside the mill...<srai>INSIDETHEMILL</srai></li>
+					<li>If you are wondering how the mill works...<srai>HOWTHEMILLWORKS</srai></li>
+					<li>If you are wondering how the mill is powered...<srai>HOWISTHEMILLPOWERED</srai></li>
+					<li>If you are wondering what they do in the mill...<srai>KINDOFWORKINTHEMILL</srai></li>
+					<li>Did you know the the mill is popular with the children? <srai>CHILDRENATMILL</srai></li>
+				</random>
+			</template>
+	</category>
+	<!-- bot name -->
+	<category>
+		<pattern>WHAT IS YOUR NAME</pattern>
+		<template>
+				<random>
+					<li><bot name="name"/></li>
+					<li>I go by the name <bot name="name"/>.</li>
+					<li>You can call me <bot name="name"/>.</li>
+					<li>My friends call me <bot name="name"/>.</li>
+					<li>My name is <bot name="name"/>. What is your name?</li>
+				</random>
+			</template>
+	</category>
+	<category>
+		<pattern>WHAT * CALL YOU</pattern>
+		<template><srai>WHAT IS YOUR NAME</srai></template>
+	</category>
+	<category>
+		<pattern>_ CALL YOURSELF</pattern>
+		<template><srai>WHAT IS YOUR NAME</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO YOU GO BY</pattern>
+		<template><srai>WHAT IS YOUR NAME</srai></template>
+	</category>	
+	<category>
+		<pattern>_ REFER TO YOU</pattern>
+		<template><srai>WHAT IS YOUR NAME</srai></template>
+	</category>
+	<category>
+		<pattern>YOUR NAME IS</pattern>
+		<template><srai>WHAT IS YOUR NAME</srai></template>
+	</category>	
+	<category>
+		<pattern>_ YOUR NAME IS</pattern>
+		<template><srai>WHAT IS YOUR NAME</srai></template>
+	</category>	
+     <category>
+          <pattern>WHAT IS *</pattern>
+          <template>DEFINE <star/></template>
+     </category>
+</aiml>

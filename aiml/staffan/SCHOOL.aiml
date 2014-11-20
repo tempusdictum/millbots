@@ -1,0 +1,1795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>BOYS DRESS FOR SCHOOL</pattern>
+		<template>The boys wear a knitted sweater and breeches to school.</template>
+	</category>
+	<category>
+		<pattern>_ BOYS DRESS * SCHOOL</pattern>
+		<template><srai>BOYS DRESS FOR SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS WEAR TO SCHOOL</pattern>
+		<template><srai>BOYS DRESS FOR SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ BOYS WEAR * SCHOOL</pattern>
+		<template><srai>BOYS DRESS FOR SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS DRESS FOR SCHOOL</pattern>
+		<template>Most girls wear a dress or a skirt to school. </template>
+	</category>
+	<category>
+		<pattern>_ GIRLS DRESS * SCHOOL</pattern>
+		<template><srai>BLANK GIRLS DRESS FOR SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS WEAR * SCHOOL</pattern>
+		<template><srai>BLANK GIRLS DRESS FOR SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>DRESS AT SCHOOL</pattern>
+		<template>
+			<random>
+				<li>We wear homemade clothes. We have to change when we came home because then we have to do chores.</li>
+				<li>We wear ordinary day clothes and woollen socks. </li>
+				<li>You could dress as you wanted, there is no uniform. </li>
+				<li>To school you wear your best clothes. </li>
+				<li>There are no school uniforms, so we wear ordinary clothes. </li>
+				<li>At secondary school they sometimes wear a special hat. </li>
+				<li>In winter they wear skiing-pants and boots.</li>
+				<li>The boys wear a knitted sweater and breeches and the girls wear dresses to school.</li>
+				<li>When you come home from school you have to change into clothes that you could work in, because after school you have to bring in the water, chop wood and do other chores.</li>
+				<li>In the girl's school I believe they wear special uniforms. </li>
+				<li>The boys wear breeches and knee-length socks, and suspenders to keep the socks in place, but when they are older they are allowed to wear trousers. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS WEAR</pattern>
+		<template><srai>DRESS AT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>* WEAR * SCHOOL</pattern>
+		<template><srai>DRESS AT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>* DRESS * SCHOOL</pattern>
+		<template><srai>DRESS AT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>SCHOOL UNIFORM</pattern>
+		<template>
+			<random>
+				<li>There are no school uniforms, we wear ordinary clothes to school. </li>
+				<li>In the girl's school they may wear special uniforms. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL UNIFORM</pattern>
+		<template><srai>SCHOOL UNIFORM</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL UNIFORM *</pattern>
+		<template><srai>SCHOOL UNIFORM</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL UNIFORMS</pattern>
+		<template><srai>SCHOOL UNIFORM</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL UNIFORMS *</pattern>
+		<template><srai>SCHOOL UNIFORM</srai></template>
+	</category>
+	<category>
+		<pattern>TEACHERS LIKE</pattern>
+		<template>
+			<random>
+				<li>They are kind, but if you don't behave you might get spanked.</li>
+				<li>Mostly they are very nice, but severe. You have great respect for the teachers.</li>
+				<li>The teachers are nice and have a sense of humour.</li>
+				<li>They are nice. My father is a teacher. I also became a teacher and very severe. When the teacher arrived someone would yell out "The teacher is coming!" and theb everyone lined up and marched into the classroom.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS LIKE</pattern>
+		<template><srai>TEACHERS LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS LIKE *</pattern>
+		<template><srai>TEACHERS LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>DESCRIBE * TEACHERS *</pattern>
+		<template><srai>TEACHERS LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * THE TEACHERS</pattern>
+		<template><srai>TEACHERS LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ LIKE THE TEACHERS</pattern>
+		<template><srai>TEACHERS LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS NICE</pattern>
+		<template>
+			<random>
+				<li>They are nice and they have a lot to tell, but they are also strict.</li>
+				<li>Most of the teachers are nice.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS NICE *</pattern>
+		<template><srai>BLANK TEACHERS NICE</srai></template>
+	</category>
+	<category>
+		<pattern>TEACHERS LIVE AT SCHOOL</pattern>
+		<template>
+			<random>
+				<li>Three of the teachers live in the school.  </li>
+				<li>The teachers live in the school.  </li>
+				<li>The teachers live at school. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS LIVE * SCHOOL</pattern>
+		<template><srai>TEACHERS LIVE AT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS LIVING * SCHOOL</pattern>
+		<template><srai>TEACHERS LIVE AT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS LIVE</pattern>
+		<template><srai>TEACHERS LIVE AT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS LIVE *</pattern>
+		<template><srai>TEACHERS LIVE AT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY TEACHERS</pattern>
+		<template>
+			<random>
+				<li>In first grade they have one teacher and also in the second grade.</li>
+				<li>Third and fourth grade have the same teacher as well as the fifth and sixth grade.</li>
+				<li>All together there are four teachers at school.</li>
+				<li>Every class has one or two teachers.</li>
+				<li>There are usually 3-5 teachers working at school. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW MANY TEACHERS *</pattern>
+		<template><srai>HOW MANY TEACHERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS ARE THERE</pattern>
+		<template><srai>HOW MANY TEACHERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS ARE THERE *</pattern>
+		<template><srai>HOW MANY TEACHERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ INSTRUCTORS ARE THERE</pattern>
+		<template><srai>HOW MANY TEACHERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY TEACHERS * FIRST GRADE</pattern>
+		<template>In first grade they have one teacher and also in the second grade.</template>
+	</category>
+	<category>
+		<pattern>_ MANY TEACHERS * SECOND GRADE</pattern>
+		<template><srai>BLANK MANY TEACHERS BLANK FIRST GRADE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY TEACHERS * THIRD GRADE</pattern>
+		<template>
+			<random>
+				<li>Third and fourth grade have the same teacher as well as the fifth and sixth grade.</li>
+				<li>fifth and sixth grade have the same teacher.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ MANY TEACHERS * FORTH GRADE</pattern>
+		<template><srai>BLANK MANY TEACHERS BLANK THIRD GRADE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY TEACHERS * FIFTH GRADE</pattern>
+		<template><srai>BLANK MANY TEACHERS BLANK THIRD GRADE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY TEACHERS * SIXTH GRADE</pattern>
+		<template><srai>BLANK MANY TEACHERS BLANK THIRD GRADE</srai></template>
+	</category>
+	<category>
+		<pattern>TEACHERS WEAR</pattern>
+		<template>A female teacher do not wear trousers, but they wear skirts or dresses. </template>
+	</category>
+	<category>
+		<pattern>TEACHER FOR SPECIAL NEEDS</pattern>
+		<template>There are no teachers dedicated for children with special needs. </template>
+	</category>
+	<category>
+		<pattern>_ TEACHER * SPECIAL NEEDS</pattern>
+		<template><srai>TEACHER FOR SPECIAL NEEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHER * SPECIAL NEEDS *</pattern>
+		<template><srai>TEACHER FOR SPECIAL NEEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS * SPECIAL NEEDS</pattern>
+		<template><srai>TEACHER FOR SPECIAL NEEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS * SPECIAL NEEDS *</pattern>
+		<template><srai>TEACHER FOR SPECIAL NEEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS * SPECIAL NEEDS</pattern>
+		<template><srai>TEACHER FOR SPECIAL NEEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS DO</pattern>
+		<template>
+			<random>
+				<li>Every teacher is responsible for the children's learning. </li>
+				<li>The teachers do not write a weekly note for the parents to read. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ KNOW ANY TEACHERS</pattern>
+		<template>Kerstin, she started to work as a teacher in 1954 when she was 21. She mostly enjoys being a teacher.</template>
+	</category>
+	<category>
+		<pattern>_ REMEMBER * TEACHERS</pattern>
+		<template><srai>BLANK KNOW ANY TEACHERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ KNOW A TEACHER</pattern>
+		<template><srai>BLANK KNOW ANY TEACHERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ REMEMBER * TEACHER</pattern>
+		<template><srai>BLANK KNOW ANY TEACHERS</srai></template>
+	</category>
+	<category>
+		<pattern>_ KNOW * TEACHERS</pattern>
+		<template><srai>BLANK KNOW ANY TEACHERS</srai></template>
+	</category>
+	<category>
+		<pattern>TEACHER AGE</pattern>
+		<template>The ages of the teachers varies a lot, but they tend to be older. </template>
+	</category>
+	<category>
+		<pattern>HOW OLD * TEACHERS</pattern>
+		<template><srai>TEACHER AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * TEACHERS</pattern>
+		<template><srai>TEACHER AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ OLD * TEACHERS</pattern>
+		<template><srai>TEACHER AGE</srai></template>
+	</category>
+	<category>
+		<pattern>HEADMASTER</pattern>
+		<template>
+			<random>
+				<li>No, there is no headmaster. There is a head teacher and an inspector. Sometimes the teacher fainted when the inspector came.</li>
+				<li>No, but there is a head teacher. The children have great respect for the head teacher.</li>
+				<li>There is no headmaster, but sometimes inspectors would arrive and checked what the children knew and then you'd better perform well. </li>
+				<li>There is no headmaster. The word headmaster doesn't even exist. But there is a head teacher, but you only met him once a year.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ THERE A HEADMASTER</pattern>
+		<template><srai>HEADMASTER</srai></template>
+	</category>
+	<category>
+		<pattern>_ THERE A HEADMASTER *</pattern>
+		<template><srai>HEADMASTER</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * HEADMASTER</pattern>
+		<template><srai>HEADMASTER</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * HEADMASTER *</pattern>
+		<template><srai>HEADMASTER</srai></template>
+	</category>
+	<category>
+		<pattern>BRAKES</pattern>
+		<template>
+			<random>
+				<li>Yes and we'd make mischief. There is nobody watching us then.</li>
+				<li>We have brakes for picking lingonberries and potato brakes.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GET BREAKS * SCHOOL</pattern>
+		<template><srai>BRAKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET BREAKS * SCHOOL *</pattern>
+		<template><srai>BRAKES</srai></template>
+	</category>
+	<category>
+		<pattern>* RECESS</pattern>
+		<template><srai>BRAKES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG IS RECESS</pattern>
+		<template>
+			<random>
+				<li>The brakes last 10 to 15 minutes.</li>
+				<li>10 to 15 minutes.</li>
+				<li>The brakes last for 10 to 15 minutes. </li>
+				<li>The brakes last for 10 to 15 minutes and we play rounders and other games.</li>
+				<li>10 to 15 minutes, but we get longer brakes for picking lingonberries and potatos.</li>
+				<li>The brakes would be around 15 minutes long. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW LONG * BREAKS * SCHOOL</pattern>
+		<template><srai>HOW LONG IS RECESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG * BREAKS * SCHOOL *</pattern>
+		<template><srai>HOW LONG IS RECESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG * BREAK * SCHOOL</pattern>
+		<template><srai>HOW LONG IS RECESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG * BREAK * SCHOOL *</pattern>
+		<template><srai>HOW LONG IS RECESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG * RECESS</pattern>
+		<template><srai>HOW LONG IS RECESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG * RECESS *</pattern>
+		<template><srai>HOW LONG IS RECESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME * RECESS</pattern>
+		<template><srai>HOW LONG IS RECESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME * RECESS *</pattern>
+		<template><srai>HOW LONG IS RECESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY BREAKS * SCHOOL</pattern>
+		<template>There are plenty of brakes. </template>
+	</category>
+	<category>
+		<pattern>HOW MANY BREAKS * SCHOOL *</pattern>
+		<template><srai>HOW MANY BREAKS BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY BREAKS * STUDENTS *</pattern>
+		<template><srai>HOW MANY BREAKS BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>ON BREAK</pattern>
+		<template>
+			<random>
+				<li>We played, chased girls and played rounders. The brakes lasted 10 to 15 minutes.</li>
+				<li>We jumped skipping-rope, played marbles, played hopscotch and football.</li>
+				<li>Skiing is very popular both among boys and girls. Many skied to school and also in the brakes. </li>
+				<li>Students aren't allowed to play football because of the risk of breaking a window.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS DO * BREAKS</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS DO * BREAKS *</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO * BREAKS * SCHOOL</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO * BREAKS * SCHOOL *</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO * SCHOOL * BREAKS</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO * SCHOOL * BREAKS *</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS DO * BREAK</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS DO * BREAK *</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO * RECESS</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO * RECESS *</pattern>
+		<template><srai>ON BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>_ TOYS * HAVE * SCHOOL</pattern>
+		<template>
+			<random>
+				<li>We have footballs, skipping-ropes and skies. </li>
+				<li>We have some ice-skates but the ice-skates are only a boot with a  metal runner that we tried to strap on to our feet. It is hard to skate on them. There is no proper place to skate, so we poured water from buckets on to a small plot and let it freeze.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TOYS * HAVE * SCHOOL *</pattern>
+		<template><srai>BLANK TOYS BLANK HAVE BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>BOYS * BREAK</pattern>
+		<template>On the brakes the boys played rounders, chased each other and fooled around. </template>
+	</category>
+	<category>
+		<pattern>GIRLS * BREAK</pattern>
+		<template>The girls mostly stood around and talked. </template>
+	</category>
+	<category>
+		<pattern>WHO WATCHES * BREAK</pattern>
+		<template>
+			<random>
+				<li>There is no one to watch us on our brakes because we don't need that. </li>
+				<li><srai>WHARE ARE TEACHERS ON BREAK</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO WATCHES * BREAKS</pattern>
+		<template><srai>WHO WATCHES BLANK BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>DOES * TEACHER WATCH * BREAK</pattern>
+		<template><srai>WHO WATCHES BLANK BREAK</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * TEACHERS * BREAK</pattern>
+		<template>The teachers are out playing with the children in the brakes sometimes. </template>
+	</category>
+	<category>
+		<pattern>BREAK ENDS</pattern>
+		<template>When the children are to come in after a brake, the teacher rings a bell. </template>
+	</category>
+	<category>
+		<pattern>HOW * KNOW * BREAK * OVER</pattern>
+		<template><srai>BREAK ENDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BREAK ENDS</pattern>
+		<template><srai>BREAK ENDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ RECESS ENDS</pattern>
+		<template><srai>BREAK ENDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHEN BREAK * OVER</pattern>
+		<template><srai>BREAK ENDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHEN RECESS * OVER</pattern>
+		<template><srai>BREAK ENDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ RECESS IS OVER</pattern>
+		<template><srai>BREAK ENDS</srai></template>
+	</category>
+	<category>
+		<pattern>FARM BREAKS</pattern>
+		<template>Most people have their income from farming which called for harvest brakes from <set name="topic">school</set>, because you have to stay home and help out.</template>
+	</category>
+	<category>
+		<pattern>_ FARM BREAKS</pattern>
+		<template><srai>FARM BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BREAKS * FARMING</pattern>
+		<template><srai>FARM BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BREAKS * FARM</pattern>
+		<template><srai>FARM BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ FARMERS * BREAK * SCHOOL</pattern>
+		<template><srai>FARM BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ FARMERS * BREAK * SCHOOL *</pattern>
+		<template><srai>FARM BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL * HARVEST</pattern>
+		<template><srai>FARM BREAKS</srai></template>
+	</category>
+	<category>
+		<pattern>SKIP SCHOOL</pattern>
+		<template>
+			<random>
+				<li>No, I don't think that happened much.</li>
+				<li>It is not common to skip school, but it could happen at the secondary school.  </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SKIP SCHOOL</pattern>
+		<template><srai>SKIP SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SKIP SCHOOL *</pattern>
+		<template><srai>SKIP SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SKIPPING * SCHOOL</pattern>
+		<template><srai>SKIP SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SKIPPING SCHOOL</pattern>
+		<template><srai>SKIP SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SKIPPING SCHOOL *</pattern>
+		<template><srai>SKIP SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>FIGHTING</pattern>
+		<template>
+			<random>
+				<li>Nobody is ganged up on at school.</li>
+				<li>There is hardly ever any fighting at school.</li>
+				<li>There is hardly any harassment, only some teasing at school. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ FIGHT * SCHOOL</pattern>
+		<template><srai>FIGHTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ FIGHTING * SCHOOL</pattern>
+		<template><srai>FIGHTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ FIGHT * SCHOOL *</pattern>
+		<template><srai>FIGHTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ FIGHTING * SCHOOL *</pattern>
+		<template><srai>FIGHTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ GANGED UP ON *</pattern>
+		<template><srai>FIGHTING</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET HARASSED *</pattern>
+		<template><srai>FIGHTING</srai></template>
+	</category>
+	<category>
+		<pattern>STUDENT DISCIPLINE</pattern>
+		<template>
+			<random>
+				<li>Students are very disciplined. The teacher could pull you by the hair. There are never any fights.</li>
+				<li>The discipline is total. It is completely silent in the class. </li>
+				<li>The teachers are very strict. We have great respect for them. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS DISCIPLINED</pattern>
+		<template><srai>STUDENT DISCIPLINE</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS GOOD</pattern>
+		<template><srai>STUDENT DISCIPLINE</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS * DISCIPLINE</pattern>
+		<template><srai>STUDENT DISCIPLINE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW IS * DISCIPLINE * SCHOOL</pattern>
+		<template><srai>STUDENT DISCIPLINE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL * DISCIPLINED</pattern>
+		<template><srai>STUDENT DISCIPLINE</srai></template>
+	</category>
+	<category>
+		<pattern>CORPORAL PUNISHMENT</pattern>
+		<template>
+			<random>
+				<li>The teachers are very strict and if you gave a wrong answer, they would slap your hand. </li>
+				<li>The teachers are allowed to beat the children, and they are rather strict. </li>
+				<li>Allowed is not the correct word. It happened sometimes, but very seldom. You could get slapped sometimes. We don't like that in our class, cause it doesn't make you popular either.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ CORPORAL PUNISHMENT ALLOWED</pattern>
+		<template><srai>CORPORAL PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPANKING ALLOWED</pattern>
+		<template><srai>CORPORAL PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ TEACHERS DISCIPLINE</pattern>
+		<template><srai>CORPORAL PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ ALLOWED TO HIT STUDENTS</pattern>
+		<template><srai>CORPORAL PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>WERE THE TEACHERS ALLOWED TO PERFORM CORPORAL PUNISHMENT</pattern>
+		<template><srai>CORPORAL PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS PUNISHED</pattern>
+		<template><srai>CORPORAL PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS PUNISHED *</pattern>
+		<template><srai>CORPORAL PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>TYPES OF PUNISHMENT</pattern>
+		<template>
+			<random>
+				<li>You are placed in the corner. The teacher could also slap your finger with a wooden pointer.</li>
+				<li>As a punishment they could hit you on the fingers with a ruler or they would grab you by the ear.</li>
+				<li>If you have been very bad you could get slapped on the head or on your fingers with a pointer or you would have to stand in a corner. </li>
+				<li>One punishment when you've been bad is to stand in a corner. </li>
+				<li>You get grades in behaviour, so misbehaving would get you a bad grade.</li>
+				<li>If you misbehave at school, they hit you on the fingers, pull your hair or make you stand in a corner.</li>
+				<li>If you'd done something bad at school you'd have to stand in a corner and wear a cone on your head that reached all the way down to the shoulders.</li>
+				<li>I never received corporal punishment at school, but many of my friends did.</li>
+				<li>If you do something bad, you have to stand in the corner for the rest of the day.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TYPES OF PUNISHMENT *</pattern>
+		<template><srai>TYPES OF PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PUNISHED</pattern>
+		<template><srai>TYPES OF PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIND OF PUNISHMENT *</pattern>
+		<template><srai>TYPES OF PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ KINDS OF PUNISHMENT *</pattern>
+		<template><srai>TYPES OF PUNISHMENT</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO SOMETHING NAUGHTY</pattern>
+		<template>
+			<random>
+				<li>In school you get spanked on your fingers for misbehaving.</li>
+				<li>You have to stand in the corner or you get pulled by the hair and spanked.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ IF YOU MISBEHAVE</pattern>
+		<template><srai>BLANK DO SOMETHING NAUGHTY</srai></template>
+	</category>
+	<category>
+		<pattern>_ IF YOU MISBEHAVE *</pattern>
+		<template><srai>BLANK DO SOMETHING NAUGHTY</srai></template>
+	</category>
+	<category>
+		<pattern>_ SOMETHING YOU WERE NOT ALLOWED TO </pattern>
+		<template><srai>BLANK DO SOMETHING NAUGHTY</srai></template>
+	</category>
+	<category>
+		<pattern>_ MISBEHAVING</pattern>
+		<template><srai>BLANK DO SOMETHING NAUGHTY</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENT * MISBEHAVES</pattern>
+		<template><srai>BLANK DO SOMETHING NAUGHTY</srai></template>
+	</category>
+	<category>
+		<pattern>DO STUDENTS MISBEHAVE</pattern>
+		<template>
+			<random>
+				<li>We followed the rules, but if you do something wrong you would get called to the teacher's desk to explain why you'd misbehaved. Then, we usually get pulled by the hair before we could get back to our desk and continue with our work.</li>
+				<li>Yes, it happenes quite often.</li>
+				<li>Folke Hubinett told a story where he and his friend climbed up on the church in the city. There they sat in the sun and skipped school.</li>
+				<li>There is a shop called Hjalmar Astrom's next to the school. You could go there and buy candy on the brakes. Some kids would sneak out and buy candy without permission, and then they are slapped in the face.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * MISCHIEF * SCHOOL</pattern>
+		<template><srai>DO STUDENTS MISBEHAVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MISCHIEF * SCHOOL</pattern>
+		<template><srai>DO STUDENTS MISBEHAVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MISBEHAVE * SCHOOL</pattern>
+		<template><srai>DO STUDENTS MISBEHAVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ BREAK * RULES * SCHOOL</pattern>
+		<template><srai>DO STUDENTS MISBEHAVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ ACT UP * SCHOOL</pattern>
+		<template><srai>DO STUDENTS MISBEHAVE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLASSROOM LIKE</pattern>
+		<template>
+			<random>
+				<li>The desks are in straight lines and you would often switch places. </li>
+				<li>Our desks are in straight lines. </li>
+				<li>In the classroom there are the children's desks, the teacher's desk and a musical organ.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ CLASSROOM LIKE *</pattern>
+		<template><srai>BLANK CLASSROOM LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLASSROOMS LIKE</pattern>
+		<template><srai>BLANK CLASSROOM LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLASSROOMS LIKE *</pattern>
+		<template><srai>BLANK CLASSROOM LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ LIKE * CLASSSROOM</pattern>
+		<template><srai>BLANK CLASSROOM LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * CLASSROOM *</pattern>
+		<template><srai>BLANK CLASSROOM LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLASSROOM ORGANIZED</pattern>
+		<template><srai>BLANK CLASSROOM LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CLASSROOM ARRANGED</pattern>
+		<template><srai>BLANK CLASSROOM LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>SEATING</pattern>
+		<template>
+			<random>
+				<li>In the classroom students could sit alone or in pairs. </li>
+				<li>Students would often switch places. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SEATING ASSIGNED</pattern>
+		<template><srai>SEATING</srai></template>
+	</category>
+	<category>
+		<pattern>_ SEATING ASSIGNMENT</pattern>
+		<template><srai>SEATING</srai></template>
+	</category>
+	<category>
+		<pattern>_ SEATING ASSIGNED *</pattern>
+		<template><srai>SEATING</srai></template>
+	</category>
+	<category>
+		<pattern>_ SEATING ASSIGNMENT *</pattern>
+		<template><srai>SEATING</srai></template>
+	</category>
+	<category>
+		<pattern>_ ASSIGNED SEATING</pattern>
+		<template><srai>SEATING</srai></template>
+	</category>
+	<category>
+		<pattern>_ ASSIGNED SEATING *</pattern>
+		<template><srai>SEATING</srai></template>
+	</category>
+	<category>
+		<pattern>STUDENTS IN CLASS</pattern>
+		<template>
+			<random>
+				<li>In a class there would be 20 to 25 students. </li>
+				<li>There are around 25 students in each class. </li>
+				<li>In every class there are around 25 pupils. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW MANY STUDENTS * CLASS</pattern>
+		<template><srai>STUDENTS IN CLASS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY STUDENTS * CLASS *</pattern>
+		<template><srai>STUDENTS IN CLASS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY STUDENTS * CLASSROOM</pattern>
+		<template><srai>STUDENTS IN CLASS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY STUDENTS * CLASSROOM *</pattern>
+		<template><srai>STUDENTS IN CLASS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NUMBER OF STUDENTS * CLASS</pattern>
+		<template><srai>STUDENTS IN CLASS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE * STUDENTS * CLASS</pattern>
+		<template><srai>STUDENTS IN CLASS</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SCHOOLYARD * LIKE</pattern>
+		<template>
+			<random>
+				<li>There is a plot where the studens play rounders.</li>
+				<li>The schoolyard is nice. </li>
+				<li>The schoolyard is a large ground with sand where students fool around in the winter. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * SCHOOLYARD</pattern>
+		<template><srai>WHAT BLANK SCHOOLYARD BLANK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOLYARD LIKE</pattern>
+		<template><srai>WHAT BLANK SCHOOLYARD BLANK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOLYARD LIKE *</pattern>
+		<template><srai>WHAT BLANK SCHOOLYARD BLANK LIKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ LONG * SCHOOL DAY</pattern>
+		<template>
+			<random>
+				<li>In first and second grade you finished at one, and at twelve on Saturdays. In third and fourth grade you finished at half past two.</li>
+				<li>School started at nine and finished around two o'clock.</li>
+				<li>The school day is around five hours long.</li>
+				<li>The school day is between 9 and 3, Monday through Saturday. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW LONG _ SCHOOL</pattern>
+		<template><srai>BLANK LONG BLANK SCHOOL DAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOURS * SCHOOL</pattern>
+		<template><srai>BLANK LONG BLANK SCHOOL DAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOURS * SCHOOL *</pattern>
+		<template><srai>BLANK LONG BLANK SCHOOL DAY</srai></template>
+	</category>
+	<category>
+		<pattern>SCHOOL DAYS</pattern>
+		<template>
+			<random>
+				<li>We go to school 6 days a week, even Saturdays. </li>
+				<li>The children go to school every day of the week except Sundays.</li>
+				<li>Students attend school from Monday to Saturday. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ DAYS A WEEK * SCHOOL</pattern>
+		<template><srai>SCHOOL DAYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ DAYS A WEEK * SCHOOL *</pattern>
+		<template><srai>SCHOOL DAYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL ON SATURDAY</pattern>
+		<template>
+			<random>
+				<li>There is school on Saturdays. </li>
+				<li>We go to school on Saturdays </li>
+				<li>On Saturdays school finished early, at noon, but the other days it finished around two. </li>
+				<li>Yes we had school on Saturday and almost everyone also goes to Sunday school. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL ON SUNDAY</pattern>
+		<template>No, there is no school on Sunday, but there is Sunday school at the church.</template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL ON SUNDAY *</pattern>
+		<template><srai>BLANK SCHOOL ON SUNDAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL ON SUNDAYS</pattern>
+		<template><srai>BLANK SCHOOL ON SUNDAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL ON SUNDAYS *</pattern>
+		<template><srai>BLANK SCHOOL ON SUNDAY</srai></template>
+	</category>
+	<category>
+		<pattern>SCHOOL HOLIDAYS</pattern>
+		<template>
+			<random>
+				<li>Yes, we have a scrubbing holiday, Easter, Christmas and summer holidays.</li>
+				<li>We have a summer vacation and a lingonberry vacation, when we picked lingonberries.</li>
+				<li>We have vacation from school at the yearly holidays.</li>
+				<li>Yes. All the standard holidays and also a berry picking holiday.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL VACATIONS</pattern>
+		<template><srai>SCHOOL HOLIDAYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL HOLIDAYS</pattern>
+		<template><srai>SCHOOL HOLIDAYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL VACATIONS *</pattern>
+		<template><srai>SCHOOL HOLIDAYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL HOLIDAYS *</pattern>
+		<template><srai>SCHOOL HOLIDAYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ VACATIONS * SCHOOL</pattern>
+		<template><srai>SCHOOL HOLIDAYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOLIDAYS * SCHOOL</pattern>
+		<template><srai>SCHOOL HOLIDAYS</srai></template>
+	</category>
+	<category>
+		<pattern>_ RESTROOMS * SCHOOL</pattern>
+		<template>There are no toilets inside. They are outdoors. </template>
+	</category>
+	<category>
+		<pattern>_ RESTROOM * SCHOOL</pattern>
+		<template><srai>BLANK RESTROOMS BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>STUDIES</pattern>
+		<template>
+			<random>
+				<li>There is plenty of reading and writing. The teachers are very good storytellers.</li>
+				<li>You have to learn all the facts, names and years by heart.</li>
+				<li>The school day started with a psalm and a prayer.</li>
+				<li>We have homework, because it is important to learn things. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ LESSONS LIKE</pattern>
+		<template><srai>STUDIES</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDIES LIKE</pattern>
+		<template><srai>STUDIES</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIND OF LESSONS</pattern>
+		<template><srai>STUDIES</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIND OF STUDIES</pattern>
+		<template><srai>STUDIES</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIND OF LESSONS *</pattern>
+		<template><srai>STUDIES</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIND OF STUDIES *</pattern>
+		<template><srai>STUDIES</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL LIKE</pattern>
+		<template><srai>STUDIES</srai></template>
+	</category>
+	<category>
+		<pattern>HOMEWORK</pattern>
+		<template>
+			<random>
+				<li>We have much homework. </li>
+				<li>There are those who don't do their homework and go skiing on the Rodberget.</li>
+				<li>We have much homework, for example the multiplication tables and the psalms that we have to know by heart.</li>
+				<li>We have a lot of homework. Spelling for example.</li>
+				<li><srai>WHAT KIND OF HOMEWORK</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HAVE HOMEWORK</pattern>
+		<template><srai>HOMEWORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ DO HOMEWORK</pattern>
+		<template><srai>HOMEWORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ MUCH HOMEWORK</pattern>
+		<template><srai>HOMEWORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ LOT OF HOMEWORK</pattern>
+		<template><srai>HOMEWORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIND OF HOMEWORK</pattern>
+		<template>
+			<random>
+				<li>We have much homework in math, history and writing. </li>
+				<li>The homework could be to learn a psalm, at least one psalm a week. We also have homework in the other subjects. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ KIND OF HOMEWORK *</pattern>
+		<template><srai>BLANK KIND OF HOMEWORK</srai></template>
+	</category>
+	<category>
+		<pattern>SUBJECTS</pattern>
+		<template>
+			<random>
+				<li>You studied history, geography, Christianity, science, Swedish and mathematics. </li>
+				<li>We have a little English, math, history, geography etc. </li>
+				<li>We have prayer at school in the morning.</li>
+				<li>You have to know the multiplication tables and the psalms well. </li>
+				<li>We have subjects like reading, writing and calculation. </li>
+				<li>We also learn many psalms which we read in the mornings. </li>
+				<li>You would study Christianity and geography and read psalms.</li>
+				<li>One subject is crafts, and woodwork is only for the boys while textile craft is for the girls. </li>
+				<li>At school on Saturdays, we do handwriting</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SUBJECTS * STUDY</pattern>
+		<template><srai>SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUBJECTS * STUDY *</pattern>
+		<template><srai>SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPES OF SUBJECTS *</pattern>
+		<template><srai>SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUBJECTS * SCHOOL</pattern>
+		<template><srai>SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPE OF CLASSES *</pattern>
+		<template><srai>SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SORT OF SUBJECTS *</pattern>
+		<template><srai>SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SORT OF CLASSES *</pattern>
+		<template><srai>SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAND WRITING</pattern>
+		<template>We have to copy a text from a book. Then the teacher collects our notes and put them on a desk. Then we take a vote on who have the most beautiful handwriting. It is like a competition and everyone does their best. If you win you became the champion of the week. </template>
+	</category>
+	<category>
+		<pattern>_ HAND WRITING * SCHOOL</pattern>
+		<template><srai>BLANK HAND WRITING</srai></template>
+	</category>
+	<category>
+		<pattern>BEST SUBJECT</pattern>
+		<template>Many thought that song is the best subject and that drawing is the worst.</template>
+	</category>
+	<category>
+		<pattern>_ BEST SUBJECT</pattern>
+		<template><srai>BEST SUBJECT</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAVORITE SUBJECT</pattern>
+		<template><srai>BEST SUBJECT</srai></template>
+	</category>
+	<category>
+		<pattern>_ BEST SUBJECT *</pattern>
+		<template><srai>BEST SUBJECT</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAVORITE SUBJECT *</pattern>
+		<template><srai>BEST SUBJECT</srai></template>
+	</category>
+	<category>
+		<pattern>_ BEST CLASS</pattern>
+		<template><srai>BEST SUBJECT</srai></template>
+	</category>
+	<category>
+		<pattern>_ FAVORITE CLASS</pattern>
+		<template><srai>BEST SUBJECT</srai></template>
+	</category>
+	<category>
+		<pattern>_ THINK * IS THE BEST SUBJECT</pattern>
+		<template>I think <star index="2"/> is a good subject as well.</template>
+	</category>
+	<category>
+		<pattern>IMPORTANT SUBJECTS</pattern>
+		<template>
+			<random>
+				<li>The most important subjects are math and Swedish.</li>
+				<li>Mathematics is the most important subject. </li>
+				<li>History is an important subject. </li>
+				<li>The most important subjects are quite obvious; reading, writing and mathematics.</li>
+				<li>The most important subject is Christianity.  </li>
+				<li>The most important subjects are mathematics, Swedish and religion. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ IMPORTANT SUBJECT</pattern>
+		<template><srai>IMPORTANT SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IMPORTANT CLASS</pattern>
+		<template><srai>IMPORTANT SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IMPORTANT SUBJECT *</pattern>
+		<template><srai>IMPORTANT SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IMPORTANT CLASS *</pattern>
+		<template><srai>IMPORTANT SUBJECTS</srai></template>
+	</category>
+	<category>
+		<pattern>I THINK * IS THE MOST IMPORTANT SUBJECT</pattern>
+		<template><star/> is a good subject too.</template>
+	</category>
+	<category>
+		<pattern>I THINK THE MOST IMPORTANT SUBJECT IS *</pattern>
+		<template><star/> is a good subject too.</template>
+	</category>
+	<category>
+		<pattern>SCHOOL BOOKS</pattern>
+		<template>
+			<random>
+				<li>We have the Bible and the Psalm book, a calculations book and a writing notebook. </li>
+				<li>We don't have many schoolbooks, but we have a history book. </li>
+				<li>Well, I suppose that we have math and Swedish. You have to wrap them nicely in the beginning of the semester and then you have to return them at the end of the year.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL BOOKS</pattern>
+		<template><srai>SCHOOL BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL BOOKS *</pattern>
+		<template><srai>SCHOOL BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOLBOOKS *</pattern>
+		<template><srai>SCHOOL BOOKS</srai></template>
+	</category>
+	<category>
+		<pattern>SCHOOL COST</pattern>
+		<template>
+			<random>
+				<li>It does not cost anything to go to school, but for some of the books you have to pay.</li>
+				<li>Schooling is free of charge, but you have to pay for some books. </li>
+				<li>It doesn't cost anything to go to elementary school but in secondary school they charged 50 kronor, which is a lot of money and made most choose not to continue their studies but to run errands for money or work as maids.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL COST</pattern>
+		<template><srai>SCHOOL COST</srai></template>
+	</category>
+	<category>
+		<pattern>_ COST * SCHOOL</pattern>
+		<template><srai>SCHOOL COST</srai></template>
+	</category>
+	<category>
+		<pattern>SPECIAL NEEDS</pattern>
+		<template>One doesn't receive very much help, but there are special classes for those with special needs.</template>
+	</category>
+	<category>
+		<pattern>_ HELP * SPECIAL NEEDS *</pattern>
+		<template><srai>SPECIAL NEEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HELP * SPECIAL NEEDS</pattern>
+		<template><srai>SPECIAL NEEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SPECIAL CLASSES</pattern>
+		<template><srai>SPECIAL NEEDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HELP * HOMEWORK</pattern>
+		<template>We rarely get help at home with our homework, because the adults have to work. </template>
+	</category>
+	<category>
+		<pattern>_ SERVE FOOD * SCHOOL</pattern>
+		<template>
+			<random>
+				<li>No, We brought sandwiches and milk.</li>
+				<li>There are no meals served at school, we have to go home and eat if we lived nearby, or bring along something to eat. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ FOOD * CAFETERIA * SCHOOL</pattern>
+		<template><srai>BLANK SERVE FOOD BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL CAFETERIA</pattern>
+		<template><srai>BLANK SERVE FOOD BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * DO FOR LUNCH</pattern>
+		<template>
+			<random>
+				<li>We mostly brought our own food to school. It happened once a year that a meal is served at school.</li>
+				<li>Every one brings their own food packages. </li>
+				<li>Most children don't live close enough to go home, so they brought sandwiches wrapped in newspapers. </li>
+				<li><srai>LUNCH FOOD</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ LUNCH * SCHOOL</pattern>
+		<template><srai>WHAT BLANK DO FOR LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL LUNCH</pattern>
+		<template><srai>WHAT BLANK DO FOR LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>IS * DINING ROOM</pattern>
+		<template>There is no dining room at <set name="topic">school</set>. </template>
+	</category>
+	<category>
+		<pattern>DO * DINING ROOM</pattern>
+		<template><srai>IS BLANK DINING ROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ THERE A DINING ROOM * SCHOOL</pattern>
+		<template><srai>IS BLANK DINING ROOM</srai></template>
+	</category>
+	<category>
+		<pattern>_ CAFETERIA * SCHOOL</pattern>
+		<template><srai>IS BLANK DINING ROOM</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE FOR LUNCH</pattern>
+		<template>
+			<random>
+				<li>If you lived nearby the school you could go home and pick up your lunch. </li>
+				<li>There is a dining room in front of the gas station by the school. We have potatoes, fish, dumplings and pancakes.</li>
+				<li>Some students sit in the corridor underneath the hooks to eat their sandwiches.</li>
+				<li>At lunchtime those who lived close to the school could go home to eat.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHERE * FOR LUNCH</pattern>
+		<template><srai>WHERE FOR LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * EAT LUNCH</pattern>
+		<template><srai>WHERE FOR LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG WAS LUNCH</pattern>
+		<template>
+			<random>
+				<li>We have almost half an hour's brake for lunch. </li>
+				<li>About a half hour for lunch.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TIME FOR LUNCH</pattern>
+		<template><srai>HOW LONG WAS LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME FOR LUNCH *</pattern>
+		<template><srai>HOW LONG WAS LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME * FOR LUNCH</pattern>
+		<template><srai>HOW LONG WAS LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>_ TIME * FOR LUNCH *</pattern>
+		<template><srai>HOW LONG WAS LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG * LUNCH</pattern>
+		<template><srai>HOW LONG WAS LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG * LUNCH *</pattern>
+		<template><srai>HOW LONG WAS LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>SCHOOL LUNCH</pattern>
+		<template>
+			<random>
+				<li>Food is expensive. </li>
+				<li>Every one brings their food so it depends. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ LUNCH COST</pattern>
+		<template><srai>SCHOOL LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>_ LUNCH COST *</pattern>
+		<template><srai>SCHOOL LUNCH</srai></template>
+	</category>
+	<category>
+		<pattern>LUNCH FOOD</pattern>
+		<template>
+			<random>
+				<li>The sandwiches are made of crisp bread, possibly a slice of cheese, but not always. </li>
+				<li>Soft bread is a luxury! We called that "softcake". When they are newly baked they are especially delicious.</li>
+				<li>We could get bread and a tiny bit of butter.  </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ EAT FOR LUNCH</pattern>
+		<template><srai>LUNCH FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ EAT FOR LUNCH *</pattern>
+		<template><srai>LUNCH FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPE OF LUNCH *</pattern>
+		<template><srai>LUNCH FOOD</srai></template>
+	</category>
+	<category>
+		<pattern>HEATER</pattern>
+		<template>
+			<random>
+				<li>In a corner there is a heater that kept the school warm.</li>
+				<li>There is a heater in each classroom of the shcool, but if your seat is against the wall it could get quite cold. </li>
+				<li>The pupils looked after the school heater and it is nice and warm for those who sat next to it, but for those who sat next to the windows it cold get cold and draughty in the winter. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ HEATER AT SCHOOL</pattern>
+		<template><srai>HEATER</srai></template>
+	</category>
+	<category>
+		<pattern>IS THERE * HEATER *</pattern>
+		<template><srai>HEATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL * HEATER</pattern>
+		<template><srai>HEATER</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET TO SCHOOL</pattern>
+		<template>
+			<random>
+				<li>We ride our bikes and in the winter we use on our kick-sled or skied.  </li>
+				<li>We have to tread in the deep snow to get to school, because there is no one shovelling snow. </li>
+				<li>We often raced on our skies. </li>
+				<li>You'd walk to school, even if you lived far away. </li>
+				<li>It could take one or two hours to walk to school for those who lived far away. </li>
+				<li>A friend of mine lived close to the school and could ride her bike there in ten minutes, an advantage that everyone doesn't have. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TRAVEL * SCHOOL</pattern>
+		<template><srai>BLANK GET TO SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TRANSPORTATION * SCHOOL</pattern>
+		<template><srai>BLANK GET TO SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ GETTING * SCHOOL</pattern>
+		<template><srai>BLANK GET TO SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TO SCHOOL</pattern>
+		<template><srai>BLANK GET TO SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>STUDENTS HAVE PACKS</pattern>
+		<template>
+			<random>
+				<li>Most children bring a backpack to school. They also bring it on outings. </li>
+				<li>The children carry a simple backpack to school. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS * PACKS</pattern>
+		<template><srai>STUDENTS HAVE PACKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS * BACKPACKS</pattern>
+		<template><srai>STUDENTS HAVE PACKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ STUDENTS * BACKPACKS *</pattern>
+		<template><srai>STUDENTS HAVE PACKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ A PACK * SCHOOL</pattern>
+		<template><srai>STUDENTS HAVE PACKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BACKPACK * SCHOOL</pattern>
+		<template><srai>STUDENTS HAVE PACKS</srai></template>
+	</category>
+	<category>
+		<pattern>_ BACKPACKS * SCHOOL</pattern>
+		<template><srai>STUDENTS HAVE PACKS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY CLASSROOMS</pattern>
+		<template>There are 4 classrooms. </template>
+	</category>
+	<category>
+		<pattern>HOW MANY CLASSROOMS *</pattern>
+		<template><srai>HOW MANY CLASSROOMS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NUMBER OF CLASSROOMS</pattern>
+		<template><srai>HOW MANY CLASSROOMS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NUMBER OF CLASSROOMS *</pattern>
+		<template><srai>HOW MANY CLASSROOMS</srai></template>
+	</category>
+	<category>
+		<pattern>SCHOOL AGE</pattern>
+		<template>
+			<random>
+				<li>At the age of seven we could start at the school.  </li>
+				<li>You started school at the age of seven and attended school for six years.</li>
+				<li>One would start school at the age of seven. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ AGE * START SCHOOL</pattern>
+		<template><srai>SCHOOL AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * START SCHOOL *</pattern>
+		<template><srai>SCHOOL AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * START * SCHOOL</pattern>
+		<template><srai>SCHOOL AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ OLD * START SCHOOL</pattern>
+		<template><srai>SCHOOL AGE</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * START SCHOOL </pattern>
+		<template><srai>SCHOOL AGE</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MANY STUDENTS * SCHOOL</pattern>
+		<template>This year approximately 35 children attended grades 4, 5 and 6. </template>
+	</category>
+	<category>
+		<pattern>YEARS OF SCHOOL</pattern>
+		<template>
+			<random>
+				<li>Most children go to school for six years, and then you could start working or continue your education. </li>
+				<li>First they go for six years to Grisbackaskolan, and then the seventh year to Backenskolan.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW MANY YEARS * SCHOOL</pattern>
+		<template><srai>YEARS OF SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW LONG * STAY IN SCHOOL</pattern>
+		<template><srai>YEARS OF SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ YEARS * IN SCHOOL</pattern>
+		<template><srai>YEARS OF SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT GRADES</pattern>
+		<template>
+			<random>
+				<li>The first and second year students are in the same class, and so are the third and fourth year.</li>
+				<li>There are two classes in one classroom, altogether around 25 children. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ GRADES * SAME CLASS</pattern>
+		<template><srai>WHAT GRADES</srai></template>
+	</category>
+	<category>
+		<pattern>_ MANY IN * CLASSROOM</pattern>
+		<template><srai>WHAT GRADES</srai></template>
+	</category>
+	<category>
+		<pattern>_ NOT LIKE ABOUT SCHOOL</pattern>
+		<template>It is a long way to get there, but it is a very nice school.</template>
+	</category>
+	<category>
+		<pattern>_ DISLIKE ABOUT SCHOOL</pattern>
+		<template><srai>BLANK NOT LIKE ABOUT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ NOT LIKE ABOUT SCHOOL *</pattern>
+		<template><srai>BLANK NOT LIKE ABOUT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ DISLIKE ABOUT SCHOOL *</pattern>
+		<template><srai>BLANK NOT LIKE ABOUT SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE A JANITOR</pattern>
+		<template>Yes, there is a janitor that comes to the school.</template>
+	</category>
+	<category>
+		<pattern>_ HAVE A JANITOR *</pattern>
+		<template><srai>BLANK HAVE A JANITOR</srai></template>
+	</category>
+	<category>
+		<pattern>_ JANITOR * SCHOOL</pattern>
+		<template><srai>BLANK HAVE A JANITOR</srai></template>
+	</category>
+	<category>
+		<pattern>SCHOOL NURSE</pattern>
+		<template>Yes, but she only comes by occasionally because she lives outside of the village.</template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL NURSE</pattern>
+		<template><srai>SCHOOL NURSE</srai></template>
+	</category>
+	<category>
+		<pattern>_ NURSE * SCHOOL</pattern>
+		<template><srai>SCHOOL NURSE</srai></template>
+	</category>
+	<category>
+		<pattern>TOOLS</pattern>
+		<template>
+			<random>
+				<li>There are also pencils and erasers in school. </li>
+				<li>We have inkpots, but the teachers don't like the inkblots.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TOOLS * SCHOOL</pattern>
+		<template><srai>TOOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WRITING TOOLS *</pattern>
+		<template><srai>TOOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUPPLIES * SCHOOL</pattern>
+		<template><srai>TOOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL SUPPLIES</pattern>
+		<template><srai>TOOLS</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL SUPPLIES *</pattern>
+		<template><srai>TOOLS</srai></template>
+	</category>
+	<category>
+		<pattern>WHY</pattern>
+		<that>* LIKE THE INKBOTS</that>
+		<template>Because they made a mess.</template>
+	</category>
+	<category>
+		<pattern>WHAT KIND OF PENS DID YOU USE WERE THERE ERASERS AND OTHER MATERIAL</pattern>
+		<template>We have pencils and we have to learn how to write with ink. The ink is in an inkpot. You lifted a lid and dipped the pen, but you have to be careful not to make an ink blot, cause then you have to do it again.</template>
+	</category>
+	<category>
+		<pattern>WHAT IS THE SCHOOL CALLED</pattern>
+		<template>The school is called Hartvigsskolan. </template>
+	</category>
+	<category>
+		<pattern>WHAT * NAME OF THE SCHOOL</pattern>
+		<template><srai>WHAT IS THE SCHOOL CALLED</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * CALL THE SCHOOL</pattern>
+		<template><srai>WHAT IS THE SCHOOL CALLED</srai></template>
+	</category>
+	<category>
+		<pattern>* LIKE SCHOOL</pattern>
+		<template>
+			<random>
+				<li>Yes, it is great fun.</li>
+				<li>Yes, everyone likes school.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>* LIKE * SCHOOL</pattern>
+		<template><srai>BLANK LIKE SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>* LIKE * SCHOOL *</pattern>
+		<template><srai>BLANK LIKE SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>* ENJOY SCHOOL</pattern>
+		<template><srai>BLANK LIKE SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SCHOOL LOOK LIKE</pattern>
+		<template>
+			<random>
+				<li>The windows are big and the walls are made of wood.</li>
+				<li>In the school there are two narrow classrooms. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO * REQUIRED * SCHOOL</pattern>
+		<template>
+			<random>
+				<li>All the children go to school. </li>
+				<li>School attendance is compulsory and free of charge. </li>
+				<li>No one skipped school. </li>
+				<li>All children go to school because the attendance is compulsory. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO * REQUIRED * SCHOOL *</pattern>
+		<template><srai>WHO BLANK REQUIRED BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAS TO GO * SCHOOL</pattern>
+		<template><srai>WHO BLANK REQUIRED BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAS TO GO * SCHOOL *</pattern>
+		<template><srai>WHO BLANK REQUIRED BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TO GO * SCHOOL</pattern>
+		<template><srai>WHO BLANK REQUIRED BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE TO GO * SCHOOL *</pattern>
+		<template><srai>WHO BLANK REQUIRED BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ STAY HOME * SCHOOL</pattern>
+		<template>You stayed at home only if you are ill.</template>
+	</category>
+	<category>
+		<pattern>_ STAY HOME * SCHOOL *</pattern>
+		<template><srai>BLANK STAY HOME BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>WHEN * SCHOOL BUILT</pattern>
+		<template>
+			<random>
+				<li>The school Harvigsskolan was built in 1934 and Grisbackaskolan was built in 1959. </li>
+				<li>The Griisbacka shool was built in 1959. Before it was built the land belonged to a farmer.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHEN * SCHOOLS BUILT</pattern>
+		<template><srai>WHEN BLANK SCHOOL BUILT</srai></template>
+	</category>
+	<category>
+		<pattern>_ GYMNASIUM * SCHOOL</pattern>
+		<template>There is no gymnasium at the <set name="topic">school</set>, so in wintertime they have the physical education in the corridors.</template>
+	</category>
+	<category>
+		<pattern>_ GYM * SCHOOL</pattern>
+		<template><srai>BLANK GYMNASIUM BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL HAVE * GYMNASIUM</pattern>
+		<template><srai>BLANK GYMNASIUM BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL HAVE * GYM</pattern>
+		<template><srai>BLANK GYMNASIUM BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ HAVE A GYM</pattern>
+		<template><srai>BLANK GYMNASIUM BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TELEPHONE * SCHOOL</pattern>
+		<template>
+			<random>
+				<li>I don't think so.</li>
+				<li>There are no telephones so students can't call home. </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TELEPHONES * SCHOOL</pattern>
+		<template><srai>BLANK TELEPHONE BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SCHOOL HAVE * TELEPHONE</pattern>
+		<template><srai>BLANK TELEPHONE BLANK SCHOOL</srai></template>
+	</category>
+	<category>
+		<pattern>IS * TELEPHONE * SCHOOL</pattern>
+		<template><srai>BLANK TELEPHONE BLANK SCHOOL</srai></template>
+	</category>
+</aiml>

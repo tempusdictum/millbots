@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="../resources/schema/AIML.xsd">
+
+	<category>
+		<pattern>TYPE OF WORK</pattern>
+		<template>
+			<random>
+				<li>Some people work as butchers, fishermen or farmers. </li>
+				<li>The women weaved and knitted and the men worked in the farm. </li>
+				<li>The most common jobs are within farming and trading.</li>
+				<li>Some work with trading or at the museum. </li>
+				<li>When the milking machines became popular, only the men milked the cows.</li>
+				<li>Most people are farmers but there are other jobs.</li>
+				<li>There is a blacksmith, a small carpentry, a painter and a tailor.</li>
+				<li>In Grisbacka we have two tailors, but 90% of the inhabitants are farmers. </li>
+				<li>The man often works in the forest in wintertime and on the fields in summer. </li>
+				<li>Some work in shops as assistants or errand boys. </li>
+				<li>Some are bus drivers and others carpenters.</li>
+				<li>Sometimes people would come passing by the village. They could help out at the farm and in return they would get a place to sleep for the night.</li>
+				<li>90% of the people here are farmers.</li>
+				<li>There is a miller, a blacksmith, a shoemaker, log rafters, carpenters, bricklayers, painters, tailors and cooks.</li>
+				<li>There are cooks who comes to the farms a few days before a party or a funeral to arrange the cooking and baking.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * PEOPLE DO FOR A LIVING</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * PEOPLE DO FOR A LIVING *</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT JOBS *</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPES OF WORK *</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPES OF JOBS *</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ JOBS ARE THERE</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ EARN A LIVING</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ EARN * LIVINGS</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE MAKE MONEY</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ JOBS ARE THERE *</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ EARN A LIVING *</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ PEOPLE MAKE MONEY *</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ EARN MONEY</pattern>
+		<template><srai>TYPE OF WORK</srai></template>
+	</category>
+	<category>
+		<pattern>WORK AGE</pattern>
+		<template>
+			<random>
+				<li>As soon as you are old enough to manage, you have to start to work. </li>
+				<li>Children might start working as young as age 10 to help the family out.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ OLD * BE * WORK</pattern>
+		<template><srai>WORK AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ OLD * BE * WORK *</pattern>
+		<template><srai>WORK AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ OLD * BE * WORKING</pattern>
+		<template><srai>WORK AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * START WORK</pattern>
+		<template><srai>WORK AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * WORKING</pattern>
+		<template><srai>WORK AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ AGE * WORKING *</pattern>
+		<template><srai>WORK AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ WORK AGE</pattern>
+		<template><srai>WORK AGE</srai></template>
+	</category>
+	<category>
+		<pattern>_ WORK AGE *</pattern>
+		<template><srai>WORK AGE</srai></template>
+	</category>
+	<category>
+		<pattern>WORK DAY</pattern>
+		<template>We <set name="topic">work</set> from seven in the morning until five in the evening, Monday through Saturday. </template>
+	</category>
+	<category>
+		<pattern>HOW LONG * WORK DAY</pattern>
+		<template><srai>WORK DAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOURS * WORK</pattern>
+		<template><srai>WORK DAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * WORK DAY</pattern>
+		<template><srai>WORK DAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ DAYS A WEEK * WORK</pattern>
+		<template><srai>WORK DAY</srai></template>
+	</category>
+	<category>
+		<pattern>PAY</pattern>
+		<template>
+			<random>
+				<li>A normal salary is around 8000 kronor per year, but some engineers or workers can earn up to 20,000 kronor a year, which is a lot!</li>
+				<li>In the 1930's they earned 70 ore an hour and they worked 12 hours every day, six days a week. </li>
+				<li>Many earn money from selling timber, wood and milk.</li>
+				<li>A rafter at the lodge driving earns 30 ore per hour. </li>
+				<li>A farmer's hand gets 10-15 kronor a month.</li>
+				<li><srai>ROOM AND BOARD AS PAY</srai></li>
+				<li><srai>FARMER SALARY</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT * GET PAID</pattern>
+		<template><srai>PAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * PAY RATE</pattern>
+		<template><srai>PAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MUCH * PAID</pattern>
+		<template><srai>PAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MUCH * PAID *</pattern>
+		<template><srai>PAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SALARY</pattern>
+		<template><srai>PAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHAT * SALARY *</pattern>
+		<template><srai>PAY</srai></template>
+	</category>
+	<category>
+		<pattern>ROOM AND BOARD AS PAY</pattern>
+		<template>
+			<random>
+				<li>Many people work only for board and accommodation.</li>
+				<li>The maids don't earn any money, but they get free food and a place to sleep. </li>
+				<li>Sometimes people come passing by the village. They can help out at the farm and in return they will get a place to sleep for the night.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ WORK * RENT</pattern>
+		<template><srai>ROOM AND BOARD AS PAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WORK * BOARD</pattern>
+		<template><srai>ROOM AND BOARD AS PAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WORK * FOOD</pattern>
+		<template><srai>ROOM AND BOARD AS PAY</srai></template>
+	</category>
+	<category>
+		<pattern>FARMER SALARY</pattern>
+		<template>
+			<random>
+				<li>It isn't possible to measure a farmer's salary. </li>
+				<li>The men who helped out at the farms are paid. They work between 8 and 10 hours a day and get 10-15 kronor a month.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW MUCH * FARMER MAKE</pattern>
+		<template><srai>FARMER SALARY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MUCH MONEY * FARMER *</pattern>
+		<template><srai>FARMER SALARY</srai></template>
+	</category>
+	<category>
+		<pattern>_ FARMER EARN</pattern>
+		<template><srai>FARMER SALARY</srai></template>
+	</category>
+	<category>
+		<pattern>ONLY MEN WORK</pattern>
+		<template>
+			<random>
+				<li>A man isn't at home very much because he is at work.</li>
+				<li>Usually only the men work, while the women are at home taking care of the children and the household.</li>
+				<li>When the milking machines became popular, only the men milked the cows.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ ONLY MEN WORK</pattern>
+		<template><srai>ONLY MEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ ONLY MEN THAT WORK</pattern>
+		<template><srai>ONLY MEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ MEN * ONLY * WORK</pattern>
+		<template><srai>ONLY MEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>WOMEN WORK</pattern>
+		<template>
+			<random>
+				<li>Both men and women work, but the married women are mostly housewives, bringing up the children and taking care of the household. </li>
+				<li>Most women work at home. They milk the cows by hand and they have plenty of other chores. </li>
+				<li>Women used to milk the cows for dairies, but when the milking machines became popular, only the men milked the cows with the machines.</li>
+				<li>The women work hard. Not only does they take care of the children and the house, but they also manages the barn and the animals.</li>
+				<li>The maids didn't earn any money, but they had free food and a place to sleep. </li>
+				<li>Some mothers who go to work have a maid to help out at home.</li>
+				<li>The women weaved and knitted.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ WOMEN WORK</pattern>
+		<template><srai>WOMEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN WORK *</pattern>
+		<template><srai>WOMEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN * WORK</pattern>
+		<template><srai>WOMEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMEN * WORK *</pattern>
+		<template><srai>WOMEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS WORK</pattern>
+		<template><srai>WOMEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ GIRLS WORK *</pattern>
+		<template><srai>WOMEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMAN WORK</pattern>
+		<template><srai>WOMEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ WOMAN WORK *</pattern>
+		<template><srai>WOMEN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ WORK * FOREST</pattern>
+		<template>Men will cut timber in the forest.</template>
+	</category>
+	<category>
+		<pattern>_ WORK * FIELDS</pattern>
+		<template>Men will help farm the fields in the growing season.</template>
+	</category>
+	<category>
+		<pattern>_ WORK * FIELD</pattern>
+		<template><srai>BLANK WORK BLANK FIELDS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WORKS * FIELDS</pattern>
+		<template><srai>BLANK WORK BLANK FIELDS</srai></template>
+	</category>
+	<category>
+		<pattern>CHILDREN WORK</pattern>
+		<template>
+			<random>
+				<li>There was a place where you could start to work at the age of 10–12; Lithell's gardens. There you could help in the harvest, gathering potatoes and carrots.</li>
+				<li>In the autumn there is a school brake called "potato brake". The children help getting up the potatoes. No particular age is required to do this because it is not a difficult task.</li>
+				<li>Some work in shops as assistants or errand boys. </li>
+				<li>As soon as you were old enough to manage, you would have to start to work. </li>
+				<li><srai>CHILDREN EARNINGS</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN WORK</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN WORK *</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * WORK</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * WORK *</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILD WORK</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIDS WORK</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ YOUNG POEPLE WORK</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ TYPE * WORK CHILDREN *</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILD * JOB</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * JOB</pattern>
+		<template><srai>CHILDREN WORK</srai></template>
+	</category>
+	<category>
+		<pattern>CHILDREN EARNINGS</pattern>
+		<template>To earn enough to buy a football, you had to work for three weeks, and if you wanted to buy a bike, you had to work for two months. </template>
+	</category>
+	<category>
+		<pattern>WHAT * GET WITH * ALLOWANCE</pattern>
+		<template><srai>CHILDREN EARNINGS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW MUCH _ ALLOWANCE</pattern>
+		<template><srai>CHILDREN EARNINGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WORK _ ALLOWANCE</pattern>
+		<template><srai>CHILDREN EARNINGS</srai></template>
+	</category>
+	<category>
+		<pattern>ALLOWANCE</pattern>
+		<template>Some children have a weekly allowance of 10 ore. </template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * ALLOWANCE</pattern>
+		<template><srai>ALLOWANCE</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHILDREN * ALLOWANCE *</pattern>
+		<template><srai>ALLOWANCE</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET AN ALLOWANCE</pattern>
+		<template><srai>ALLOWANCE</srai></template>
+	</category>
+	<category>
+		<pattern>_ GET AN ALLOWANCE *</pattern>
+		<template><srai>ALLOWANCE</srai></template>
+	</category>
+	<category>
+		<pattern>_ KIDS * ALLOWANCE *</pattern>
+		<template><srai>ALLOWANCE</srai></template>
+	</category>
+	<category>
+		<pattern>_ ALLOWANCE</pattern>
+		<template><srai>ALLOWANCE</srai></template>
+	</category>
+</aiml>
