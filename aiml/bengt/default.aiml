@@ -20,7 +20,7 @@
 					<li>If you are wondering how the mill works...<srai>HOWTHEMILLWORKS</srai></li>
 					<li>If you are wondering how the mill is powered...<srai>HOWISTHEMILLPOWERED</srai></li>
 					<li>If you are wondering what they do in the mill...<srai>KINDOFWORKINTHEMILL</srai></li>
-					<li>Did you know the the mill is popular with the children? <srai>CHILDRENATMILL</srai></li>
+					<li>Did you know the the mill is popular with the children?</li>
 				</random>
 			</template>
 	</category>

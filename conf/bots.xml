@@ -17,7 +17,7 @@
     <sentence-splitters href="sentence-splitters.xml"/>
     <learn>../aiml/staffan/*.aiml</learn>
     <learn>../aiml/standard/*.aiml</learn>
-    <listener class="org.aitools.programd.listener.IRCListener" enabled="true">
+    <listener class="com.tdi.millbots.IRCListener" enabled="true">
       <!-- 	            <parameter name="host" value="192.168.0.5"/> -->
 	   <parameter name="host" value="irc.freenode.net"/>
 	   <parameter name="port" value="6667"/>
@@ -42,7 +42,7 @@
     <sentence-splitters href="sentence-splitters.xml"/>
     <learn>../aiml/bengt/*.aiml</learn>
     <learn>../aiml/standard/*.aiml</learn>
-    <listener class="org.aitools.programd.listener.IRCListener" enabled="true">
+    <listener class="com.tdi.millbots.IRCListener" enabled="true">
       <!-- 	            <parameter name="host" value="192.168.0.5"/> -->
 	   <parameter name="host" value="irc.freenode.net"/>
 	   <parameter name="port" value="6667"/>
@@ -51,6 +51,7 @@
     </listener>
   </bot>
   <!-- God-bot -->
+  <!--
   <bot id="god-bot" enabled="true">
 	 <properties>
 		<property name="name" value="TDI-God-Bot"/> 
@@ -66,14 +67,14 @@
     <substitutions href="substitutions.xml"/>
     <sentence-splitters href="sentence-splitters.xml"/>
     <learn>../aiml/god/*.aiml</learn>    
-    <listener class="org.aitools.programd.listener.IRCListener" enabled="true">
-      <!-- 	            <parameter name="host" value="192.168.0.5"/> -->
+    <listener class="com.tdi.millbots.IRCListener" enabled="true">
 	   <parameter name="host" value="irc.freenode.net"/>
 	   <parameter name="port" value="6667"/>
 	   <parameter name="nick" value="TDI-God-Bot"/> 
 	   <parameter name="channel" value="#tdibots"/>
     </listener>
   </bot>
+  -->
   <!-- Anna Bot -->
   <bot id="anna-bot" enabled="true">
 	 <properties>
@@ -90,7 +91,7 @@
     <substitutions href="substitutions.xml"/>
     <sentence-splitters href="sentence-splitters.xml"/>
     <learn>../aiml/anna/*.aiml</learn>
-    <listener class="org.aitools.programd.listener.IRCListener" enabled="true">
+    <listener class="com.tdi.millbots.IRCListener" enabled="true">
 	   <parameter name="host" value="irc.freenode.net"/>
 	   <parameter name="port" value="6667"/>
 	   <parameter name="nick" value="TDI-AnnaBot"/>

@@ -7,7 +7,11 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-package org.aitools.programd.listener;
+// 2014-11-25 gepr - use our IRCBot instead of ProgramDPircBot
+
+// gepr 2014-11-25
+// package org.aitools.programd.listener;
+package com.tdi.millbots;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -19,6 +23,10 @@ import org.apache.log4j.Logger;
 import org.jibble.pircbot.IrcException;
 import org.jibble.pircbot.NickAlreadyInUseException;
 import org.jibble.pircbot.PircBot;
+
+// gepr 2014-11-25
+import org.aitools.programd.listener.Listener;
+import org.aitools.programd.listener.InvalidListenerParameterException;
 
 /**
  * This is totally new and works with the PircBot API.
@@ -133,7 +141,7 @@ public class IRCListener implements Listener
     public void run()
     {
         this.logger.info(String.format("Starting for \"%s.\".", this.botID));
-        this.pircBot = new ProgramDPircBot(this.nick, this.core, this.botID);
+        this.pircBot = new IRCBot(this.nick, this.core, this.botID);
         this.pircBot.setVerbose(true);
         try
         {
